@@ -1,0 +1,37 @@
+{
+	"name": "parallax",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"engines": {
+		"node": ">=24 <25"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/adapter-vercel": "^4.0.5",
+		"@sveltejs/kit": "2.5.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"autoprefixer": "^10.4.16",
+		"flowbite": "^2.2.0",
+		"flowbite-svelte": "^0.44.20",
+		"flowbite-svelte-icons": "^1.6.0",
+		"postcss": "^8.4.32",
+		"svelte": "^4.2.7",
+		"tailwindcss": "^3.3.6",
+		"vite": "^5.0.0"
+	},
+	"dependencies": {
+		"@vercel/analytics": "^2.0.1",
+		"arquero": "^8.0.3",
+		"d3": "^7.9.0",
+		"lucide-svelte": "^0.554.0",
+		"motion": "12.23.24"
+	}
+}

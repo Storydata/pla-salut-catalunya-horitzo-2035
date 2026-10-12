@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  /* motion mesura els `scroll(..., { target })` contra `document.scrollingElement`,
+     que es <html>, i avisa si el troba `static`. Amb `relative` el calcul de
+     l'offset queda ben definit; <html> ja es el bloc contenidor inicial, aixi
+     que no canvia res de la maquetacio. */
+  position: relative;
+  /* La web només té disseny clar: amb `light` el navegador no pinta de fosc el
+     llenç, les barres de scroll ni els controls de formulari si l'usuari té el
+     mode fosc activat. */
+  color-scheme: light;
+}
+
+/* Cap seccio no ha de provocar scroll horitzontal al mobil. `clip` i no
+   `hidden`: `hidden` crearia un contenidor de scroll i trencaria els
+   `position: sticky` de les seccions fixades. */
+html,
+body {
+  overflow-x: clip;
+}
+
+/* Titol de seccio: mida fixa, que nomes canvia al breakpoint md (cap escalat
+   continu amb l'ample). */
+.section-title {
+  font-family: "Abhaya Libre", serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #2e3a59;
+}
+
+/* Subtitol de seccio (el que abans era text-3xl / text-[30px]). */
+.section-subtitle {
+  font-family: "Abhaya Libre", serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #2e3a59;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 30px;
+  }
+}
+
+/* Match the prototype's text rendering: without this, macOS Chrome uses
+   subpixel antialiasing, which visibly thickens Inter at body sizes. */
+body {
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.chart-title {
+  color: #1b4853;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(12px, 2.5vw, 14px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.facet-label {
+  fill: #616161;
+  text-anchor: end;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(8px, 1.5vw, 10px);
+  font-weight: 500;
+}
+
+.indicator-label {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(7px, 1.2vw, 9px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mean-label-text {
+  font-family: "Inter", sans-serif;
+  fill: #4c4f51;
+  font-size: clamp(10px, 1.5vw, 12px);
+  font-weight: 700;
+}
+
+.mean-label-value {
+  fill: #1b4853;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(20px, 5vw, 30px);
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* The figure SVGs share a 360-unit height but vary in width (130-270), so
+   `contain` letterboxes the wide ones. Default centring left those floating
+   above the baseline - pin them to the bottom edge so every person stands on
+   the same ground line. */
+.figure-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+
+/* All axis styles  */
+
+.y-axis text {
+  font-family: "Inter", sans-serif;
+  color: #8b898e;
+  font-weight: 300;
+}
+
+.x-axis text {
+  font-family: "Inter", sans-serif;
+  color: #b9b8bb;
+  font-weight: 400;
+  color: #b9b8bb;
+  text-align: center;
+}
+
+.x-axis path,
+.y-axis path {
+  stroke-width: 0;
+  stroke-opacity: 0;
+  stroke: black;
+}
+
+.x-axis line,
+.y-axis line {
+  fill: none;
+  stroke-width: 1;
+  stroke-opacity: 1;
+  stroke: #b9b8bb;
+}
+
+.x-axis-horizontal text {
+  fill: #616161;
+  text-anchor: middle;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.7em;
+}
+
+.x-axis-horizontal path {
+  stroke-width: 0;
+  stroke-opacity: 1;
+  color: #8b898e;
+}
+
+.x-axis-horizontal line {
+  fill: none;
+  stroke-width: 2;
+  stroke-opacity: 0.5;
+  color: #b9b8bb;
+}
+
+.y-axis-horizontal text {
+  color: #b9b8bb;
+  text-anchor: middle;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.y-axis-horizontal path {
+  stroke-width: 0;
+  stroke-opacity: 0;
+  stroke: #b9b8bb;
+}
+
+.y-axis-horizontal line {
+  fill: none;
+  stroke-width: 1;
+  stroke-opacity: 1;
+  stroke: #b9b8bb;
+}
+
+.x-axis-line text {
+  color: #8b898e;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.x-axis-line line {
+  stroke-width: 0.5;
+  stroke-opacity: 0.7;
+  color: #8b898e;
+}
+
+.x-axis-line path {
+  stroke-width: 0px;
+  stroke: #8b898e;
+}
+
+.y-axis-line text {
+  color: #8b898e;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.y-axis-line line {
+  stroke-width: 1;
+  color: #8b898e;
+}
+
+.y-axis-line path {
+  stroke-width: 0;
+  color: #8b898e;
+}

@@ -1,0 +1,37 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Plans
+plans/
+
+# Material sense ús que no ha de pujar a GitHub
+eliminar antes de subir a github/
+
+# Dades originals (Raw) i instruccions internes del projecte: no pugen a GitHub
+src/lib/data/Raw/**/*.csv
+CLAUDE.md
+
+# Excel d'origen i prototip: no pugen a GitHub
+src/lib/data/Scripts/excel-origen/
+pla-de-salut-wireframe.html

@@ -1,0 +1,380 @@
+[
+  {
+    "id": 1,
+    "label": "Esperança de vida",
+    "objectius": [
+      {
+        "label": "Incrementar l'esperança de vida en néixer",
+        "indicador": "Esperança de vida en néixer",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Incrementar l'esperança de vida amb bona salut en néixer",
+        "indicador": "Esperança de vida amb bona salut en néixer",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Incrementar l'esperança de vida amb bona salut en dones als 65 anys",
+        "indicador": "Esperança de vida amb bona salut als 65 anys",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "label": "Mortalitat evitable",
+    "objectius": [
+      {
+        "label": "Reduir un 15 % la taxa de mortalitat evitable per totes les causes",
+        "indicador": "Taxa de mortalitat evitable per totes les causes",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir un 10 % la taxa de mortalitat evitable per càncer de pulmó",
+        "indicador": "Taxa de mortalitat evitable per càncer de pulmó",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir per sota del valor actual la taxa de mortalitat evitable per malalties isquèmiques del cor",
+        "indicador": "Taxa de mortalitat evitable per malaltia isquèmica del cor",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir un 15 % la taxa de mortalitat evitable per càncer de mama",
+        "indicador": "Taxa de mortalitat evitable per càncer de mama",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir un 15 % la taxa de mortalitat evitable per càncer colorectal",
+        "indicador": "Taxa de mortalitat evitable per càncer colorectal",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir un 10 % la taxa de mortalitat evitable per ictus",
+        "indicador": "Taxa de mortalitat evitable per ictus",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Mantenir la taxa de mortalitat evitable per malalties de l'aparell respiratori",
+        "indicador": "Taxa de mortalitat evitable per malalties de l'aparell respiratori",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir un 15 % la taxa de mortalitat evitable per càncer de fetge",
+        "indicador": "Taxa de mortalitat evitable per càncer de fetge",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir un 10 % la taxa de mortalitat evitable per càncer d’estómac",
+        "indicador": "Taxa de mortalitat evitable per càncer d'estómac",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir un 10 % la taxa de mortalitat evitable per càncer de cèrvix",
+        "indicador": "Taxa de mortalitat evitable per càncer de cèrvix",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir un 10 % la taxa de mortalitat evitable per suïcidi",
+        "indicador": "Taxa de mortalitat evitable per suïcidi",
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir un 10 % la taxa de mortalitat evitable per suïcidi en homes",
+        "indicador": null,
+        "font": "Registre de mortalitat de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "No incrementar la taxa de mortalitat per temperatures extremes",
+        "indicador": "Taxa de mortalitat per temperatures extremes",
+        "font": "Sistema de monitoratge de la mortalitat diària",
+        "datasetId": null
+      },
+      {
+        "label": "Incrementar fins al 70 % la supervivència neta per càncer als cinc anys en homes i en dones",
+        "indicador": "Taxa de supervivència neta per càncer als cinc anys en homes i en dones",
+        "font": "Registres de càncer de Girona i Tarragona",
+        "datasetId": null
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "label": "Morbiditat",
+    "objectius": [
+      {
+        "label": "Reduir per sota del 30 % el dolor en adults i disminuir-ne les desigualtats",
+        "indicador": "% de persones de 15 anys i més amb dolor",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir les desigualtats de gènere i nivell d’estudis en l’ansietat lleu",
+        "indicador": "% de persones de 15 anys i més amb ansietat lleu",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "PS3_19_adults"
+      },
+      {
+        "label": "Reduir les desigualtats de gènere i nivell d’estudis en la depressió lleu",
+        "indicador": "% de persones de 15 anys i més amb depressió lleu",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "PS3_18_adults"
+      },
+      {
+        "label": "Caigudes en gent gran",
+        "indicador": "Atès el seu gran impacte, és un objectiu prioritari del Pla de salut. No obstant això, com que en l’actualitat no existeix un bon indicador per mesurar-les, en primer lloc es farà la recerca pertinent per trobar-lo. Una vegada identificat i avaluat l’inidicador, s’establiran les metes d’aquest objectiu per a 2035.",
+        "font": "Pendent",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir per sota del 5 % la malaltia pulmonar obstructiva crònica en adults i disminuir-ne les desigualtats",
+        "indicador": "% de persones de 40 anys i més amb malaltia pulmonar obstructiva crònica",
+        "font": "Sistema d’informació sanitària de l’atenció primària",
+        "datasetId": null
+      },
+      {
+        "label": "Mantenir per sota del nivell actual la taxa d'infeccions de transmissió sexual (ITS) en adults",
+        "indicador": "Taxa d’incidència d'infeccions de transmissió sexual\n(per 100.000 habitants)",
+        "font": "Centre d’Estudis Epidemiològics de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Mantenir per sota del nivell actual la taxa d’ictus en adults i disminuir-ne les desigualtats",
+        "indicador": "Taxa d’incidència d’ictus (per 100.000 habitants)",
+        "font": "Sistema Sanitari Integral d’Utilització Pública de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Mantenir per sota del nivell actual la malaltia isquèmica del cor en adults i disminuir-ne les desigualtats",
+        "indicador": "Taxa d’incidència de malaltia isquèmica del cor (per 100.000 habitants)",
+        "font": "Sistema Sanitari Integral d’Utilització Pública de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Tendir a l’eliminació del càncer de coll d’úter",
+        "indicador": "Taxa bruta d’incidència de càncer de coll d’úter (per 100.000 habitants)",
+        "font": "Pla director d’Oncologia",
+        "datasetId": null
+      },
+      {
+        "label": "Tendir a l’eliminació de la infecció pel virus de l’hepatitis C",
+        "indicador": "Taxa d'incidència d'hepatitis C (per 100.000 habitants)",
+        "font": "Malalties de Declaració Obligatòria",
+        "datasetId": null
+      },
+      {
+        "label": "Mantenir sense brots autòctons d'arbovirosis",
+        "indicador": "Nombre de brots autòctons declarats de dengue, Chikungunya, Zika i febre del Nil",
+        "font": "Malalties de Declaració Obligatòria",
+        "datasetId": null
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "label": "Factors de risc",
+    "objectius": [
+      {
+        "label": "Superar el 65 % de lactància materna exclusiva en nadons",
+        "indicador": "% de nadons amb lactància materna exclusiva als 6 mesos",
+        "font": "Sistema d’informació sanitària de l’atenció primària",
+        "datasetId": "LACTANCIAMATERNA_6M_infants"
+      },
+      {
+        "label": "Superar el 70 % de població infantil lliure de càries",
+        "indicador": "% de persones de 1-14 anys sense experiència de càries (població assignada atesa)",
+        "font": "Sistema d’informació sanitària de l’atenció primària",
+        "datasetId": null
+      },
+      {
+        "label": "Superar el 20 % de consum diari de fruita i/o verdura en infants i adolescents",
+        "indicador": "% de persones de 3-14 anys que mengen 5 racions de fruita i/o verdura diàriament",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "FRUITAVERDURA_R_infants"
+      },
+      {
+        "label": "Superar el 20 % de consum diari de fruita i/o verdura en adults",
+        "indicador": "% de persones de 15 anys i més que mengen 5 racions de fruita i/o verdura diàriament",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "FRUITAVERDURA_R_adults"
+      },
+      {
+        "label": "Reduir per sota del 25 % el consum d'aliments alts en sucres, greixos no saludables i sal en infants i adolescents, i disminuir-ne les desigualtats",
+        "indicador": "% de persones de 3-14 anys que consumeixen aliments alts en sucres, greixos no saludables i sal",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir per sota del 4 % el consum diari de begudes ensucrades en infants i adolescents",
+        "indicador": "% de persones de 3-14 anys que consumeixen begudes ensucrades diàriament",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "BEGSUCRE_infants"
+      },
+      {
+        "label": "Reduir per sota del 15 % el consum diari de begudes ensucrades en adults",
+        "indicador": "% de persones de 15 anys i més que consumeixen begudes ensucrades diàriament",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "BEGSUCRE_adults"
+      },
+      {
+        "label": "Reduir per sota del 30 % l’excés de pes en infants i adolescents, i disminuir-ne les desigualtats (1)",
+        "indicador": "% de persones de 6-12 anys amb excés de pes (sobrepès)",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "IMC_CAT_OMS_0_19_Sobrepes_infants"
+      },
+      {
+        "label": "Reduir per sota del 30 % l’excés de pes en infants i adolescents, i disminuir-ne les desigualtats (2)",
+        "indicador": "% de persones de 6-12 anys amb excés de pes (obesitat)",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "IMC_CAT_OMS_0_19_Obsitat_infants"
+      },
+      {
+        "label": "Reduir per sota del 50 % l'excés de pes en adults i disminuir-ne les desigualtats (1)",
+        "indicador": "% de persones de 18-74 anys amb excés de pes (excés de pes)",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "IMC_CAT_15imes_R_adults"
+      },
+      {
+        "label": "Reduir per sota del 50 % l'excés de pes en adults i disminuir-ne les desigualtats (2)",
+        "indicador": "% de persones de 18-74 anys amb excés de pes (obesitat)",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "IMC_CAT_15imes_adults"
+      },
+      {
+        "label": "Superar el 40 % d'oci actiu en infants i adolescents, i disminuir-ne les desigualtats",
+        "indicador": "% de persones de 3-14 anys que realitzen oci actiu (4)",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "Oci_actiu_infants"
+      },
+      {
+        "label": "Superar el 50 % de persones adultes que compleixen les recomanacions d'activitat física de l’OMS i disminuir-ne les desigualtats",
+        "indicador": "% de persones de 15 anys i més que fan ≥ 150 minuts setmanals d’activitat física moderada o ≥ 75 minuts setmanals de vigorosa",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "ACT_INT_MOD_adults"
+      },
+      {
+        "label": "Superar el 80 % d’infants i adolescents que dormen les hores de son recomanades",
+        "indicador": "% de persones de 3-14 anys que dormen les hores recomanades",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Superar el 80 % d’adults que dormen les hores de son recomanades i disminuir-ne les desigualtats",
+        "indicador": "% de persones de 15 anys i més que dormen les hores recomanades",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "SON_R_adults"
+      },
+      {
+        "label": "Reduir per sota del 3 % l'exposició al fum ambiental en infants",
+        "indicador": "% de persones de 0 a 14 anys no fumadores exposades al fum ambiental de tabac a casa",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir per sota de l'1 % el consum de tabac en alumnes de 2n d'ESO i per sota del 3 % en els de 4t d'ESO",
+        "indicador": "% de persones de 2n i 4t d'ESO que fumen de tant en tant o diàriament",
+        "font": "Enquesta d'Educació, Salut i Social de la població adolescent de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir per sota de l'1 % el consum de cigarretes electròniques en alumnes de 2n d'ESO i per sota del 5 % en els de 4t d'ESO",
+        "indicador": "% de persones de 2n i 4t d'ESO que fumen cigarretes electròniques de tant en tant o diàriament",
+        "font": "Enquesta d'Educació, Salut i Social de la població adolescent de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir per sota del 15 % el consum de tabac en adults (1)",
+        "indicador": "% de persones de 15 anys i més amb consum de tabac (diari + ocasional) (diari)",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "CONS_TABAC_adults"
+      },
+      {
+        "label": "Reduir per sota del 15 % el consum de tabac en adults (2)",
+        "indicador": "% de persones de 15 anys i més amb consum de tabac (diari + ocasional) (fumadors)",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "CONS_TABAC_R_adults"
+      },
+      {
+        "label": "Reduir per sota de l'1,5 % el consum de risc d'alcohol en alumnes de 2n d'ESO i per sota del 12 % en els de 4t d'ESO",
+        "indicador": "% de persones de 2n i 4t d'ESO que fan consum de risc d'alcohol (puntuació de 3 o més en test AUDIT-C)",
+        "font": "Enquesta d'Educació, Salut i Social de la població adolescent de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir per sota del 50 % el consum d’alcohol en adults i disminuir-ne les desigualtats",
+        "indicador": "% de persones de 15-64 anys que han consumit alcohol en els darrers 30 dies",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Arribar fins al 70 % de bon control de la hipertensió arterial en adults",
+        "indicador": "% de persones de 15 anys i més amb la tensió arterial en valors normals",
+        "font": "Sistema d’informació sanitària de l’atenció primària",
+        "datasetId": "PS3_1_adults"
+      },
+      {
+        "label": "Arribar fins al 75 % de bon control dels nivells de colesterol en persones de 35-74 anys amb alt risc cardiovascular",
+        "indicador": "% de persones de 35-74 anys amb alt risc cardiovascular amb el colesterol LDL en valors normals",
+        "font": "Sistema d’informació sanitària de l’atenció primària",
+        "datasetId": "PS3_2_adults"
+      },
+      {
+        "label": "Arribar fins al 75 % de bon control de la diabetis mellitus en adults",
+        "indicador": "% de persones de 14-80 anys amb diabetis mellitus amb el HBA1C en valors normals",
+        "font": "Sistema d’informació sanitària de l’atenció primària",
+        "datasetId": "PS3_3_adults"
+      },
+      {
+        "label": "Reduir per sota del 15 % el baix benestar emocional en adults i reduir-ne les desigualtats (1)",
+        "indicador": "% de persones de 15 anys i més amb baix benestar emocional",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": "SWEMWBS_index_adults"
+      },
+      {
+        "label": "Reduir per sota del 15 % el baix benestar emocional en adults i reduir-ne les desigualtats (2)",
+        "indicador": "% de persones de 15 anys i més amb baix benestar emocional",
+        "font": "Enquesta de salut de Catalunya",
+        "datasetId": null
+      },
+      {
+        "label": "Superar el 95 % la vacunació infantil DT",
+        "indicador": "% de persones de 7 anys amb pauta completa de difèria i tètanus (DT)",
+        "font": "Sistema d’informació sanitària de l’atenció primària",
+        "datasetId": null
+      },
+      {
+        "label": "Reduir l'edat mitjana a la maternitat (dones) en el moment del naixement dels nadons",
+        "indicador": "Edat mitjana a la maternitat (dones)",
+        "font": "Idescat",
+        "datasetId": null
+      },
+      {
+        "label": "Superar el 97,5% la vacunació infantil triple vírica",
+        "indicador": "% de persones 7 anys amb pauta completa de vacuna triple vírica (XRP)",
+        "font": "Sistema d’informació sanitària de l’atenció primària",
+        "datasetId": null
+      },
+      {
+        "label": "Arribar fins al 60 % de vacunació antigripal en majors de 59 anys",
+        "indicador": "% de persones de 60 anys i més amb vacunació antigripal",
+        "font": "Sistema d’informació sanitària de l’atenció primària",
+        "datasetId": null
+      }
+    ]
+  }
+]

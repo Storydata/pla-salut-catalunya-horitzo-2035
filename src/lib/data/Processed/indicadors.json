@@ -1,0 +1,170 @@
+[
+  {
+    "id": "OSLO_index2_adults",
+    "codi": "OSLO_index2",
+    "edat": "Adults",
+    "dataFile": "pendents/OSLO_index2_final.csv"
+  },
+  {
+    "id": "CONS_TABAC_R_adults",
+    "codi": "CONS_TABAC_R",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/CONS_TABAC_R_final.csv"
+  },
+  {
+    "id": "CONS_TABAC_adults",
+    "codi": "CONS_TABAC",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/CONS_TABAC_final.csv"
+  },
+  {
+    "id": "SON_R_adults",
+    "codi": "SON_R",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/SON_R_final.csv"
+  },
+  {
+    "id": "EQ4_R_adults",
+    "codi": "EQ4_R",
+    "edat": "Adults",
+    "dataFile": "pendents/EQ4_R_final.csv"
+  },
+  {
+    "id": "COBERTURA_adults",
+    "codi": "COBERTURA",
+    "edat": "Adults",
+    "dataFile": "pendents/COBERTURA_final.csv"
+  },
+  {
+    "id": "ACT_INT_MOD_adults",
+    "codi": "ACT_INT_MOD",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/ACT_INT_MOD_final.csv"
+  },
+  {
+    "id": "PS3_1_adults",
+    "codi": "PS3_1",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/PS3_1_final.csv"
+  },
+  {
+    "id": "PS3_3_adults",
+    "codi": "PS3_3",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/PS3_3_final.csv"
+  },
+  {
+    "id": "PS3_2_adults",
+    "codi": "PS3_2",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/PS3_2_final.csv"
+  },
+  {
+    "id": "PS3_18_adults",
+    "codi": "PS3_18",
+    "edat": "Adults",
+    "dataFile": "morbiditat/PS3_18_final.csv"
+  },
+  {
+    "id": "PS3_19_adults",
+    "codi": "PS3_19",
+    "edat": "Adults",
+    "dataFile": "morbiditat/PS3_19_final.csv"
+  },
+  {
+    "id": "AUTONOMIA_adults",
+    "codi": "AUTONOMIA",
+    "edat": "Adults",
+    "dataFile": "pendents/AUTONOMIA_final.csv"
+  },
+  {
+    "id": "GALI_adults",
+    "codi": "GALI",
+    "edat": "Adults",
+    "dataFile": "pendents/GALI_final.csv"
+  },
+  {
+    "id": "SWEMWBS_index_adults",
+    "codi": "SWEMWBS_index",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/SWEMWBS_index_final.csv"
+  },
+  {
+    "id": "PMgreu_adults",
+    "codi": "PMgreu",
+    "edat": "Adults",
+    "dataFile": "pendents/PMgreu_final.csv"
+  },
+  {
+    "id": "FRUITAVERDURA_R_adults",
+    "codi": "FRUITAVERDURA_R",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/FRUITAVERDURA_R_adults_final.csv"
+  },
+  {
+    "id": "IMC_CAT_15imes_R_adults",
+    "codi": "IMC_CAT_15imes_R",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/IMC_CAT_15imes_R_final.csv"
+  },
+  {
+    "id": "BEGSUCRE_adults",
+    "codi": "BEGSUCRE",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/BEGSUCRE_adults_final.csv"
+  },
+  {
+    "id": "DIETAMEDIT_adults",
+    "codi": "DIETAMEDIT",
+    "edat": "Adults",
+    "dataFile": "pendents/DIETAMEDIT_final.csv"
+  },
+  {
+    "id": "IMC_CAT_15imes_adults",
+    "codi": "IMC_CAT_15imes",
+    "edat": "Adults",
+    "dataFile": "factors_de_risc/IMC_CAT_15imes_final.csv"
+  },
+  {
+    "id": "IMC_CAT_OMS_0_19_Sobrepes_infants",
+    "codi": "IMC_CAT_OMS_0_19_Sobrepes",
+    "edat": "Infants",
+    "dataFile": "factors_de_risc/IMC_CAT_OMS_0_19_Sobrepes_final.csv"
+  },
+  {
+    "id": "IMC_CAT_OMS_0_19_Obsitat_infants",
+    "codi": "IMC_CAT_OMS_0_19_Obsitat",
+    "edat": "Infants",
+    "dataFile": "factors_de_risc/IMC_CAT_OMS_0_19_Obsitat_final.csv"
+  },
+  {
+    "id": "FRUITAVERDURA_R_infants",
+    "codi": "FRUITAVERDURA_R",
+    "edat": "Infants",
+    "dataFile": "factors_de_risc/FRUITAVERDURA_R_infants_final.csv"
+  },
+  {
+    "id": "BEGSUCRE_infants",
+    "codi": "BEGSUCRE",
+    "edat": "Infants",
+    "dataFile": "factors_de_risc/BEGSUCRE_infants_final.csv"
+  },
+  {
+    "id": "LACTANCIAMATERNA_6M_infants",
+    "codi": "LACTANCIAMATERNA_6M",
+    "edat": "Infants",
+    "dataFile": "factors_de_risc/LACTANCIAMATERNA_6M_final.csv"
+  },
+  {
+    "id": "Oci_actiu_infants",
+    "codi": "Oci_actiu",
+    "edat": "Infants",
+    "dataFile": "factors_de_risc/Oci_actiu_final.csv"
+  },
+  {
+    "id": "Oci_sedentari_infants",
+    "codi": "Oci_sedentari",
+    "edat": "Infants",
+    "dataFile": "pendents/Oci_sedentari_final.csv"
+  }
+]
