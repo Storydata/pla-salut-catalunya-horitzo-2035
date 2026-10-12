@@ -28,11 +28,19 @@
        el logo, centrat. -->
   <div class="brand-strip">
     <div class="page-width brand-row">
-      <img
-        src={`${base}/logotip_generalitat/Logo-Generalitat-Salut.svg`}
-        alt="Generalitat de Catalunya. Departament de Salut"
-        class="salut-logo"
-      />
+      <a
+        class="salut-link"
+        href="https://salutweb.gencat.cat/ca/inici"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Generalitat de Catalunya. Departament de Salut"
+      >
+        <img
+          src={`${base}/logotip_generalitat/Logo-Generalitat-Salut.svg`}
+          alt="Generalitat de Catalunya. Departament de Salut"
+          class="salut-logo"
+        />
+      </a>
       <p class="site-title">Pla de salut de Catalunya. Horitzó 2035</p>
     </div>
   </div>
@@ -67,9 +75,14 @@
     height: 100%;
   }
 
-  .gencat-link {
+  .gencat-link,
+  .salut-link {
     display: flex;
     text-decoration: none;
+  }
+
+  .salut-link {
+    flex-shrink: 0;
   }
 
   .gencat-logo {
@@ -92,7 +105,6 @@
   }
 
   .salut-logo {
-    flex-shrink: 0;
     height: calc(31.6px * var(--scale));
     width: auto;
   }

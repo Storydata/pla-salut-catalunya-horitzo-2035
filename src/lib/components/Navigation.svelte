@@ -10,7 +10,7 @@
     { href: `${base}/`, label: "INICI" },
     {
       href: `${base}/enfocament/`,
-      label: "ENFOCAMENT\nDEL PLA DE SALUT",
+      label: "ORIENTACIÓ\nDEL PLA DE SALUT",
     },
     {
       id: "la_poblacio",
@@ -21,7 +21,7 @@
           href: `${base}/estructura-poblacio/`,
           label: "Estructura de la població",
         },
-        { href: `${base}/estat-salut/`, label: "Estat de la salut" },
+        { href: `${base}/estat-salut/`, label: "La salut de la població" },
       ],
     },
     {

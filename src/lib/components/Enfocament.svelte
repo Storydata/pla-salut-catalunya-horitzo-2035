@@ -47,7 +47,7 @@
         <p
           class="font-abhaya text-[clamp(20px,5.5vw,36px)] font-bold leading-[1.15] text-[#2E3A59]"
         >
-          Enfocament del Pla de salut
+        Orientació del Pla de salut
         </p>
       </div>
 
