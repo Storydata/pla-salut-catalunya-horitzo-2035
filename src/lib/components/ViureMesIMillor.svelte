@@ -121,7 +121,7 @@
 
     {#if activeItem?.gifs}
       <div
-        class="pointer-events-none absolute inset-x-0 bottom-0 hidden items-end justify-center gap-24 pb-8 lg:flex lg:gap-40"
+        class="pointer-events-none absolute inset-x-0 bottom-0 hidden items-end justify-center gap-24 pb-0.5 lg:flex lg:gap-40"
         transition:fade={{ duration: 200 }}
       >
         <div class="relative">
@@ -180,7 +180,7 @@
     {/if}
 
     <div
-      class="pointer-events-none absolute inset-x-0 bottom-0 hidden items-end justify-center gap-10 pb-8 lg:flex"
+      class="pointer-events-none absolute inset-x-0 bottom-0 hidden items-end justify-center gap-10 pb-0.5 lg:flex"
     >
       <img
         src="{base}/gifs-animados/Dona-espera.gif"

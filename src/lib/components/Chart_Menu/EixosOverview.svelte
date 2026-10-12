@@ -44,18 +44,25 @@
   </div>
 
   <!-- Objectius de salut (vora esquerra al 10%, ample 50%) +
-       Indicadors d'entorn (vora dreta al 90%, ample 25%) -->
-  <div class="mb-8 flex w-full items-start md:mb-10">
-    <div class="ml-[10%] w-[50%]">
+       Indicadors d'entorn (vora dreta al 90%, ample 25%). Una graella de tres
+       files amb subgraella: els dos blocs comparteixen fila de títol, de línia
+       i de botons, així la línia i els botons de l'un queden sempre a l'alçada
+       de l'altre encara que un títol ocupi dues línies, i si els botons
+       d'Objectius de salut salten de línia, tota la fila creix i empeny els
+       Eixos estratègics cap avall. -->
+  <div class="mb-8 grid w-full grid-cols-[10%_50%_1fr_25%_10%] md:mb-10">
+    <div class="col-start-2 row-span-3 grid grid-rows-[subgrid]">
       <p
-        class="mb-2 text-center font-abhaya text-[clamp(15px,2.2vw,26px)] font-extrabold leading-[1.2] text-[#2E3A59]"
+        class="mb-2 flex items-end justify-center text-center font-abhaya text-[clamp(15px,2.2vw,26px)] font-extrabold leading-[1.2] text-[#2E3A59]"
       >
         Objectius de salut
       </p>
       <div class="border-t-4 border-[#F3F4F7]" />
       <!-- 10% del propi bloc (que ja és el 50% de la web) = 5% real de la
            web a cada costat, tal com marca el disseny. -->
-      <div class="mx-[10%] mt-4 flex items-start justify-between md:mt-6">
+      <div
+        class="mx-[10%] mt-4 flex flex-wrap items-start justify-between gap-y-4 md:mt-6"
+      >
         {#each objectiusGrups as grup (grup.id)}
           <button
             type="button"
@@ -82,9 +89,9 @@
       </div>
     </div>
 
-    <div class="ml-auto mr-[10%] w-[25%]">
+    <div class="col-start-4 row-span-3 grid grid-rows-[subgrid]">
       <p
-        class="mb-2 text-center font-abhaya text-[clamp(15px,2.2vw,26px)] font-extrabold leading-[1.2] text-[#2E3A59]"
+        class="mb-2 flex items-end justify-center text-center font-abhaya text-[clamp(15px,2.2vw,26px)] font-extrabold leading-[1.2] text-[#2E3A59]"
       >
         Indicadors d'entorn
       </p>
