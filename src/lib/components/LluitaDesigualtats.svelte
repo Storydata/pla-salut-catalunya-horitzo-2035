@@ -1,11 +1,14 @@
 <script>
-  import { onMount } from "svelte";
+  import { onDestroy, onMount, tick } from "svelte";
   import Icon from "$lib/icons/Icon.svelte";
+  import { morphBubbles, snapshotBubbles } from "$lib/utils/bubbleMorph.js";
   // En línia (?raw), no com a imatge: dins d'una imatge el document SVG està
   // aïllat i no pot fer servir la Inter de la pàgina.
   import SvgSexe from "$lib/assets/Desigualtats-salut-eixos-SEXE.svg?raw";
   import SvgEdat from "$lib/assets/Desigualtats-salut-eixos-EDAT.svg?raw";
   import SvgClasseSocial from "$lib/assets/Desigualtats-salut-eixos-C-SOCIAL.svg?raw";
+  import SvgEstudis from "$lib/assets/Desigualtats-salut-eixos-ESTUDIS.svg?raw";
+  import SvgOrigen from "$lib/assets/Desigualtats-salut-eixos-ORIGEN.svg?raw";
 
   export let onClose = () => {};
 
@@ -26,31 +29,53 @@
       label: "Per classe social",
       svg: prepare(SvgClasseSocial, "classe"),
     },
-    // Placeholder: reutilitzen SVGs existents fins que hi hagi els definitius
     {
       key: "estudis",
       label: "Per nivell d'estudis",
-      svg: prepare(SvgClasseSocial, "estudis"),
+      svg: prepare(SvgEstudis, "estudis"),
     },
     {
-      key: "nacionalitat",
+      key: "origen",
       label: "Per país d'origen",
-      svg: prepare(SvgEdat, "nacionalitat"),
+      svg: prepare(SvgOrigen, "origen"),
     },
   ];
 
+  // Durada (ms) del canvi d'eix: les bombolles creixen o es redueixen fins al
+  // seu valor mentre la resta de l'SVG s'esvaeix i apareix.
+  const MORPH_MS = 1400;
+
   let activeKey = "sexe";
-  let svgVisible = true;
+  let active; // contenidor de l'SVG mostrat
+  let ghostHost; // capa on s'esvaeix l'SVG anterior
+  let finishMorph = null;
+  let request = 0;
 
   $: activeEix = eixos.find((e) => e.key === activeKey) ?? eixos[0];
 
   async function selectEix(key) {
     if (key === activeKey) return;
-    svgVisible = false;
-    await new Promise((r) => setTimeout(r, 250));
+    finishMorph?.();
+    finishMorph = null;
+
+    const id = ++request;
+    const snapshot = snapshotBubbles(active.querySelector("svg"));
     activeKey = key;
-    svgVisible = true;
+    await tick();
+
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    if (id !== request || reduceMotion) return;
+    finishMorph = morphBubbles(
+      snapshot,
+      active.querySelector("svg"),
+      ghostHost,
+      MORPH_MS / 1000,
+    );
   }
+
+  onDestroy(() => finishMorph?.());
 
   let root;
 
@@ -136,14 +161,10 @@
           </div>
         </div>
 
-        <div
-          class="mb-16 flex justify-center"
-          style="opacity: {svgVisible ? 1 : 0}; transition: opacity {svgVisible
-            ? 600
-            : 250}ms ease;"
-        >
+        <div class="relative mb-16 flex justify-center">
           {#key activeEix.key}
             <div
+              bind:this={active}
               class="eix h-auto w-full max-w-[620px]"
               role="img"
               aria-label="Desigualtats en salut per eixos socials: {activeEix.label}"
@@ -151,6 +172,11 @@
               {@html activeEix.svg}
             </div>
           {/key}
+          <div
+            bind:this={ghostHost}
+            class="eix pointer-events-none absolute left-1/2 top-0 w-full max-w-[620px] -translate-x-1/2"
+            aria-hidden="true"
+          ></div>
         </div>
       </div>
     </div>
@@ -164,5 +190,16 @@
     width: 100%;
     height: auto;
     font-family: "Inter", sans-serif;
+  }
+
+  /* Durant el canvi d'eix (bubbleMorph.js) les bombolles es mouen soles; la
+     resta de l'SVG nou apareix i la de l'anterior s'esvaeix amb el mateix
+     progrés (--morph, de 0 a 1). */
+  .eix :global(svg.morph > :not(defs):not(style):not([data-bubble])) {
+    opacity: var(--morph, 1);
+  }
+
+  .eix :global(svg.ghost) {
+    opacity: calc(1 - var(--morph, 0));
   }
 </style>
