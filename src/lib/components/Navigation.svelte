@@ -9,7 +9,7 @@
   $: navItems = [
     { href: `${base}/`, label: "INICI" },
     {
-      href: `${base}/enfocament/`,
+      href: `${base}/orientacio/`,
       label: "ORIENTACIÓ\nDEL PLA DE SALUT",
     },
     {

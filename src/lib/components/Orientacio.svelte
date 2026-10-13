@@ -1,5 +1,5 @@
 <script>
-  // Enfocament del Pla de salut 26-30. Horitzo 2035
+  // Orientació del Pla de salut. Horitzó 2035
   import { onMount } from "svelte";
   // Intro block: sticky title + text + three (non-clickable) illustrations.
   import AmbitsIcon5 from "$lib/assets/Ambits-Pla-Salut-color-nou-5.svg";

@@ -34,7 +34,7 @@
     },
     {
       key: "nacionalitat",
-      label: "Per nacionalitat",
+      label: "Per país d'origen",
       svg: prepare(SvgEdat, "nacionalitat"),
     },
   ];

@@ -31,7 +31,7 @@
     </p>
   </div>
 
-  <!-- Text explicatiu: mateix estil que el d'Enfocament.svelte -->
+  <!-- Text explicatiu: mateix estil que el d'Orientacio.svelte -->
   <div class="mx-auto mb-8 max-w-[680px] md:mb-10">
     <p
       class="text-center font-['Inter',sans-serif] text-[15px] font-normal leading-[1.65] text-[#2E3A59] md:text-[18px] md:leading-[1.8]"
