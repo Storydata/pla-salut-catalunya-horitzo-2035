@@ -76,7 +76,7 @@
       <p
         class="px-5 pb-3 text-center font-['Inter',sans-serif] text-lg font-semibold leading-[1.4] text-[#2E3A59] lg:pt-[var(--section-top-gap)]"
       >
-        A on es concentra l'envelliment
+        On es concentra l'envelliment
       </p>
       <div
         class="flex w-full max-w-[1200px] flex-col items-center gap-10 px-5 md:flex-row md:items-start md:justify-center md:gap-8 lg:max-w-none lg:gap-[6%] lg:px-0"

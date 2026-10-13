@@ -28,7 +28,7 @@
 <div class="relative w-full lg:min-h-[180vh]" class:hidden={activeSub !== null}>
   <div class="lg:sticky lg:top-[var(--site-header-h)] lg:z-10">
     <div class="pb-4 pt-[var(--section-top-gap)] text-center">
-      <p class="section-title">Objectius generals de l'estat de salut</p>
+      <p class="section-title">La salut de la població</p>
     </div>
     <div class="container mx-auto px-4">
       <div class="mb-4 flex justify-center md:mb-6">

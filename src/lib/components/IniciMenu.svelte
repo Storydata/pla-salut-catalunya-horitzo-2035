@@ -9,7 +9,7 @@
   // Els salts de línia (\n) dels títols es respecten (`whitespace-pre-line`) i
   // fan que no calgui limitar l'ample de la caixa de text.
   const orientacio = {
-    title: "Orientació del Pla de Salut",
+    title: "Orientació del Pla de salut",
     href: `${base}/orientacio/`,
     image: illustrationOrientacio,
     alt: "Il·lustració sobre l'orientació del Pla de salut",

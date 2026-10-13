@@ -21,7 +21,7 @@
     <h1
       class="font-abhaya text-[clamp(1.5rem,6vw,4.5rem)] leading-[1.15] font-semibold tracking-tight text-[#2E3A59]"
     >
-      Pla de salut de Catalunya <br />Horitzó 2035
+      <!--  Pla de salut de Catalunya <br />Horitzó 2035 -->
     </h1>
   </div>
   <div class="px-4 w-full flex items-center justify-center mx-auto py-0">
