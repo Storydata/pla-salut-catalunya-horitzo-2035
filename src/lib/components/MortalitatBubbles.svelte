@@ -21,135 +21,115 @@
   const bubbles = [
     {
       id: 1,
-      color: "#6E467D",
+      color: "#26aaaa",
       size: "sm",
-      icon: "leaf",
-      stat: "8,2‰",
-      text: "taxa de mortalitat a Catalunya",
-      label: "Mortalitat general",
-      description:
-        "La taxa de mortalitat general reflecteix l'estat de salut de la població i l'eficàcia del sistema sanitari. Els avenços en medicina i salut pública han contribuït a reduir la mortalitat en les últimes dècades.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/FKqyk/1/",
-        height: 400,
-      },
+      icon: "baby",
+      stat: "84,43",
+      unit: "anys",
+      text: "Esperança de vida en néixer",
+      label: "Esperança de vida en néixer",
     },
     {
       id: 2,
-      color: "#CEC4FF",
+      color: "#26aaaa",
       size: "lg",
-      icon: "heart-pulse",
-      stat: "28%",
-      text: "de morts per malalties cardiovasculars",
-      label: "Malalties cardiovasculars",
-      description:
-        "Les malalties cardiovasculars són la principal causa de mort a Catalunya. La prevenció i el control dels factors de risc són essencials per reduir la mortalitat per aquestes malalties.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/gG0SF/1/",
-        height: 400,
-      },
+      icon: "shield-plus",
+      stat: "68",
+      unit: "anys",
+      text: "Esperança de vida amb bona salut al néixer",
+      label: "Esperança de vida amb bona salut al néixer",
     },
     {
       id: 3,
-      color: "#6E467D",
+      color: "#26aaaa",
       size: "sm",
-      icon: "microscope",
-      stat: "27%",
-      text: "de morts per càncer",
-      label: "Càncer",
-      description:
-        "El càncer és la segona causa de mort a Catalunya. La detecció precoç i els avenços en tractaments han millorat la supervivència, però segueix sent un repte important de salut pública.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/UP3ms/1/",
-        height: 400,
-      },
+      icon: "elderly_woman",
+      stat: "12,23",
+      unit: "anys",
+      text: "Esperança de vida amb bona salut als 65 anys",
+      label: "Esperança de vida amb bona salut als 65 anys",
     },
     {
       id: 4,
-      color: "#AC8FB3",
+      color: "#98cbcb",
       size: "lg",
-      icon: "brain",
-      stat: "8%",
-      text: "de morts per malalties neuro-\ndegeneratives",
-      label: "Malalties neurodegeneratives",
-      description:
-        "Les malalties neurodegeneratives, com l'Alzheimer i el Parkinson, tenen una prevalença creixent amb l'envelliment de la població i són una causa important de mortalitat i discapacitat.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/keO3A/1/",
-        height: 400,
-      },
+      icon: "users",
+      stat: "730,7",
+      unit: "persones/100.000",
+      text: "Mortalitat per totes les causes",
+      label: "Mortalitat per totes les causes",
     },
     {
       id: 5,
-      color: "#FCC5F8",
+      color: "#98cbcb",
       size: "sm",
       icon: "pulmonology",
-      stat: "10%",
-      text: "de morts per malalties respiratòries",
-      label: "Malalties respiratòries",
-      description:
-        "Les malalties respiratòries cròniques són una causa important de mortalitat, especialment en persones grans i fumadores. La qualitat de l'aire i els hàbits de vida influeixen en la seva prevalença.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/r1TDM/1/",
-        height: 400,
-      },
+      stat: "46,6",
+      unit: "persones/100.000",
+      text: "Mortalitat per càncer de pulmó",
+      label: "Mortalitat per càncer de pulmó",
     },
     {
       id: 6,
-      color: "#AC8FB3",
+      color: "#98cbcb",
       size: "lg",
-      icon: "glucose",
-      stat: "3%",
-      text: "de morts relacionades amb diabetis",
-      label: "Diabetis",
-      description:
-        "La diabetis és una causa de mortalitat significativa, sovint associada a complicacions cardiovasculars i renals. El control adequat de la malaltia és clau per prevenir la mortalitat prematura.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/Ww29m/1/",
-        height: 400,
-      },
+      icon: "heart-pulse",
+      stat: "38,3",
+      unit: "persones/100.000",
+      text: "Mortalitat per malalties isquèmiques del cor",
+      label: "Mortalitat per malalties isquèmiques del cor",
     },
     {
       id: 7,
-      color: "#CEC4FF",
+      color: "#98cbcb",
       size: "sm",
-      icon: "triangle-alert",
-      stat: "4%",
-      text: "de morts per causes externes",
-      label: "Causes externes",
-      description:
-        "Les causes externes inclouen accidents, suïcidis i altres morts violentes. La prevenció d'accidents i la promoció de la salut mental són estratègies clau per reduir aquesta mortalitat.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/RgIV0/1/",
-        height: 400,
-      },
+      icon: "brain",
+      stat: "35,8",
+      unit: "persones/100.000",
+      text: "Mortalitat per demències",
+      label: "Mortalitat per demències",
     },
     {
       id: 8,
-      color: "#6E467D",
+      color: "#98cbcb",
       size: "lg",
-      icon: "sprout",
-      stat: "2,3‰",
-      text: "taxa de mortalitat infantil",
-      label: "Mortalitat infantil",
-      description:
-        "La taxa de mortalitat infantil és un indicador clau de la qualitat del sistema de salut. Catalunya té una de les taxes més baixes del món gràcies a l'atenció perinatal i pediàtrica de qualitat.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/ydh5l/1/",
-        height: 400,
-      },
+      icon: "stethoscope",
+      stat: "35,6",
+      unit: "persones/100.000",
+      text: "Mortalitat per la resta de malalties del cor",
+      label: "Mortalitat per la resta de malalties del cor",
+    },
+    {
+      id: 9,
+      color: "#98cbcb",
+      size: "sm",
+      icon: "hospital",
+      stat: "33,7",
+      unit: "persones/100.000",
+      text: "Mortalitat per malalties del ronyó",
+      label: "Mortalitat per malalties del ronyó",
+    },
+    {
+      id: 10,
+      color: "#98cbcb",
+      size: "lg",
+      icon: "activity",
+      stat: "29,4",
+      unit: "persones/100.000",
+      text: "Mortalitat per insuficiència cardíaca",
+      label: "Mortalitat per insuficiència cardíaca",
     },
   ];
 
   $: selected = bubbles.find((b) => b.id === selectedId) ?? null;
   $: currentIframe = selected?.datawrapper ?? null;
 
-  // 2 files de 3 (6+8 inclosos) i una tercera fila de 2 -- cada fila mesura
+  // 2 files de 3 i una tercera de 4 -- cada fila mesura
   // el que li demanen les seves pròpies bombolles i es centra per la seva
   // banda, igual que a Malalties/FactorsCausals. En mòbil, flex-wrap deixa
   // que una fila passi a 2 línies si no hi cap, en lloc d'encongir les
   // bombolles per sota de la seva mida real.
-  $: rows = [bubbles.slice(0, 3), bubbles.slice(3, 6), bubbles.slice(6, 8)];
+  $: rows = [bubbles.slice(0, 3), bubbles.slice(3, 6), bubbles.slice(6, 10)];
 
   let root;
 
@@ -185,11 +165,13 @@
       >
         La salut de la població | Esperança de vida i mortalitat
       </p>
-      <p
-        class="text-xs font-normal uppercase tracking-[0.5px] text-[#828898] mt-1"
-      >
-        Clica a les bombolles per aprofundir
-      </p>
+      {#if bubbles.some((b) => b.description)}
+        <p
+          class="text-xs font-normal uppercase tracking-[0.5px] text-[#828898] mt-1"
+        >
+          Clica a les bombolles per aprofundir
+        </p>
+      {/if}
       <button
         on:click={onClose}
         class="absolute right-4 top-12 cursor-pointer text-gray-500 transition-colors hover:text-gray-800 lg:top-24"
@@ -200,14 +182,16 @@
 
     {#if selectedId === null}
       <div class="flex justify-center items-center flex-1">
-        <div class="flex flex-col items-center gap-3 w-[min(600px,90vw)]">
+        <div class="flex flex-col items-center gap-3 w-[min(700px,90vw)]">
           {#each rows as row}
             <div class="flex justify-center items-center gap-3 flex-wrap">
               {#each row as bubble}
                 <Bubble
                   {bubble}
                   delay={500 + (bubble.id - 1) * 150}
-                  onSelect={() => (selectedId = bubble.id)}
+                  onSelect={bubble.description
+                    ? () => (selectedId = bubble.id)
+                    : null}
                 />
               {/each}
             </div>
@@ -233,7 +217,11 @@
                     : '2px solid transparent'};
               "
                 >
-                  <Icon name={bubble.icon} size={20} color="white" />
+                  <Icon
+                    name={bubble.icon}
+                    size={20}
+                    color={bubble.textColor ?? "white"}
+                  />
                 </button>
 
                 {#if hoveredNavId === bubble.id}

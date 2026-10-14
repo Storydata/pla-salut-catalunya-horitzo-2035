@@ -21,165 +21,125 @@
   const bubbles = [
     {
       id: 1,
-      color: "#2E3A59",
+      color: "#5eebef",
+      textColor: "#262626",
       size: "sm",
       icon: "baby",
-      stat: "55%",
-      text: "de lactància materna als 6 mesos",
-      label: "Lactància materna",
-      description:
-        "Text simulat pendent de versió definitiva. Text simulat pendent de versió definitiva. Text simulat pendent de versió definitiva",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/FKqyk/1/",
-        height: 400,
-      },
+      stat: "54,6%",
+      text: "de nadons amb lactància materna exclusiva als 6 mesos",
+      label: "Lactància materna exclusiva als 6 mesos",
     },
     {
       id: 2,
-      color: "#828898",
+      color: "#b3f7fe",
+      textColor: "#262626",
       size: "lg",
-      icon: "can-soda",
-      stat: "17%",
-      text: "dels adults consumeixen begudes ensucrades",
-      label: "Alimentació poc saludable en adults",
-      description:
-        "Una dieta desequilibrada amb excés de greixos saturats, sucres i sal és un factor de risc per a malalties cròniques. Promoure una alimentació equilibrada és clau.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/gG0SF/1/",
-        height: 400,
-      },
+      icon: "apple",
+      stat: "8,4%",
+      text: "de la població infantil consumeix cinc racions de fruita i/o verdura",
+      label: "Població infantil amb consum diari de fruita i/o verdura",
     },
     {
       id: 3,
-      color: "#2E3A59",
+      color: "#e5fbfe",
+      textColor: "#262626",
       size: "sm",
-      icon: "gauge",
-      stat: "54,3%",
-      text: "de les persones adultes tenen excés de pes",
-      label: "Excés de pes en adults",
-      description:
-        "L'excés de pes és un factor de risc important per a múltiples malalties cròniques. Una alimentació saludable i l'activitat física són fonamentals per prevenir i controlar l'obesitat.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/UP3ms/1/",
-        height: 400,
-      },
+      icon: "hamburger",
+      stat: "35,4%",
+      text: "de la població infantil consumeix aliments alts en sucres, greixos no saludables i sal",
+      label: "Població infantil amb consum d'aliments alts en sucres, greixos i sal",
     },
     {
       id: 4,
-      color: "#828898",
+      color: "#5eebef",
+      textColor: "#262626",
       size: "lg",
-      icon: "bike",
-      stat: "39%",
-      text: "d'adults fa activitat física recomanada per l'OMS",
-      label: "Activitat física en adults",
-      description:
-        "Text simulat pendent de versió definitiva. Text simulat pendent de versió definitiva. Text simulat pendent de versió definitiva",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/r1TDM/1/",
-        height: 400,
-      },
+      icon: "gauge",
+      stat: "34%",
+      text: "de la població infantil té excés de pes",
+      label: "Població infantil amb excés de pes",
     },
     {
       id: 5,
-      color: "#2E3A59",
+      color: "#b3f7fe",
+      textColor: "#262626",
       size: "sm",
-      icon: "cigarette-off",
-      stat: "21%",
-      text: "de les persones adultes fuma",
-      label: "Tabaquisme en adults",
-      description:
-        "El tabaquisme és un dels principals factors de risc per a la salut, associat a malalties cardiovasculars, respiratòries i càncer. Les polítiques de prevenció i cessació tabàquica són prioritàries.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/keO3A/1/",
-        height: 400,
-      },
+      icon: "bike",
+      stat: "33,4%",
+      text: "de la població infantil té un estil d'oci actiu",
+      label: "Població infantil amb oci actiu",
     },
     {
       id: 6,
-      color: "#828898",
+      color: "#e5fbfe",
+      textColor: "#262626",
       size: "lg",
-      icon: "face-expressionless",
-      stat: "12%",
-      text: "d'adults amb baix benestar emocional",
-      label: "Benestar emocional en adults",
-      description:
-        "Text simulat pendent de versió definitiva. Text simulat pendent de versió definitiva. Text simulat pendent de versió definitiva",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/Ww29m/1/",
-        height: 400,
-      },
+      icon: "vape_free",
+      stat: "12,9% i 14,8%",
+      text: "dels nois i noies de 4t d'ESO fumen cigarretes electròniques",
+      label: "Consum de cigarretes electròniques a 4t d'ESO",
     },
     {
       id: 7,
-      color: "#26AAAA",
+      color: "#5eebef",
+      textColor: "#262626",
       size: "sm",
-      icon: "hamburger",
-      stat: "33%",
-      text: "menors d'edat amb alimentació alta en greixos no saludables, sucres i sal",
-      label: "Alimentació poc saludable en infants i adolescents",
-      description:
-        "Una dieta desequilibrada amb excés de greixos saturats, sucres i sal és un factor de risc per a malalties cròniques. Promoure una alimentació equilibrada és clau.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/RgIV0/1/",
-        height: 400,
-      },
+      icon: "beer-off",
+      stat: "14,8% i 17,0%",
+      text: "dels nois i noies de 4t d'ESO amb consum de risc d'alcohol",
+      label: "Consum de risc d'alcohol a 4t d'ESO",
     },
     {
       id: 8,
-      color: "#7DCCCC",
+      color: "#b3f7fe",
+      textColor: "#262626",
       size: "lg",
-      icon: "moon-star",
-      stat: "25%",
-      text: "menors d'edat no dormen les hores recomanades",
-      label: "Hores de son en infants i adolescents",
-      description:
-        "Text simulat pendent de versió definitiva. Text simulat pendent de versió definitiva. Text simulat pendent de versió definitiva",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/ydh5l/1/",
-        height: 400,
-      },
+      icon: "gauge",
+      stat: "54,3%",
+      text: "de la població adulta té excés de pes",
+      label: "Població adulta amb excés de pes",
     },
     {
       id: 9,
-      color: "#26AAAA",
+      color: "#e5fbfe",
+      textColor: "#262626",
       size: "sm",
-      icon: "vape_free",
-      stat: "14%",
-      text: "d'adolescents fuma cigarretes electròniques",
-      label: "Consum de cigarretes electròniques en adolescents",
-      description:
-        "El tabaquisme és un dels principals factors de risc per a la salut, associat a malalties cardiovasculars, respiratòries i càncer. Les polítiques de prevenció i cessació tabàquica són prioritàries.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/gG0SF/1/",
-        height: 400,
-      },
+      icon: "activity",
+      stat: "38,7%",
+      text: "de la població adulta realitza l'activitat física (OMS)",
+      label: "Població adulta amb activitat física recomanada",
     },
     {
       id: 10,
-      color: "#7DCCCC",
+      color: "#5eebef",
+      textColor: "#262626",
       size: "lg",
-      icon: "beer-off",
-      stat: "16%",
-      text: "d'adolescents té un consum de risc d'alcohol",
-      label: "Consum d'alcohol en adolescents",
-      description:
-        "El consum excessiu d'alcohol és un factor de risc important per a la salut física i mental. La promoció del consum responsable i la prevenció de l'alcoholisme són essencials.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/gG0SF/1/",
-        height: 400,
-      },
+      icon: "cigarette-off",
+      stat: "20,6%",
+      text: "de la població adulta fuma tabac",
+      label: "Població adulta que consumeix tabac",
+    },
+    {
+      id: 11,
+      color: "#b3f7fe",
+      textColor: "#262626",
+      size: "sm",
+      icon: "face-expressionless",
+      stat: "11,8%",
+      text: "de la població adulta presenta baix benestar emocional",
+      label: "Població adulta amb baix benestar emocional",
     },
   ];
 
   $: selected = bubbles.find((b) => b.id === selectedId) ?? null;
   $: currentIframe = selected?.datawrapper ?? null;
 
-  // 3 files independents (3+3+4) en lloc de columnes d'una graella: cada
+  // 3 files independents (3+4+4) en lloc de columnes d'una graella: cada
   // fila mesura el que li demanen les seves pròpies bombolles (que ja
   // tenen una mida fixa, `dim`) i es centra per la seva banda, així la fila
   // de 4 surt més ampla que les de 3 de dalt de manera natural -- sense cap
   // truc d'amplades proporcionals que obligui les bombolles a encongir-se.
-  $: rows = [bubbles.slice(0, 3), bubbles.slice(3, 6), bubbles.slice(6, 10)];
+  $: rows = [bubbles.slice(0, 3), bubbles.slice(3, 7), bubbles.slice(7, 11)];
 
   let root;
 
@@ -215,11 +175,13 @@
       >
         La salut de la població | Factors causals i de risc
       </p>
-      <p
-        class="text-xs font-normal uppercase tracking-[0.5px] text-[#828898] mt-1"
-      >
-        Clica a les bombolles per aprofundir
-      </p>
+      {#if bubbles.some((b) => b.description)}
+        <p
+          class="text-xs font-normal uppercase tracking-[0.5px] text-[#828898] mt-1"
+        >
+          Clica a les bombolles per aprofundir
+        </p>
+      {/if}
       <button
         on:click={onClose}
         class="absolute right-4 top-12 cursor-pointer text-gray-500 transition-colors hover:text-gray-800 lg:top-24"
@@ -237,7 +199,9 @@
                 <Bubble
                   {bubble}
                   delay={500 + (bubble.id - 1) * 150}
-                  onSelect={() => (selectedId = bubble.id)}
+                  onSelect={bubble.description
+                    ? () => (selectedId = bubble.id)
+                    : null}
                 />
               {/each}
             </div>
@@ -263,7 +227,11 @@
                     : '2px solid transparent'};
                   "
                 >
-                  <Icon name={bubble.icon} size={20} color="white" />
+                  <Icon
+                    name={bubble.icon}
+                    size={20}
+                    color={bubble.textColor ?? "white"}
+                  />
                 </button>
 
                 {#if hoveredNavId === bubble.id}

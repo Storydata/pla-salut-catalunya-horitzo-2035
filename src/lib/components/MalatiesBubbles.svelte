@@ -23,163 +23,89 @@
       id: 1,
       color: "#EA4D50",
       size: "sm",
-      icon: "pill-bottle",
-      stat: "16%",
-      text: "de catalans prenen psicofàrmacs crònicament",
-      label: "Psicofàrmacs",
-      description:
-        "L'ús crònic de psicofàrmacs reflecteix la prevalença de trastorns mentals i emocionals a la població catalana. Aquests medicaments inclouen antidepressius, ansiolítics i altres tractaments per a la salut mental.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/gG0SF/1/",
-        height: 400,
-      },
+      icon: "alert-circle",
+      stat: "33,9%",
+      text: "de la població adulta té dolor",
+      label: "Població adulta amb dolor",
     },
     {
       id: 2,
       color: "#F6C3AE",
       size: "lg",
-      icon: "calendars",
-      stat: "43%",
-      text: "de catalans amb una o més malalties cròniques",
-      label: "% de persones amb una o més malalties cròniques",
-      description:
-        "Les malalties cròniques són una de les principals causes de morbiditat i mortalitat a Catalunya. La prevalença de persones amb una o més malalties cròniques ha augmentat en les últimes dècades, reflectint l'envelliment de la població i els canvis en els estils de vida.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/FKqyk/1/",
-        height: 400,
-      },
+      icon: "message-circle-warning",
+      stat: "17,5%",
+      text: "de la població adulta té ansietat lleu",
+      label: "Població adulta amb ansietat lleu",
     },
     {
       id: 3,
       color: "#F19592",
       size: "sm",
-      icon: "glucose",
-      stat: "590.000",
-      text: "de catalans majors de 15 anys són diabètics",
-      label: "Diabetis",
-      description:
-        "La diabetis és una malaltia crònica amb una prevalença creixent a Catalunya. El seu control adequat és essencial per prevenir complicacions greus com malalties cardiovasculars, nefropatia i retinopatia.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/r1TDM/1/",
-        height: 400,
-      },
+      icon: "face-expressionless",
+      stat: "15,7%",
+      text: "de la població adulta té depressió lleu",
+      label: "Població adulta amb depressió lleu",
     },
     {
       id: 4,
       color: "#FF9671",
       size: "lg",
-      icon: "eye-dashed",
-      stat: "158.213",
-      text: "majors de 65 anys pateixen degeneració macular",
-      label: "Degeneració macular",
-      description:
-        "La degeneració macular és una de les principals causes de pèrdua de visió en persones grans. La detecció precoç i el tractament adequat són fonamentals per prevenir la pèrdua de visió evitable.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/UP3ms/1/",
-        height: 400,
-      },
+      icon: "pulmonology",
+      stat: "5,9%",
+      text: "de les persones de 40 anys i més tenen malaltia pulmonar obstructiva crònica",
+      label: "Malaltia pulmonar obstructiva crònica (40 anys i més)",
     },
     {
       id: 5,
       color: "#F19592",
       size: "sm",
-      icon: "alert-circle",
-      stat: "5,8%",
-      text: "dels catalans amb depressió moderada o greu",
-      label: "Depressió",
-      description:
-        "La depressió és un problema de salut mental que afecta milions de persones. Les estratègies de prevenció, detecció precoç i tractament adequat són prioritàries per millorar el benestar emocional de la població.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/keO3A/1/",
-        height: 400,
-      },
+      icon: "mouth",
+      stat: "396,1",
+      unit: "persones/100.000",
+      text: "Incidència d'infeccions de transmissió sexual",
+      label: "Incidència d'infeccions de transmissió sexual",
     },
     {
       id: 6,
       color: "#FF9671",
       size: "lg",
       icon: "heart-pulse",
-      stat: "30%",
-      text: "dels catalans amb la pressió arterial alta",
-      label: "Hipertensió arterial",
-      description:
-        "La hipertensió arterial és un factor de risc cardiovascular major. El seu control és fonamental per prevenir infarts de miocardi, ictus i altres complicacions cardiovasculars i renals.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/Ww29m/1/",
-        height: 400,
-      },
+      stat: "294,1",
+      unit: "persones/100.000",
+      text: "Incidència de malaltia isquèmica del cor",
+      label: "Incidència de malaltia isquèmica del cor",
     },
     {
       id: 7,
       color: "#F19592",
       size: "sm",
-      icon: "stethoscope",
-      stat: "5-20%",
-      text: "dels catalans tenen el colesterol molt alt",
-      label: "Hiperlipidèmia/Hipercolesterolèmia",
-      description:
-        "Els nivells elevats de colesterol i altres lípids en sang són factors de risc per a malalties cardiovasculars. La modificació d'hàbits de vida i el tractament farmacològic adequat són claus per al seu control.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/RgIV0/1/",
-        height: 400,
-      },
+      icon: "brain",
+      stat: "226,3",
+      unit: "persones/100.000",
+      text: "Incidència d'ictus",
+      label: "Incidència d'ictus",
     },
     {
       id: 8,
       color: "#EA4D50",
       size: "lg",
-      icon: "shield-plus",
-      stat: "78,6%",
-      text: "de catalans tenen una percepció positiva de la seva salut",
-      label: "Autopercepció de salut",
-      description:
-        "L'autopercepció de salut és un indicador subjectiu però molt rellevant que reflecteix com les persones avaluen el seu propi estat de salut. Aquest indicador està relacionat amb la morbiditat, la mortalitat i la utilització dels serveis sanitaris.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/gG0SF/1/",
-        height: 400,
-      },
-    },
-    {
-      id: 9,
-      color: "#F6C3AE",
-      size: "sm",
-      icon: "ear",
-      stat: "274.000",
-      text: "persones amb dificultats auditives significatives",
-      label: "Sordesa",
-      description:
-        "Les limitacions auditives afecten la comunicació i la qualitat de vida de les persones. La detecció precoç, especialment en població infantil i gent gran, permet intervencions efectives per millorar la capacitat auditiva.",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/ydh5l/1/",
-        height: 400,
-      },
-    },
-    {
-      id: 10,
-      color: "#EA4D50",
-      size: "lg",
-      icon: "mouth",
-      stat: "34.522",
-      text: "nous casos d'infeccions de transmissió sexual",
-      label: "Infeccions de transmissió sexual",
-      description:
-        "Text simulat pendent de versió definitiva. Text simulat pendent de versió definitiva. Text simulat pendent de versió definitiva",
-      datawrapper: {
-        src: "https://datawrapper.dwcdn.net/gG0SF/1/",
-        height: 400,
-      },
+      icon: "microscope",
+      stat: "0,33",
+      unit: "persones/100.000",
+      text: "Incidència d'hepatitis C",
+      label: "Incidència d'hepatitis C",
     },
   ];
 
   $: selected = bubbles.find((b) => b.id === selectedId) ?? null;
   $: currentIframe = selected?.datawrapper ?? null;
 
-  // 3 files independents (3+3+4) en lloc de columnes d'una graella: cada
+  // 3 files independents (3+3+2) en lloc de columnes d'una graella: cada
   // fila mesura el que li demanen les seves pròpies bombolles (que ja
   // tenen una mida fixa, `dim`) i es centra per la seva banda, així la fila
   // de 4 surt més ampla que les de 3 de dalt de manera natural -- sense cap
   // truc d'amplades proporcionals que obligui les bombolles a encongir-se.
-  $: rows = [bubbles.slice(0, 3), bubbles.slice(3, 6), bubbles.slice(6, 10)];
+  $: rows = [bubbles.slice(0, 3), bubbles.slice(3, 6), bubbles.slice(6, 8)];
 
   let root;
 
@@ -215,11 +141,13 @@
       >
        La salut de la població | Les malalties
       </p>
-      <p
-        class="text-xs font-normal uppercase tracking-[0.5px] text-[#828898] mt-1"
-      >
-        Clica a les bombolles per aprofundir
-      </p>
+      {#if bubbles.some((b) => b.description)}
+        <p
+          class="text-xs font-normal uppercase tracking-[0.5px] text-[#828898] mt-1"
+        >
+          Clica a les bombolles per aprofundir
+        </p>
+      {/if}
       <button
         on:click={onClose}
         class="absolute right-4 top-12 cursor-pointer text-gray-500 transition-colors hover:text-gray-800 lg:top-24"
@@ -237,7 +165,9 @@
                 <Bubble
                   {bubble}
                   delay={500 + (bubble.id - 1) * 150}
-                  onSelect={() => (selectedId = bubble.id)}
+                  onSelect={bubble.description
+                    ? () => (selectedId = bubble.id)
+                    : null}
                 />
               {/each}
             </div>
@@ -263,7 +193,11 @@
                     : '2px solid transparent'};
                   "
                 >
-                  <Icon name={bubble.icon} size={20} color="white" />
+                  <Icon
+                    name={bubble.icon}
+                    size={20}
+                    color={bubble.textColor ?? "white"}
+                  />
                 </button>
 
                 {#if hoveredNavId === bubble.id}
