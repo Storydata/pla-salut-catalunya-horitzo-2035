@@ -213,7 +213,7 @@
       <p
         class="font-inter text-base font-normal uppercase tracking-[1px] text-[#2E3A59]"
       >
-        Estat de la salut | Factors causals i de risc
+        La salut de la població | Factors causals i de risc
       </p>
       <p
         class="text-xs font-normal uppercase tracking-[0.5px] text-[#828898] mt-1"

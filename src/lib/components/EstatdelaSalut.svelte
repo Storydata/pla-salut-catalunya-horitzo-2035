@@ -81,7 +81,7 @@
             >
               <Icon
                 name="activity"
-                class="h-6 w-6 text-[#26aaaa] md:h-10 md:w-10"
+                class="h-6 w-6 text-[#ff8f68] md:h-10 md:w-10"
               />
             </div>
           </div>
@@ -102,7 +102,7 @@
             >
               <Icon
                 name="search-check"
-                class="h-6 w-6 text-[#26aaaa] md:h-10 md:w-10"
+                class="h-6 w-6 text-[#5eebef] md:h-10 md:w-10"
               />
             </div>
           </div>
@@ -123,14 +123,14 @@
             >
               <Icon
                 name="user-round-group"
-                class="h-6 w-6 text-[#26aaaa] md:h-10 md:w-10"
+                class="h-6 w-6 text-[#7d4184] md:h-10 md:w-10"
               />
             </div>
           </div>
           <h3
             class="text-center font-['Inter',sans-serif] text-[11px] leading-[1.25] text-[#2E3A59] md:text-[15px] md:leading-[1.3]"
           >
-            Desigualtat i salut
+            Desigualtats i salut
           </h3>
         </button>
       </div>

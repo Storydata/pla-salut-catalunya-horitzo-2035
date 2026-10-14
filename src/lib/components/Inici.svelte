@@ -19,7 +19,7 @@
     class="absolute inset-x-0 top-[5vw] lg:top-[var(--section-top-gap)] text-center px-4"
   >
     <h1
-      class="font-abhaya text-[clamp(1.5rem,6vw,4.5rem)] leading-[1.15] font-semibold tracking-tight text-[#2E3A59]"
+      class="font-titol text-[clamp(1.5rem,6vw,4.5rem)] leading-[1.15] font-normal tracking-tight text-[#2E3A59]"
     >
       <!--  Pla de salut de Catalunya <br />Horitzó 2035 -->
     </h1>

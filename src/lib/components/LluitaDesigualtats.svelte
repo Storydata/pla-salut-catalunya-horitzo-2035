@@ -1,6 +1,7 @@
 <script>
   import { onDestroy, onMount, tick } from "svelte";
   import Icon from "$lib/icons/Icon.svelte";
+  import ChartFootnote from "$lib/charts/ChartFootnote.svelte";
   import { morphBubbles, snapshotBubbles } from "$lib/utils/bubbleMorph.js";
   // En línia (?raw), no com a imatge: dins d'una imatge el document SVG està
   // aïllat i no pot fer servir la Inter de la pàgina.
@@ -95,7 +96,7 @@
       <p
         class="font-inter text-base font-normal uppercase tracking-[1px] text-[#2E3A59]"
       >
-        Estat de la salut | Lluita contra les desigualtats
+        La salut de la població | Desigualtats i salut
       </p>
       <button
         on:click={onClose}
@@ -108,20 +109,29 @@
     <div class="container mx-auto px-4">
       <div class="mx-auto w-full max-w-[1100px]">
         <h2
-          class="mb-6 text-center font-inter text-lg font-bold text-[#2e3a59]"
+          class="mb-3 text-center font-inter text-lg font-bold text-[#2e3a59]"
         >
-          Desigualtats en salut per eixos socials (2024)
+          Desigualtats en salut per eixos socials 
         </h2>
+
+        <p
+          class="mx-auto mb-6 max-w-[820px] text-center font-inter text-[15px] leading-relaxed text-[#2e3a59]"
+        >
+          Les desigualtats més marcades s'observen segons el nivell educatiu i
+          la classe social, fet que reforça l'evidència que la salut està
+          fortament condicionada pels determinants socials i que reduir aquestes
+          diferències requereix actuar molt més enllà del sistema sanitari
+        </p>
 
         <div class="mb-6 flex flex-col items-center">
           <div class="w-full">
-            <div class="mb-6 flex flex-wrap justify-center gap-3">
+            <div class="mb-3 flex flex-wrap justify-center gap-3">
               {#each eixos as eix}
                 <button
                   on:click={() => selectEix(eix.key)}
-                  class="rounded-md px-6 py-2 font-inter text-sm uppercase tracking-[0.5px] transition-colors cursor-pointer {activeKey ===
+                  class="rounded-md px-[21.6px] py-[7.2px] font-inter text-[12.6px] uppercase tracking-[0.5px] transition-colors cursor-pointer {activeKey ===
                   eix.key
-                    ? 'bg-[#2E3A59] text-white'
+                    ? 'bg-[#2E3A59] font-bold text-white'
                     : 'bg-[#E8EDF2] text-[#2E3A59] hover:bg-[#dbe3ec]'}"
                 >
                   {eix.label}
@@ -161,11 +171,11 @@
           </div>
         </div>
 
-        <div class="relative mb-16 flex justify-center">
+        <div class="relative flex justify-center">
           {#key activeEix.key}
             <div
               bind:this={active}
-              class="eix h-auto w-full max-w-[620px]"
+              class="eix h-auto w-full max-w-[589px]"
               role="img"
               aria-label="Desigualtats en salut per eixos socials: {activeEix.label}"
             >
@@ -174,9 +184,14 @@
           {/key}
           <div
             bind:this={ghostHost}
-            class="eix pointer-events-none absolute left-1/2 top-0 w-full max-w-[620px] -translate-x-1/2"
+            class="eix pointer-events-none absolute left-1/2 top-0 w-full max-w-[589px] -translate-x-1/2"
             aria-hidden="true"
           ></div>
+        </div>
+
+        <!-- Mateixa nota de font que els indicadors dels CSV, alineada amb l'SVG. -->
+        <div class="mx-auto mb-16 mt-1 w-full max-w-[589px]">
+          <ChartFootnote font="Dades ESCA 2025." />
         </div>
       </div>
     </div>

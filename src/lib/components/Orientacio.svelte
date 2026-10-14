@@ -5,7 +5,7 @@
   import AmbitsIcon5 from "$lib/assets/Ambits-Pla-Salut-color-nou-5.svg";
   import AmbitsIcon7 from "$lib/assets/Ambits-Pla-Salut-color-nou-7.svg";
   import AmbitsIcon8 from "$lib/assets/Ambits-Pla-Salut-color-nou-8.svg";
-  import PrincipisEtics from "$lib/assets/Principis-etics-i-Valors.svg";
+  import Icon from "$lib/icons/Icon.svelte";
   import MortalitatEvitable from "$lib/assets/Mortalitat-evitable-sexe.svg";
 
   const blocs = [
@@ -15,6 +15,15 @@
       icon: AmbitsIcon8,
       label: "Pioners en l'anàlisi de la càrrega de malaltia a Catalunya",
     },
+  ];
+
+  // Els salts de línia (\n) es respecten amb `whitespace-pre-line`.
+  const principis = [
+    { icon: "settings_accessibility", text: "Centralitat de la persona\ni respecte a l'autonomia" },
+    { icon: "vertical_distribute", text: "Justícia i equitat" },
+    { icon: "volunteer_activism", text: "Solidaritat i cohesió social" },
+    { icon: "nest_eco_leaf", text: "Sostenibilitat i responsabilitat\nenvers les generacions futures" },
+    { icon: "rocket_launch", text: "Progrés i responsabilitat\ncompartida" },
   ];
 
   let avadFrame;
@@ -45,7 +54,7 @@
       <!-- Titol de seccio -->
       <div class="mb-6 text-center">
         <p
-          class="font-abhaya text-[clamp(20px,5.5vw,36px)] font-bold leading-[1.15] text-[#2E3A59]"
+          class="font-titol text-[clamp(20px,5.5vw,36px)] font-normal leading-[1.15] text-[#2E3A59]"
         >
         Orientació del Pla de salut
         </p>
@@ -94,18 +103,31 @@
 <section class="w-full pt-12 pb-20">
   <div class="container mx-auto px-4">
     <p
-      class="font-abhaya text-[clamp(19px,5vw,30px)] font-extrabold leading-[1.35] text-[#2E3A59]"
+      class="font-titol text-[clamp(19px,5vw,30px)] font-normal leading-[1.35] text-[#2E3A59]"
     >
       Principis ètics i valors
     </p>
 
-    <div class="mx-auto mt-8 w-full md:w-[48%]">
-      <img
-        src={PrincipisEtics}
-        alt="Principis ètics i valors del Pla de salut"
-        class="block h-auto w-full"
-      />
-    </div>
+    <!-- Llista vertical: a escriptori el bloc fa 475px d'alt i els 5 elements
+         es reparteixen en aquesta alçada. -->
+    <ul
+      class="mx-auto mt-8 flex w-fit flex-col gap-6 lg:h-[475px] lg:justify-between lg:gap-0"
+    >
+      {#each principis as principi}
+        <li class="flex items-center gap-4 lg:gap-6">
+          <span
+            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#ff8f68] lg:h-20 lg:w-20"
+          >
+            <Icon name={principi.icon} class="h-6 w-6 text-white lg:h-8 lg:w-8" />
+          </span>
+          <span
+            class="whitespace-pre-line font-['Inter',sans-serif] text-base font-semibold leading-[1.35] text-[#2E3A59]"
+          >
+            {principi.text}
+          </span>
+        </li>
+      {/each}
+    </ul>
   </div>
 </section>
 
@@ -113,7 +135,7 @@
 <section class="w-full pt-12 pb-20">
   <div class="container mx-auto px-4">
     <p
-      class="font-abhaya text-[clamp(19px,5vw,30px)] font-extrabold leading-[1.35] text-[#2E3A59]"
+      class="font-titol text-[clamp(19px,5vw,30px)] font-normal leading-[1.35] text-[#2E3A59]"
     >
       Mortalitat evitable
     </p>
@@ -139,7 +161,7 @@
 <section class="w-full pt-12 pb-20">
   <div class="container mx-auto px-4">
     <p
-      class="font-abhaya text-[clamp(19px,5vw,30px)] font-extrabold leading-[1.35] text-[#2E3A59]"
+      class="font-titol text-[clamp(19px,5vw,30px)] font-normal leading-[1.35] text-[#2E3A59]"
     >
       Pioners en l'anàlisi de la càrrega de malaltia a Catalunya
     </p>
@@ -156,8 +178,8 @@
         bind:this={avadFrame}
         title="Salut barres horitzontals"
         aria-label="Table"
-        id="datawrapper-chart-V9z4E"
-        src="https://datawrapper.dwcdn.net/V9z4E/1/"
+        id="datawrapper-chart-4wgfp"
+        src="https://datawrapper.dwcdn.net/4wgfp/2/"
         scrolling="no"
         frameborder="0"
         height="887"

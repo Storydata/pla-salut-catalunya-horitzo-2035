@@ -6,9 +6,9 @@ import objectiusData from "$lib/data/Processed/objectius.json";
 // de l'arxiu dins src/lib/icons/Lucide/, llegit per <Icon name={...} />.
 const iconByGrupId = {
   1: { icon: "heart-pulse", iconColor: "#00ADAB" }, // Esperança de vida
-  2: { icon: "chart-column", iconColor: "#D0C4FF" }, // Mortalitat evitable
-  3: { icon: "stethoscope", iconColor: "#FF8F68" }, // Morbiditat
-  4: { icon: "message-circle-warning", iconColor: "#FFD063" }, // Factors de risc
+  2: { icon: "leaf", iconColor: "#D0C4FF" }, // Mortalitat evitable
+  3: { icon: "activity", iconColor: "#FF8F68" }, // Morbiditat
+  4: { icon: "search-check", iconColor: "#5EEBEF" }, // Factors de risc
 };
 
 export const objectiusGrups = writable(

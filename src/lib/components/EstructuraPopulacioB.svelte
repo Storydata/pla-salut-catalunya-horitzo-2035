@@ -74,7 +74,7 @@
   >
     <div bind:this={stack} class="flex w-full flex-col items-center">
       <p
-        class="px-5 pb-3 text-center font-['Inter',sans-serif] text-lg font-semibold leading-[1.4] text-[#2E3A59] lg:pt-[var(--section-top-gap)]"
+        class="px-5 pb-3 text-center font-titol text-lg font-bold leading-[1.4] text-[#2E3A59] lg:pt-[var(--section-top-gap)]"
       >
         Com creix la població
       </p>
@@ -131,8 +131,7 @@
           La població de Catalunya ha crescut considerablement els darrers 4
           anys. Les projeccions poblacionals de l'Idescat ja mostraven aquesta
           tendència creixent i aquest augment es confirma ara amb les dades
-          actuals. Respecte a (posar l'any), el creixement de la població de
-          Catalunya ha estat d'un X%. Aquest increment s'explica, entre
+          actuals. El creixement de la població de Catalunya ha estat d’un 1,3% interanual. Aquest increment s'explica, entre
           d'altres, pel flux migratori donat que el creixement natural és
           negatiu.
         </p>

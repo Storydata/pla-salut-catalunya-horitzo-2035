@@ -17,7 +17,7 @@ export default {
       },
       fontFamily: {
         segoe: ["'Segoe UI'", "Tahoma", "sans-serif"],
-        abhaya: ["'Abhaya Libre'", "serif"],
+        titol: ["scale-variable", "sans-serif"],
         inter: ["'Inter'", "sans-serif"]
       },
       keyframes: {

@@ -36,10 +36,7 @@
     <p
       class="text-center font-['Inter',sans-serif] text-[15px] font-normal leading-[1.65] text-[#2E3A59] md:text-[18px] md:leading-[1.8]"
     >
-      Aquest pla proposa 15 objectius de context, 17 objectius generals de
-      salut, 26 objectius de reducció de risc, 11 objectius de morbiditat,
-      agrupats en 6 eixos estratègics que donen lloc a 140 intervencions i X
-      metes.
+      Aquest Pla proposa 15 objectius de salut, 25 de reducció de risc i  10 de morbiditat, agrupats en 6 eixos estratègics que donen lloc a 150 intervencions.
     </p>
   </div>
 
@@ -53,7 +50,7 @@
   <div class="mb-8 grid w-full grid-cols-[10%_50%_1fr_25%_10%] md:mb-10">
     <div class="col-start-2 row-span-3 grid grid-rows-[subgrid]">
       <p
-        class="mb-2 flex items-end justify-center text-center font-abhaya text-[clamp(15px,2.2vw,26px)] font-extrabold leading-[1.2] text-[#2E3A59]"
+        class="mb-2 flex items-end justify-center text-center font-titol text-[clamp(15px,2.2vw,26px)] font-normal leading-[1.2] text-[#2E3A59]"
       >
         Objectius de salut
       </p>
@@ -91,9 +88,9 @@
 
     <div class="col-start-4 row-span-3 grid grid-rows-[subgrid]">
       <p
-        class="mb-2 flex items-end justify-center text-center font-abhaya text-[clamp(15px,2.2vw,26px)] font-extrabold leading-[1.2] text-[#2E3A59]"
+        class="mb-2 flex items-end justify-center text-center font-titol text-[clamp(15px,2.2vw,26px)] font-normal leading-[1.2] text-[#2E3A59]"
       >
-        Indicadors d'entorn
+       Condicions de vida i entorn 
       </p>
       <div class="border-t-4 border-[#F3F4F7]" />
       <div class="mt-4 flex justify-center md:mt-6">
@@ -124,7 +121,7 @@
   <!-- Eixos estratègics: 10% de marge a cada costat (línia al 80% d'ample) -->
   <div class="mx-auto w-[80%]">
     <p
-      class="mb-2 text-center font-abhaya text-[clamp(15px,2.2vw,26px)] font-extrabold leading-[1.2] text-[#2E3A59]"
+      class="mb-2 text-center font-titol text-[clamp(15px,2.2vw,26px)] font-normal leading-[1.2] text-[#2E3A59]"
     >
       Eixos estratègics
     </p>
