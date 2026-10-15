@@ -19,12 +19,7 @@
 {#if bubble.unit}
   <p class="unit font-inter font-semibold text-center">{bubble.unit}</p>
 {/if}
-<p
-  class="text font-inter font-semibold text-center"
-  class:text-long={bubble.text.length > 38}
->
-  {bubble.text}
-</p>
+<p class="text font-inter font-semibold text-center">{bubble.text}</p>
 
 <style>
   .icon {
@@ -47,20 +42,14 @@
     font-size: calc(var(--u) * 11);
     line-height: 1.2;
   }
+  /* La mateixa mida de text a totes les bombolles: la més gran amb la qual el
+     text més llarg de qualsevol subseccio hi cap dins el cercle (comprovat a
+     la mida màxima, 166px). Si un text nou no hi cap, es revisa aquesta mida,
+     no se li afegeix una excepció. */
   .text {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
     margin-top: calc(var(--u) * 6);
-    max-width: 73%;
-    font-size: calc(var(--u) * 14);
-    line-height: 1.2;
-  }
-  /* Frases llargues: lletra més petita (11px a mida màxima) perquè hi cabin. */
-  .text-long {
-    -webkit-line-clamp: 5;
     max-width: 80%;
-    font-size: calc(var(--u) * 11);
+    font-size: calc(var(--u) * 12);
+    line-height: 1.2;
   }
 </style>

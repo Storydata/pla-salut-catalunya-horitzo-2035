@@ -11,8 +11,7 @@
       gifs: { dona: "dona-A.gif", home: "home-A.gif" },
       years: { dona: "+9", home: "+12" },
       tops: { dona: "21%", home: "12%" },
-      color: "#FE3A49",
-      tint: "26",
+      color: "#53e6ea",
     },
     {
       key: "alimentacio",
@@ -21,8 +20,7 @@
       gifs: { dona: "dona-B.gif", home: "home-B.gif" },
       years: { dona: "+4", home: "+5" },
       tops: { dona: "50%", home: "45%" },
-      color: "#FF8F68",
-      tint: "26",
+      color: "#acfafc",
     },
     {
       key: "alcohol",
@@ -31,8 +29,7 @@
       gifs: { dona: "dona-C.gif", home: "home-C.gif" },
       years: { dona: "+2", home: "+3" },
       tops: { dona: "67%", home: "62%" },
-      color: "#D0C4FF",
-      tint: "40",
+      color: "#53e6ea",
     },
     {
       key: "activitat",
@@ -41,10 +38,14 @@
       gifs: { dona: "dona-D.gif", home: "home-D.gif" },
       years: { dona: "+8", home: "+7" },
       tops: { dona: "37%", home: "31%" },
-      color: "#2B3A5C",
-      tint: "26",
+      color: "#acfafc",
     },
   ];
+
+  // Color de les icones dels botons, dels valors i de la línia que apareixen
+  // al costat dels GIF: el mateix que el text, perquè es vegin sobre el color
+  // clar del botó.
+  const YEARS_COLOR = "#2E3A59";
 
   let activeKey = null;
   let playCount = 0;
@@ -91,12 +92,12 @@
             <div class="animate-pulse-slow relative mb-2 md:mb-4">
               <div
                 class="flex h-14 w-14 items-center justify-center rounded-full transition-colors md:h-[clamp(3rem,8vh,6rem)] md:w-[clamp(3rem,8vh,6rem)]"
-                style="background-color: {item.color + item.tint}"
+                style="background-color: {item.color}"
               >
                 <Icon
                   name={item.icon}
                   class="h-6 w-6 md:h-[clamp(1.25rem,3.4vh,2.5rem)] md:w-[clamp(1.25rem,3.4vh,2.5rem)]"
-                  color={item.color}
+                  color={YEARS_COLOR}
                 />
               </div>
             </div>
@@ -133,13 +134,13 @@
             >
               <p
                 class="border-b pb-1 leading-none"
-                style="border-color: {activeItem.color}; color: {activeItem.color}"
+                style="border-color: {YEARS_COLOR}; color: {YEARS_COLOR}"
               >
                 <span class="text-2xl font-medium">{activeItem.years.dona}</span
                 >
                 <span class="text-sm">anys</span>
               </p>
-              <p class="mt-1 text-sm" style="color: {activeItem.color}">
+              <p class="mt-1 text-sm" style="color: {YEARS_COLOR}">
                 de vida
               </p>
             </div>
@@ -159,13 +160,13 @@
             >
               <p
                 class="border-b pb-1 leading-none"
-                style="border-color: {activeItem.color}; color: {activeItem.color}"
+                style="border-color: {YEARS_COLOR}; color: {YEARS_COLOR}"
               >
                 <span class="text-2xl font-medium">{activeItem.years.home}</span
                 >
                 <span class="text-sm">anys</span>
               </p>
-              <p class="mt-1 text-sm" style="color: {activeItem.color}">
+              <p class="mt-1 text-sm" style="color: {YEARS_COLOR}">
                 de vida
               </p>
             </div>
@@ -239,14 +240,14 @@
             <div class="mt-3 text-center" transition:fade={{ duration: 300 }}>
               <p
                 class="border-b pb-1 leading-none"
-                style="border-color: {activeItem.color}; color: {activeItem.color}"
+                style="border-color: {YEARS_COLOR}; color: {YEARS_COLOR}"
               >
                 <span class="text-2xl font-medium">
                   {activeItem.years[sexe]}
                 </span>
                 <span class="text-sm">anys</span>
               </p>
-              <p class="mt-1 text-sm" style="color: {activeItem.color}">
+              <p class="mt-1 text-sm" style="color: {YEARS_COLOR}">
                 de vida
               </p>
             </div>

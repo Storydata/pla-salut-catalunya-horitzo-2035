@@ -111,7 +111,7 @@
             />
           </div>
           <span class="max-w-[150px] {LABEL_CLASS}">
-            Explora aquests indicadors
+            Indicadors
           </span>
         </button>
       </div>
