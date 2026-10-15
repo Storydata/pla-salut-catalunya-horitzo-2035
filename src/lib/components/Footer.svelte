@@ -63,7 +63,7 @@
   ];
 </script>
 
-<footer class="gencat-footer mt-24 w-full md:mt-32">
+<footer class="gencat-footer mt-12 w-full md:mt-16">
   <div class="mx-auto w-full max-w-6xl px-6 py-10 md:py-12">
     <h2 class="social-heading text-center">
       Segueix-nos a les xarxes socials de gencat

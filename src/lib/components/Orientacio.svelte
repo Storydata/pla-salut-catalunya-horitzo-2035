@@ -176,7 +176,7 @@
 <!-- Pioners en l'analisi de la carrega de malaltia -->
 <section
   id="pioners-analisi-carrega-malaltia"
-  class="w-full scroll-mt-[var(--site-header-h)] pt-12 pb-20"
+  class="w-full scroll-mt-[var(--site-header-h)] pt-12 pb-10"
 >
   <div class="container mx-auto px-4">
     <p class="section-subtitle">

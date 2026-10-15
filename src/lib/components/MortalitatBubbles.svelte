@@ -4,8 +4,12 @@
 
   import Icon from "$lib/icons/Icon.svelte";
   import Bubble from "./Bubble.svelte";
+  import BackButton from "./BackButton.svelte";
+  import SubsectionNav from "./SubsectionNav.svelte";
 
   export let onClose = () => {};
+  export let prev = null; // subseccio anterior: { label, onSelect }
+  export let next = null; // subseccio seguent
 
   let selectedId = null;
   let hoveredNavId = null;
@@ -23,7 +27,7 @@
       id: 1,
       color: "#26aaaa",
       size: "sm",
-      icon: "nest_eco_leaf",
+      icon: "child_care",
       stat: "84,43",
       unit: "anys",
       text: "Esperança de vida en néixer",
@@ -31,7 +35,7 @@
       description:
         "Els indicadors de salut de la població catalana se situen entre els valors més alts dels països del nostre entorn. L'esperança de vida n'és un dels principals exemples.",
       datawrapper: {
-        src: "https://datawrapper.dwcdn.net/jeuOw/1/",
+        src: "https://datawrapper.dwcdn.net/jeuOw/",
         height: 400,
       },
     },
@@ -71,15 +75,15 @@
       id: 4,
       color: "#98cbcb",
       size: "lg",
-      icon: "pulmonology",
+      icon: "nest_eco_leaf",
       stat: "730,7",
-      unit: "persones/100.000",
-      text: "Mortalitat per totes les causes",
-      label: "Mortalitat per totes les causes",
+      unit: "persones/100.000h",
+      text: "Mortalitat general",
+      label: "Mortalitat general",
       description:
         "La taxa de mortalitat general reflecteix l'estat de salut de la població i l'eficàcia del sistema sanitari. Els avenços en medicina i salut pública han contribuït a reduir la mortalitat en les últimes decades",
       datawrapper: {
-        src: "https://datawrapper.dwcdn.net/hj5qJ/8/",
+        src: "https://datawrapper.dwcdn.net/hj5qJ/",
         height: 400,
       },
     },
@@ -87,61 +91,113 @@
       id: 5,
       color: "#98cbcb",
       size: "sm",
-      icon: "rheumatology",
-      stat: "46,6",
-      unit: "persones/100.000",
-      text: "Mortalitat per càncer de pulmó",
-      label: "Mortalitat per càncer de pulmó",
+      icon: "biotech",
+      stat: "210,6",
+      unit: "persones/100.000h",
+      text: "Mortalitat per tumors",
+      label: "Mortalitat per tumors",
+      description:
+        "Els tumors són la primera causa de mort a Catalunya. La detecció precoç i els avenços en tractaments han millorat la supervivència, però segueix sent un repte important de salut pública.",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/FKqyk/6/",
+        height: 400,
+      },
     },
     {
       id: 6,
       color: "#98cbcb",
       size: "lg",
       icon: "pulse_alert",
-      stat: "38,3",
-      unit: "persones/100.000",
-      text: "Mortalitat per malalties isquèmiques del cor",
-      label: "Mortalitat per malalties isquèmiques del cor",
+      stat: "172,4",
+      unit: "persones/100.000h",
+      text: "Mortalitat per malalties cardiovasculars",
+      label: "Mortalitat per malalties cardiovasculars",
+      description:
+        "Les malalties cardiovasculars són la segona causa de mort a Catalunya. La prevenció i el control dels factors de risc són essencials per reduir la mortalitat per aquestes malalties.",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/Bc8Bf/",
+        height: 400,
+      },
     },
     {
       id: 7,
       color: "#98cbcb",
       size: "sm",
-      icon: "cognition",
-      stat: "35,8",
-      unit: "persones/100.000",
-      text: "Mortalitat per demències",
-      label: "Mortalitat per demències",
+      icon: "pulmonology",
+      stat: "79,8",
+      unit: "persones/100.000h",
+      text: "Mortalitat per malalties respiratòries",
+      label: "Mortalitat per malalties respiratòries",
+      description:
+        "Les malalties respiratòries són la tercera causa de mortalitat a Catalunya. La qualitat de l'aire i els hàbits de vida influeixen en la seva prevalença.",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/u8DJN/",
+        height: 400,
+      },
     },
     {
       id: 8,
       color: "#98cbcb",
       size: "lg",
-      icon: "cardio_load",
-      stat: "35,6",
-      unit: "persones/100.000",
-      text: "Mortalitat per la resta de malalties del cor",
-      label: "Mortalitat per la resta de malalties del cor",
+      icon: "network_intel_node",
+      stat: "44,3",
+      unit: "persones/100.000h",
+      text: "Mortalitat per malalties del sistema nerviós",
+      label: "Mortalitat per malalties del sistema nerviós",
+      description:
+        "Les malalties del sistema nerviós són la quarta causa de mortalitat a Catalunya.",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/f6aTL/",
+        height: 400,
+      },
     },
     {
       id: 9,
       color: "#98cbcb",
       size: "sm",
-      icon: "nephrology",
-      stat: "33,7",
-      unit: "persones/100.000",
-      text: "Mortalitat per malalties del ronyó",
-      label: "Mortalitat per malalties del ronyó",
+      icon: "cognition",
+      stat: "37,9",
+      unit: "persones/100.000h",
+      text: "Mortalitat per trastorns mentals",
+      label: "Mortalitat per trastorns mentals",
+      description:
+        "Els trastorns mentals són la cinquena causa de mortalitat a Catalunya.",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/rJ6j0/2/",
+        height: 400,
+      },
     },
     {
       id: 10,
       color: "#98cbcb",
       size: "lg",
-      icon: "heart_minus",
-      stat: "29,4",
-      unit: "persones/100.000",
-      text: "Mortalitat per insuficiència cardíaca",
-      label: "Mortalitat per insuficiència cardíaca",
+      icon: "gastroenterology",
+      stat: "36,6",
+      unit: "persones/100.000h",
+      text: "Mortalitat per malalties de l'aparell digestiu",
+      label: "Mortalitat per malalties de l'aparell digestiu",
+      description:
+        "Les malalties de l'aparell digestiu són la sisena causa de mortalitat a Catalunya.",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/F8G5q/2/",
+        height: 400,
+      },
+    },
+    {
+      id: 11,
+      color: "#98cbcb",
+      size: "sm",
+      icon: "nest_eco_leaf",
+      stat: "34,6",
+      unit: "persones/100.000h",
+      text: "Mortalitat per causes externes",
+      label: "Mortalitat per causes externes",
+      description:
+        "Les causes externes inclouen accidents, suïcidis i altres morts violentes. La prevenció d'accidents i la promoció de la salut mental són estratègies claus per reduir aquesta mortalitat",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/Butpn/1/",
+        height: 400,
+      },
     },
   ];
 
@@ -152,12 +208,12 @@
   $: detailBubbles = bubbles.filter((b) => b.datawrapper);
   $: currentIframe = selected?.datawrapper ?? null;
 
-  // 2 files de 3 i una tercera de 4 -- cada fila mesura
+  // Files de 3, 4 i 4 -- cada fila mesura
   // el que li demanen les seves pròpies bombolles i es centra per la seva
   // banda, igual que a Malalties/FactorsCausals. En mòbil, flex-wrap deixa
   // que una fila passi a 2 línies si no hi cap, en lloc d'encongir les
   // bombolles per sota de la seva mida real.
-  $: rows = [bubbles.slice(0, 3), bubbles.slice(3, 6), bubbles.slice(6, 10)];
+  $: rows = [bubbles.slice(0, 3), bubbles.slice(3, 7), bubbles.slice(7, 11)];
 
   let root;
 
@@ -171,6 +227,9 @@
   }
 
   onMount(() => {
+    // En obrir la subseccio es veu el seu inici, no el scroll d'on veniem.
+    root?.scrollIntoView({ block: "start" });
+
     // Nomes els nostres iframes: abans es recorria tot el document i aquest
     // listener redimensionava tambe els grafics d'altres seccions.
     const handleDatawrapperResize = (e) => {
@@ -196,7 +255,8 @@
   style="animation: componentFadeIn 800ms ease both;"
 >
   <div class="flex flex-col pb-8">
-    <div class="relative px-4 pt-[var(--section-top-gap)] text-center">
+    <SubsectionNav {prev} {next} />
+    <div class="px-4 pt-[var(--section-top-gap)] text-center">
       <p
         class="font-inter text-base font-normal uppercase tracking-[1px] text-[#2E3A59]"
       >
@@ -209,19 +269,21 @@
           Clica a les bombolles per aprofundir
         </p>
       {/if}
-      <button
-        on:click={onClose}
-        class="absolute right-4 top-12 cursor-pointer text-gray-500 transition-colors hover:text-gray-800 lg:top-24"
-      >
-        <Icon name="x" size={24} />
-      </button>
     </div>
 
     {#if selectedId === null}
       <div class="mt-8 flex flex-1 items-center justify-center">
         <div class="flex flex-col items-center gap-3 w-[min(700px,90vw)]">
-          {#each rows as row}
-            <div class="flex justify-center items-center gap-3 flex-wrap">
+          {#each rows as row, i}
+            <div
+              class="relative flex flex-wrap items-center justify-center gap-3"
+            >
+              {#if i === 0}
+                <BackButton
+                  on:click={onClose}
+                  class="w-full md:absolute md:right-full md:top-0 md:mr-8 md:w-auto"
+                />
+              {/if}
               {#each row as bubble}
                 <Bubble
                   {bubble}
@@ -238,7 +300,13 @@
     {:else}
       <div in:fade={{ duration: 100 }}>
         <div class="sticky z-30 py-2 px-4 mb-4">
-          <div class="flex items-center justify-center gap-3 flex-wrap">
+          <div
+            class="relative mx-auto flex w-fit max-w-full flex-wrap items-center justify-center gap-3"
+          >
+            <BackButton
+              on:click={() => (selectedId = null)}
+              class="w-full md:absolute md:right-full md:mr-8 md:w-auto"
+            />
             {#each detailBubbles as bubble}
               <div class="relative flex flex-col items-center">
                 <button

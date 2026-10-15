@@ -30,8 +30,6 @@
     <EstructuraPopulacioC />
   </div>
 </section>
-<section class="lg:flex lg:min-h-screen lg:items-center lg:justify-center">
-  <div class="w-full">
-    <EstructuraPopulacioD />
-  </div>
+<section>
+  <EstructuraPopulacioD />
 </section>

@@ -4,8 +4,12 @@
 
   import Icon from "$lib/icons/Icon.svelte";
   import Bubble from "./Bubble.svelte";
+  import BackButton from "./BackButton.svelte";
+  import SubsectionNav from "./SubsectionNav.svelte";
 
   export let onClose = () => {};
+  export let prev = null; // subseccio anterior: { label, onSelect }
+  export let next = null; // subseccio seguent
 
   let selectedId = null;
   let hoveredNavId = null;
@@ -157,6 +161,9 @@
   }
 
   onMount(() => {
+    // En obrir la subseccio es veu el seu inici, no el scroll d'on veniem.
+    root?.scrollIntoView({ block: "start" });
+
     // Nomes els nostres iframes: abans es recorria tot el document i aquest
     // listener redimensionava tambe els grafics d'altres seccions.
     const handleDatawrapperResize = (e) => {
@@ -182,7 +189,8 @@
   style="animation: componentFadeIn 800ms ease both;"
 >
   <div class="flex flex-col pb-8">
-    <div class="relative px-4 pt-[var(--section-top-gap)] text-center">
+    <SubsectionNav {prev} {next} />
+    <div class="px-4 pt-[var(--section-top-gap)] text-center">
       <p
         class="font-inter text-base font-normal uppercase tracking-[1px] text-[#2E3A59]"
       >
@@ -195,19 +203,21 @@
           Clica a les bombolles per aprofundir
         </p>
       {/if}
-      <button
-        on:click={onClose}
-        class="absolute right-4 top-12 cursor-pointer text-gray-500 transition-colors hover:text-gray-800 lg:top-24"
-      >
-        <Icon name="x" size={24} />
-      </button>
     </div>
 
     {#if selectedId === null}
       <div class="mt-8 flex flex-1 items-center justify-center">
         <div class="flex flex-col items-center gap-3 w-[min(700px,90vw)]">
-          {#each rows as row}
-            <div class="flex justify-center items-center gap-3 flex-wrap">
+          {#each rows as row, i}
+            <div
+              class="relative flex flex-wrap items-center justify-center gap-3"
+            >
+              {#if i === 0}
+                <BackButton
+                  on:click={onClose}
+                  class="w-full md:absolute md:right-full md:top-0 md:mr-8 md:w-auto"
+                />
+              {/if}
               {#each row as bubble}
                 <Bubble
                   {bubble}
@@ -224,7 +234,13 @@
     {:else}
       <div in:fade={{ duration: 100 }}>
         <div class="sticky z-30 py-2 px-4 mb-4">
-          <div class="flex items-center justify-center gap-3 flex-wrap">
+          <div
+            class="relative mx-auto flex w-fit max-w-full flex-wrap items-center justify-center gap-3"
+          >
+            <BackButton
+              on:click={() => (selectedId = null)}
+              class="w-full md:absolute md:right-full md:mr-8 md:w-auto"
+            />
             {#each detailBubbles as bubble}
               <div class="relative flex flex-col items-center">
                 <button

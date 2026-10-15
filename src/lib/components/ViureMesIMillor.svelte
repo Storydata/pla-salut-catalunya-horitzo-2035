@@ -209,7 +209,7 @@
          viewport i `max-w-full` limita la figura tambe per amplada perque les
          dues hi capiguen en un mobil estret. -->
     <div
-      class="mt-10 flex flex-row items-end justify-center gap-4 pb-12 sm:gap-8 lg:hidden"
+      class="mt-10 flex flex-row items-end justify-center gap-4 pb-6 sm:gap-8 lg:hidden"
     >
       {#each ["dona", "home"] as sexe (sexe)}
         <div class="flex w-1/2 max-w-[260px] flex-col items-center">

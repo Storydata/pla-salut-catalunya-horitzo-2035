@@ -7,8 +7,8 @@ import objectiusData from "$lib/data/Processed/objectius.json";
 const iconByGrupId = {
   1: { icon: "heart-pulse", iconColor: "#00ADAB" }, // Esperança de vida
   2: { icon: "leaf", iconColor: "#D0C4FF" }, // Mortalitat evitable
-  3: { icon: "activity", iconColor: "#FF8F68" }, // Morbiditat
-  4: { icon: "search-check", iconColor: "#5EEBEF" }, // Factors de risc
+  3: { icon: "search-check", iconColor: "#5EEBEF" }, // Factors protectors i de risc
+  4: { icon: "activity", iconColor: "#FF8F68" }, // Morbiditat
 };
 
 export const objectiusGrups = writable(

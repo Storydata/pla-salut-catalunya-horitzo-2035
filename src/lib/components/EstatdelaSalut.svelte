@@ -1,31 +1,76 @@
 <script>
   import Image from "$lib/assets/pla-salut-ilustracions-colors-nous-02c.jpg";
+  import { tick } from "svelte";
   import Icon from "$lib/icons/Icon.svelte";
   import MortalitatBubbles from "./MortalitatBubbles.svelte";
   import MalatiesBubbles from "./MalatiesBubbles.svelte";
   import FactorsCausalsBubbles from "./FactorsCausalsBubbles.svelte";
   import LluitaDesigualtats from "./LluitaDesigualtats.svelte";
 
+  // Ordre dels quatre botons: la navegacio lateral hi segueix.
+  const subs = [
+    { key: "mortalitat", label: "Esperança de vida i mortalitat" },
+    { key: "malalties", label: "Les malalties" },
+    { key: "factors", label: "Factors de risc i causals" },
+    { key: "desigualtats", label: "Desigualtats i salut" },
+  ];
+
   let activeSub = null;
+  let menu;
+
+  // Subseccio veina de l'activa (-1 anterior, +1 seguent) per a les fletxes.
+  function neighbour(offset) {
+    const target = subs[subs.findIndex((s) => s.key === activeSub) + offset];
+    return target
+      ? { label: target.label, onSelect: () => (activeSub = target.key) }
+      : null;
+  }
+
+  // En tornar al menu es veu el seu inici, no el scroll de la subseccio.
+  async function closeSub() {
+    activeSub = null;
+    await tick();
+    menu?.scrollIntoView({ block: "start" });
+  }
 </script>
 
 {#if activeSub === "mortalitat"}
-  <MortalitatBubbles onClose={() => (activeSub = null)} />
+  <MortalitatBubbles
+    onClose={closeSub}
+    prev={neighbour(-1)}
+    next={neighbour(1)}
+  />
 {/if}
 
 {#if activeSub === "malalties"}
-  <MalatiesBubbles onClose={() => (activeSub = null)} />
+  <MalatiesBubbles
+    onClose={closeSub}
+    prev={neighbour(-1)}
+    next={neighbour(1)}
+  />
 {/if}
 
 {#if activeSub === "factors"}
-  <FactorsCausalsBubbles onClose={() => (activeSub = null)} />
+  <FactorsCausalsBubbles
+    onClose={closeSub}
+    prev={neighbour(-1)}
+    next={neighbour(1)}
+  />
 {/if}
 
 {#if activeSub === "desigualtats"}
-  <LluitaDesigualtats onClose={() => (activeSub = null)} />
+  <LluitaDesigualtats
+    onClose={closeSub}
+    prev={neighbour(-1)}
+    next={neighbour(1)}
+  />
 {/if}
 
-<div class="relative w-full" class:hidden={activeSub !== null}>
+<div
+  bind:this={menu}
+  class="relative w-full scroll-mt-[var(--site-header-h)]"
+  class:hidden={activeSub !== null}
+>
   <div class="pt-[var(--section-top-gap)] text-center">
     <p class="section-title">La salut de la població</p>
   </div>

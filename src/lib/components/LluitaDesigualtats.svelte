@@ -1,6 +1,7 @@
 <script>
   import { onDestroy, onMount, tick } from "svelte";
-  import Icon from "$lib/icons/Icon.svelte";
+  import BackButton from "./BackButton.svelte";
+  import SubsectionNav from "./SubsectionNav.svelte";
   import ChartFootnote from "$lib/charts/ChartFootnote.svelte";
   import { morphBubbles, snapshotBubbles } from "$lib/utils/bubbleMorph.js";
   // En línia (?raw), no com a imatge: dins d'una imatge el document SVG està
@@ -12,6 +13,8 @@
   import SvgOrigen from "$lib/assets/Desigualtats-salut-eixos-ORIGEN.svg?raw";
 
   export let onClose = () => {};
+  export let prev = null; // subseccio anterior: { label, onSelect }
+  export let next = null; // subseccio seguent
 
   // Els fitxers reutilitzen els noms .cls-1… amb valors diferents i,
   // en línia, els seus estils afecten tot el document: cal prefixar-los.
@@ -92,18 +95,13 @@
   style="animation: componentFadeIn 800ms ease both;"
 >
   <div class="flex flex-col pb-8">
-    <div class="relative mb-8 px-4 pt-[var(--section-top-gap)] text-center">
+    <SubsectionNav {prev} {next} />
+    <div class="mb-8 px-4 pt-[var(--section-top-gap)] text-center">
       <p
         class="font-inter text-base font-normal uppercase tracking-[1px] text-[#2E3A59]"
       >
         La salut de la població | Desigualtats i salut
       </p>
-      <button
-        on:click={onClose}
-        class="absolute right-4 top-12 cursor-pointer text-gray-500 transition-colors hover:text-gray-800 lg:top-24"
-      >
-        <Icon name="x" size={24} />
-      </button>
     </div>
 
     <div class="container mx-auto px-4">
@@ -125,7 +123,13 @@
 
         <div class="mb-6 flex flex-col items-center">
           <div class="w-full">
-            <div class="mb-3 flex flex-wrap justify-center gap-3">
+            <div
+              class="relative mx-auto mb-3 flex w-fit max-w-full flex-wrap justify-center gap-3"
+            >
+              <BackButton
+                on:click={onClose}
+                class="w-full md:absolute md:right-full md:top-0 md:mr-8 md:w-auto"
+              />
               {#each eixos as eix}
                 <button
                   on:click={() => selectEix(eix.key)}
@@ -191,7 +195,9 @@
 
         <!-- Mateixa nota de font que els indicadors dels CSV, alineada amb l'SVG. -->
         <div class="mx-auto mb-16 mt-1 w-full max-w-[589px]">
-          <ChartFootnote font="Dades ESCA 2025." />
+          <ChartFootnote
+            font="Enquesta de salut de Catalunya. Departament de Salut. Any 2025"
+          />
         </div>
       </div>
     </div>

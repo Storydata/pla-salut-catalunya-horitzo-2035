@@ -5,7 +5,7 @@ Genera els JSON de dades de la web a partir dels Excels de contingut:
     intervenció pengen la fitxa en PDF i les metes i indicadors de seguiment
     (gràfic de Datawrapper).
   - objectius: els 4 Objectius de salut (Esperança de vida, Mortalitat evitable,
-    Morbiditat, Factors de risc), cadascun amb el seu indicador i, si ja hi és,
+    Factors protectors i de risc, Morbiditat), cadascun amb el seu indicador i, si ja hi és,
     el CSV de dades (`datasetId`, de indicadors.json).
 
 Ús (des de l'arrel del projecte):
@@ -69,8 +69,8 @@ IFRAME_HEIGHT = re.compile(r'\bheight="(\d+)"')
 OBJECTIUS_GENERALS = {
     1: "Esperança de vida",
     2: "Mortalitat evitable",
-    3: "Morbiditat",
-    4: "Factors de risc",
+    3: "Factors protectors i de risc",
+    4: "Morbiditat",
 }
 
 PENDENT = "PENDENT OMPLIR"
