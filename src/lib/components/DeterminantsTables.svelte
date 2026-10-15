@@ -10,12 +10,12 @@
   // Per actualitzar un gràfic: enganxa l'URL nova de Datawrapper (el número
   // final canvia cada vegada que el tornes a publicar).
   // Per afegir un àmbit: un objecte més, a la posició on s'ha de veure.
-  // L'ordre segueix la numeració dels indicadors del Pla: Pobresa 1-3,
+  // L'ordre segueix la numeració dels indicadors del Pla: Condicions socioeconòmiques 1-3,
   // Habitatge 4-6, Educació 7, Treball 8-12, Medi ambient 13-15.
   const areas = [
     {
-      id: "pobresa",
-      title: "Pobresa",
+      id: "condicions-socioeconomiques",
+      title: "Condicions socioeconòmiques",
       src: "https://datawrapper.dwcdn.net/GiO1r/5/",
     },
     {
