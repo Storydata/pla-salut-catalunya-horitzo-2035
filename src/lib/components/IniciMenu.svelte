@@ -70,7 +70,7 @@
          central) perquè les targetes no s'arrepleguin; des de 1225px, a mida
          completa. -->
     <div
-      class="relative hidden min-h-screen lg:block lg:scale-[0.85] min-[1225px]:scale-100"
+      class="relative hidden min-h-screen lg:block lg:max-[1224px]:scale-[0.85]"
     >
       <p
         class="pointer-events-none absolute left-1/2 top-1/2 z-20 m-0 -translate-x-1/2 translate-y-[calc(-1_*_min(20vw,300px)_-_2rem)] whitespace-nowrap font-['Inter',sans-serif] text-[14px] uppercase tracking-[0.5px] text-[#2E3A59]"

@@ -63,6 +63,6 @@
 	   `sticky` es fixen just sota la capçalera (`top: var(--site-header-h)`),
 	   així aquesta distància és la mateixa en posició inicial i ja fixats. */
   :global(:root) {
-    --section-top-gap: 45px;
+    --section-top-gap: 35px;
   }
 </style>

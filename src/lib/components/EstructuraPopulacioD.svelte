@@ -74,7 +74,7 @@
   >
     <div bind:this={stack} class="flex w-full flex-col items-center">
       <p
-        class="px-5 pb-3 text-center font-titol text-lg font-bold leading-[1.4] text-[#2E3A59] lg:pt-[var(--section-top-gap)]"
+        class="px-5 pb-3 text-center font-['Inter',sans-serif] text-lg font-bold leading-[1.4] text-[#2E3A59] lg:pt-[var(--section-top-gap)]"
       >
         Índex socioeconòmic i nivell d'estudis
       </p>

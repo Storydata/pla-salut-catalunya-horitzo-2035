@@ -1,6 +1,6 @@
 <script>
   import { fade } from "svelte/transition";
-  import { onMount } from "svelte";
+  import { onMount, tick } from "svelte";
 
   import Icon from "$lib/icons/Icon.svelte";
   import Bubble from "./Bubble.svelte";
@@ -146,8 +146,10 @@
   ];
 
   $: selected = bubbles.find((b) => b.id === selectedId) ?? null;
-  // Només les que tenen detall (descripció i gràfic) surten a la navegació.
-  $: detailBubbles = bubbles.filter((b) => b.description);
+  // Una bombolla té detall quan té el gràfic de Datawrapper; el text
+  // explicatiu és opcional i, si encara no hi és, simplement no es mostra.
+  // Només les que tenen detall surten a la navegació.
+  $: detailBubbles = bubbles.filter((b) => b.datawrapper);
   $: currentIframe = selected?.datawrapper ?? null;
 
   // 2 files de 3 i una tercera de 4 -- cada fila mesura
@@ -158,6 +160,15 @@
   $: rows = [bubbles.slice(0, 3), bubbles.slice(3, 6), bubbles.slice(6, 10)];
 
   let root;
+
+  // En obrir el detall d'una bombolla (o canviar de bombolla) es mostra des de
+  // l'inici del contingut, no des d'on s'estava fent scroll a la llista.
+  $: if (selectedId !== null) showFromTop();
+
+  async function showFromTop() {
+    await tick();
+    root?.scrollIntoView({ block: "start" });
+  }
 
   onMount(() => {
     // Nomes els nostres iframes: abans es recorria tot el document i aquest
@@ -181,17 +192,17 @@
 
 <div
   bind:this={root}
-  class="relative w-full lg:min-h-[180vh]"
+  class="relative w-full scroll-mt-[var(--site-header-h)]"
   style="animation: componentFadeIn 800ms ease both;"
 >
-  <div class="flex flex-col py-8 lg:sticky lg:top-[var(--site-header-h)] lg:z-10">
-    <div class="relative mb-8 px-4 pt-[var(--section-top-gap)] text-center">
+  <div class="flex flex-col pb-8">
+    <div class="relative px-4 pt-[var(--section-top-gap)] text-center">
       <p
         class="font-inter text-base font-normal uppercase tracking-[1px] text-[#2E3A59]"
       >
         La salut de la població | Esperança de vida i mortalitat
       </p>
-      {#if bubbles.some((b) => b.description)}
+      {#if detailBubbles.length}
         <p
           class="text-xs font-normal uppercase tracking-[0.5px] text-[#828898] mt-1"
         >
@@ -207,7 +218,7 @@
     </div>
 
     {#if selectedId === null}
-      <div class="flex justify-center items-center flex-1">
+      <div class="mt-8 flex flex-1 items-center justify-center">
         <div class="flex flex-col items-center gap-3 w-[min(700px,90vw)]">
           {#each rows as row}
             <div class="flex justify-center items-center gap-3 flex-wrap">
@@ -215,7 +226,7 @@
                 <Bubble
                   {bubble}
                   delay={500 + (bubble.id - 1) * 150}
-                  onSelect={bubble.description
+                  onSelect={bubble.datawrapper
                     ? () => (selectedId = bubble.id)
                     : null}
                 />
@@ -288,9 +299,13 @@
                   data-external="1"
                 ></iframe>
               {/if}
-              <p class="font-inter text-[15px] leading-relaxed text-[#2e3a59]">
-                {selected?.description}
-              </p>
+              {#if selected?.description}
+                <p
+                  class="font-inter text-[15px] leading-relaxed text-[#2e3a59]"
+                >
+                  {selected.description}
+                </p>
+              {/if}
             </div>
           </div>
         </div>

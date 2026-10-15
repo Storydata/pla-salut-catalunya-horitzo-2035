@@ -50,7 +50,7 @@
   <div class="mb-8 grid w-full grid-cols-[10%_50%_1fr_25%_10%] md:mb-10">
     <div class="col-start-2 row-span-3 grid grid-rows-[subgrid]">
       <p
-        class="mb-2 flex items-end justify-center text-center font-titol text-[clamp(15px,2.2vw,26px)] font-normal leading-[1.2] text-[#2E3A59]"
+        class="mb-2 flex items-end justify-center text-center block-title"
       >
         Objectius de salut
       </p>
@@ -88,7 +88,7 @@
 
     <div class="col-start-4 row-span-3 grid grid-rows-[subgrid]">
       <p
-        class="mb-2 flex items-end justify-center text-center font-titol text-[clamp(15px,2.2vw,26px)] font-normal leading-[1.2] text-[#2E3A59]"
+        class="mb-2 flex items-end justify-center text-center block-title"
       >
        Condicions de vida i entorn 
       </p>
@@ -121,7 +121,7 @@
   <!-- Eixos estratègics: 10% de marge a cada costat (línia al 80% d'ample) -->
   <div class="mx-auto w-[80%]">
     <p
-      class="mb-2 text-center font-titol text-[clamp(15px,2.2vw,26px)] font-normal leading-[1.2] text-[#2E3A59]"
+      class="mb-2 text-center block-title"
     >
       Eixos estratègics
     </p>

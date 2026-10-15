@@ -1,5 +1,5 @@
 <script>
-  import Icon from "$lib/icons/Icon.svelte";
+  import BubbleContent from "./BubbleContent.svelte";
 
   // { icon, stat, unit?, text, label, color, textColor?, size: "sm" | "lg" }
   // `unit` va sota la xifra (només les dades que no són un %); `textColor`
@@ -25,6 +25,11 @@
   // sobre cada bombolla perquè icones i xifres tinguin la mateixa mida a
   // totes les bombolles, siguin petites o grans.
   const UNIT = `calc(${LARGE} / 166)`;
+
+  const CIRCLE =
+    "bubble flex flex-shrink-0 flex-col items-center justify-start rounded-full";
+
+  $: style = `--u: ${UNIT}; width: ${DIAMETER[bubble.size]}; height: ${DIAMETER[bubble.size]}; background-color: ${bubble.color}; color: ${textColor};`;
 </script>
 
 <div
@@ -33,83 +38,27 @@
 >
   <!-- Només és un botó si té detall al qual anar (`onSelect`); si no, és una
        figura sense interacció. -->
-  <svelte:element
-    this={onSelect ? "button" : "div"}
-    type={onSelect ? "button" : undefined}
-    on:click={onSelect}
-    class="bubble flex flex-shrink-0 flex-col items-center justify-start rounded-full {onSelect
-      ? 'cursor-pointer animate-pulse-slow transition-transform hover:animate-none hover:scale-105'
-      : ''}"
-    style="
-      --u: {UNIT};
-      width: {DIAMETER[bubble.size]};
-      height: {DIAMETER[bubble.size]};
-      background-color: {bubble.color};
-      color: {textColor};
-    "
-    aria-label={onSelect ? bubble.label : undefined}
-  >
-    <span class="icon">
-      <Icon name={bubble.icon} color={textColor} class="h-full w-full" />
-    </span>
-    <p
-      class="stat font-inter font-extrabold text-center"
-      class:stat-long={bubble.stat.length > 8}
+  {#if onSelect}
+    <button
+      type="button"
+      on:click={onSelect}
+      class="{CIRCLE} cursor-pointer animate-pulse-slow transition-transform hover:animate-none hover:scale-105"
+      {style}
+      aria-label={bubble.label}
     >
-      {bubble.stat}
-    </p>
-    {#if bubble.unit}
-      <p class="unit font-inter font-semibold text-center">{bubble.unit}</p>
-    {/if}
-    <p
-      class="text font-inter font-semibold text-center"
-      class:text-long={bubble.text.length > 38}
-    >
-      {bubble.text}
-    </p>
-  </svelte:element>
+      <BubbleContent {bubble} {textColor} />
+    </button>
+  {:else}
+    <div class={CIRCLE} {style}>
+      <BubbleContent {bubble} {textColor} />
+    </div>
+  {/if}
 </div>
 
 <style>
   /* Mides del model de disseny (cercle de 166px), expressades en --u. */
   .bubble {
     padding-top: calc(var(--u) * 16);
-  }
-  .icon {
-    display: flex;
-    flex-shrink: 0;
-    width: calc(var(--u) * 30);
-    height: calc(var(--u) * 30);
-  }
-  .stat {
-    margin-top: calc(var(--u) * 4);
-    font-size: calc(var(--u) * 24);
-    line-height: 1;
-  }
-  /* Xifres llargues (p. ex. "12,9% i 14,8%"): no hi caben a 24. */
-  .stat-long {
-    font-size: calc(var(--u) * 16);
-  }
-  .unit {
-    margin-top: calc(var(--u) * 2);
-    font-size: calc(var(--u) * 11);
-    line-height: 1.2;
-  }
-  .text {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
-    margin-top: calc(var(--u) * 6);
-    max-width: 73%;
-    font-size: calc(var(--u) * 14);
-    line-height: 1.2;
-  }
-  /* Frases llargues: lletra més petita (11px a mida màxima) perquè hi cabin. */
-  .text-long {
-    -webkit-line-clamp: 5;
-    max-width: 80%;
-    font-size: calc(var(--u) * 11);
   }
 
   @keyframes -global-bubbleFadeIn {

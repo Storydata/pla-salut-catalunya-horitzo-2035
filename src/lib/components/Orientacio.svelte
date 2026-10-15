@@ -63,9 +63,7 @@
     <div class="container mx-auto px-4">
       <!-- Titol de seccio -->
       <div class="mb-6 text-center">
-        <p
-          class="font-titol text-[clamp(20px,5.5vw,36px)] font-normal leading-[1.15] text-[#2E3A59]"
-        >
+        <p class="section-title">
         Orientació del Pla de salut
         </p>
       </div>
@@ -121,9 +119,7 @@
   class="w-full scroll-mt-[var(--site-header-h)] pt-12 pb-20"
 >
   <div class="container mx-auto px-4">
-    <p
-      class="font-titol text-[clamp(19px,5vw,30px)] font-normal leading-[1.35] text-[#2E3A59]"
-    >
+    <p class="section-subtitle">
       Principis ètics i valors
     </p>
 
@@ -156,9 +152,7 @@
   class="w-full scroll-mt-[var(--site-header-h)] pt-12 pb-20"
 >
   <div class="container mx-auto px-4">
-    <p
-      class="font-titol text-[clamp(19px,5vw,30px)] font-normal leading-[1.35] text-[#2E3A59]"
-    >
+    <p class="section-subtitle">
       Mortalitat evitable
     </p>
 
@@ -185,9 +179,7 @@
   class="w-full scroll-mt-[var(--site-header-h)] pt-12 pb-20"
 >
   <div class="container mx-auto px-4">
-    <p
-      class="font-titol text-[clamp(19px,5vw,30px)] font-normal leading-[1.35] text-[#2E3A59]"
-    >
+    <p class="section-subtitle">
       Pioners en l'anàlisi de la càrrega de malaltia a Catalunya
     </p>
 

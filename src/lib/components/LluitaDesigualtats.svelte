@@ -88,10 +88,10 @@
 
 <div
   bind:this={root}
-  class="relative w-full lg:min-h-[180vh]"
+  class="relative w-full scroll-mt-[var(--site-header-h)]"
   style="animation: componentFadeIn 800ms ease both;"
 >
-  <div class="flex flex-col py-8">
+  <div class="flex flex-col pb-8">
     <div class="relative mb-8 px-4 pt-[var(--section-top-gap)] text-center">
       <p
         class="font-inter text-base font-normal uppercase tracking-[1px] text-[#2E3A59]"
