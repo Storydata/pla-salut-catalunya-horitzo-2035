@@ -1,19 +1,29 @@
 <script>
   // Orientació del Pla de salut. Horitzó 2035
   import { onMount } from "svelte";
-  // Intro block: sticky title + text + three (non-clickable) illustrations.
-  import AmbitsIcon5 from "$lib/assets/Ambits-Pla-Salut-color-nou-5.svg";
-  import AmbitsIcon7 from "$lib/assets/Ambits-Pla-Salut-color-nou-7.svg";
-  import AmbitsIcon8 from "$lib/assets/Ambits-Pla-Salut-color-nou-8.svg";
+  // Bloc d'introducció: títol sticky + text + tres il·lustracions que són
+  // enllaços a la seva part de la pàgina.
+  import OrientacioPrincipis from "$lib/assets/Orientacio-principis.svg";
+  import OrientacioMortalitat from "$lib/assets/Orientacio-mortalitat-e.svg";
+  import OrientacioAvads from "$lib/assets/Orientacio-avads.svg";
   import Icon from "$lib/icons/Icon.svelte";
   import MortalitatEvitable from "$lib/assets/Mortalitat-evitable-sexe.svg";
 
   const blocs = [
-    { icon: AmbitsIcon5, label: "Principis ètics i valors" },
-    { icon: AmbitsIcon7, label: "Mortalitat evitable" },
     {
-      icon: AmbitsIcon8,
+      icon: OrientacioPrincipis,
+      label: "Principis ètics i valors",
+      href: "#principis-etics-i-valors",
+    },
+    {
+      icon: OrientacioMortalitat,
+      label: "Mortalitat evitable",
+      href: "#mortalitat-evitable",
+    },
+    {
+      icon: OrientacioAvads,
       label: "Pioners en l'anàlisi de la càrrega de malaltia a Catalunya",
+      href: "#pioners-analisi-carrega-malaltia",
     },
   ];
 
@@ -77,30 +87,39 @@
         </p>
       </div>
 
-      <!-- Illustracions: three equal columns so the blocs align column for
-           column with the Eixos estrategics grid. -->
-      <div class="mx-auto mt-8 w-full md:mt-[42px] md:w-[60%]">
-        <div class="grid grid-cols-3 items-start gap-x-3 gap-y-8 md:gap-x-10">
-          {#each blocs as bloc}
-            <div class="flex flex-col items-center">
-              <div class="mb-2 w-full max-w-[84px] md:mb-3 md:max-w-[150px]">
-                <img src={bloc.icon} alt={bloc.label} class="h-auto w-full" />
-              </div>
-              <h3
-                class="max-w-[185px] text-center font-['Inter',sans-serif] text-[11px] leading-[1.25] text-[#2E3A59] md:text-[14px] md:leading-[1.3]"
-              >
-                {bloc.label}
-              </h3>
-            </div>
-          {/each}
-        </div>
+      <!-- Il·lustracions: la mida és la de la maqueta (84px d'alt en mòbil,
+           150px des de md) i, si no hi caben les tres en fila, la que sobra
+           passa a la línia següent. -->
+      <div
+        class="mx-auto mt-8 flex w-full flex-wrap items-start justify-center gap-x-4 gap-y-8 md:mt-[42px] lg:gap-x-10"
+      >
+        {#each blocs as bloc}
+          <a
+            href={bloc.href}
+            class="flex w-[121px] flex-col items-center transition-transform hover:scale-105 md:w-[216px]"
+          >
+            <img
+              src={bloc.icon}
+              alt={bloc.label}
+              class="mb-2 h-auto w-full md:mb-3"
+            />
+            <span
+              class="text-center font-['Inter',sans-serif] text-[11px] font-semibold leading-[1.25] text-[#2E3A59] md:text-[14px] md:leading-[1.3]"
+            >
+              {bloc.label}
+            </span>
+          </a>
+        {/each}
       </div>
     </div>
   </div>
 </div>
 
 <!-- Principis etics i Valors -->
-<section class="w-full pt-12 pb-20">
+<section
+  id="principis-etics-i-valors"
+  class="w-full scroll-mt-[var(--site-header-h)] pt-12 pb-20"
+>
   <div class="container mx-auto px-4">
     <p
       class="font-titol text-[clamp(19px,5vw,30px)] font-normal leading-[1.35] text-[#2E3A59]"
@@ -132,7 +151,10 @@
 </section>
 
 <!-- Mortalitat evitable -->
-<section class="w-full pt-12 pb-20">
+<section
+  id="mortalitat-evitable"
+  class="w-full scroll-mt-[var(--site-header-h)] pt-12 pb-20"
+>
   <div class="container mx-auto px-4">
     <p
       class="font-titol text-[clamp(19px,5vw,30px)] font-normal leading-[1.35] text-[#2E3A59]"
@@ -158,7 +180,10 @@
 </section>
 
 <!-- Pioners en l'analisi de la carrega de malaltia -->
-<section class="w-full pt-12 pb-20">
+<section
+  id="pioners-analisi-carrega-malaltia"
+  class="w-full scroll-mt-[var(--site-header-h)] pt-12 pb-20"
+>
   <div class="container mx-auto px-4">
     <p
       class="font-titol text-[clamp(19px,5vw,30px)] font-normal leading-[1.35] text-[#2E3A59]"

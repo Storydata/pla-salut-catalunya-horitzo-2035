@@ -21,7 +21,7 @@
   const bubbles = [
     {
       id: 1,
-      color: "#5eebef",
+      color: "#e5fbfe",
       textColor: "#262626",
       size: "sm",
       icon: "baby",
@@ -31,7 +31,7 @@
     },
     {
       id: 2,
-      color: "#b3f7fe",
+      color: "#e5fbfe",
       textColor: "#262626",
       size: "lg",
       icon: "apple",
@@ -51,7 +51,7 @@
     },
     {
       id: 4,
-      color: "#5eebef",
+      color: "#e5fbfe",
       textColor: "#262626",
       size: "lg",
       icon: "gauge",
@@ -61,17 +61,17 @@
     },
     {
       id: 5,
-      color: "#b3f7fe",
+      color: "#e5fbfe",
       textColor: "#262626",
       size: "sm",
-      icon: "bike",
+      icon: "activity",
       stat: "33,4%",
       text: "de la població infantil té un estil d'oci actiu",
       label: "Població infantil amb oci actiu",
     },
     {
       id: 6,
-      color: "#e5fbfe",
+      color: "#b3f7fe",
       textColor: "#262626",
       size: "lg",
       icon: "vape_free",
@@ -81,7 +81,7 @@
     },
     {
       id: 7,
-      color: "#5eebef",
+      color: "#b3f7fe",
       textColor: "#262626",
       size: "sm",
       icon: "beer-off",
@@ -91,7 +91,7 @@
     },
     {
       id: 8,
-      color: "#b3f7fe",
+      color: "#5eebef",
       textColor: "#262626",
       size: "lg",
       icon: "gauge",
@@ -101,10 +101,10 @@
     },
     {
       id: 9,
-      color: "#e5fbfe",
+      color: "#5eebef",
       textColor: "#262626",
       size: "sm",
-      icon: "activity",
+      icon: "bike",
       stat: "38,7%",
       text: "de la població adulta realitza l'activitat física (OMS)",
       label: "Població adulta amb activitat física recomanada",
@@ -121,7 +121,7 @@
     },
     {
       id: 11,
-      color: "#b3f7fe",
+      color: "#5eebef",
       textColor: "#262626",
       size: "sm",
       icon: "face-expressionless",
@@ -132,6 +132,8 @@
   ];
 
   $: selected = bubbles.find((b) => b.id === selectedId) ?? null;
+  // Només les que tenen detall (descripció i gràfic) surten a la navegació.
+  $: detailBubbles = bubbles.filter((b) => b.description);
   $: currentIframe = selected?.datawrapper ?? null;
 
   // 3 files independents (3+4+4) en lloc de columnes d'una graella: cada
@@ -212,7 +214,7 @@
       <div in:fade={{ duration: 100 }}>
         <div class="sticky z-30 py-2 px-4 mb-4">
           <div class="flex items-center justify-center gap-3 flex-wrap">
-            {#each bubbles as bubble}
+            {#each detailBubbles as bubble}
               <div class="relative flex flex-col items-center">
                 <button
                   on:click={() => selectBubble(bubble.id)}

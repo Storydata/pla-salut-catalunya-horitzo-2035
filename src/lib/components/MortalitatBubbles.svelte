@@ -23,21 +23,33 @@
       id: 1,
       color: "#26aaaa",
       size: "sm",
-      icon: "baby",
+      icon: "nest_eco_leaf",
       stat: "84,43",
       unit: "anys",
       text: "Esperança de vida en néixer",
       label: "Esperança de vida en néixer",
+      description:
+        "Els indicadors de salut de la població catalana se situen entre els valors més alts dels països del nostre entorn. L'esperança de vida n'és un dels principals exemples.",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/jeuOw/1/",
+        height: 400,
+      },
     },
     {
       id: 2,
       color: "#26aaaa",
       size: "lg",
-      icon: "shield-plus",
+      icon: "heart_smile",
       stat: "68",
       unit: "anys",
       text: "Esperança de vida amb bona salut al néixer",
       label: "Esperança de vida amb bona salut al néixer",
+      description:
+        "L'esperança de vida en bona salut és un indicador que uneix la consideració de la quantitat d'anys de vida que s'espera viure a partir d'una determinada edat i de la qualitat amb la qual es viuen aquests anys.",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/Cl9L9/1/",
+        height: 400,
+      },
     },
     {
       id: 3,
@@ -48,22 +60,34 @@
       unit: "anys",
       text: "Esperança de vida amb bona salut als 65 anys",
       label: "Esperança de vida amb bona salut als 65 anys",
+      description:
+        "L'esperança de vida en bona salut és un indicador que uneix la consideració de la quantitat d'anys de vida que s'espera viure a partir d'una determinada edat i de la qualitat amb la qual es viuen aquests anys.",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/whJQq/1/",
+        height: 400,
+      },
     },
     {
       id: 4,
       color: "#98cbcb",
       size: "lg",
-      icon: "users",
+      icon: "pulmonology",
       stat: "730,7",
       unit: "persones/100.000",
       text: "Mortalitat per totes les causes",
       label: "Mortalitat per totes les causes",
+      description:
+        "La taxa de mortalitat general reflecteix l'estat de salut de la població i l'eficàcia del sistema sanitari. Els avenços en medicina i salut pública han contribuït a reduir la mortalitat en les últimes decades",
+      datawrapper: {
+        src: "https://datawrapper.dwcdn.net/hj5qJ/8/",
+        height: 400,
+      },
     },
     {
       id: 5,
       color: "#98cbcb",
       size: "sm",
-      icon: "pulmonology",
+      icon: "rheumatology",
       stat: "46,6",
       unit: "persones/100.000",
       text: "Mortalitat per càncer de pulmó",
@@ -73,7 +97,7 @@
       id: 6,
       color: "#98cbcb",
       size: "lg",
-      icon: "heart-pulse",
+      icon: "pulse_alert",
       stat: "38,3",
       unit: "persones/100.000",
       text: "Mortalitat per malalties isquèmiques del cor",
@@ -83,7 +107,7 @@
       id: 7,
       color: "#98cbcb",
       size: "sm",
-      icon: "brain",
+      icon: "cognition",
       stat: "35,8",
       unit: "persones/100.000",
       text: "Mortalitat per demències",
@@ -93,7 +117,7 @@
       id: 8,
       color: "#98cbcb",
       size: "lg",
-      icon: "stethoscope",
+      icon: "cardio_load",
       stat: "35,6",
       unit: "persones/100.000",
       text: "Mortalitat per la resta de malalties del cor",
@@ -103,7 +127,7 @@
       id: 9,
       color: "#98cbcb",
       size: "sm",
-      icon: "hospital",
+      icon: "nephrology",
       stat: "33,7",
       unit: "persones/100.000",
       text: "Mortalitat per malalties del ronyó",
@@ -113,7 +137,7 @@
       id: 10,
       color: "#98cbcb",
       size: "lg",
-      icon: "activity",
+      icon: "heart_minus",
       stat: "29,4",
       unit: "persones/100.000",
       text: "Mortalitat per insuficiència cardíaca",
@@ -122,6 +146,8 @@
   ];
 
   $: selected = bubbles.find((b) => b.id === selectedId) ?? null;
+  // Només les que tenen detall (descripció i gràfic) surten a la navegació.
+  $: detailBubbles = bubbles.filter((b) => b.description);
   $: currentIframe = selected?.datawrapper ?? null;
 
   // 2 files de 3 i una tercera de 4 -- cada fila mesura
@@ -202,7 +228,7 @@
       <div in:fade={{ duration: 100 }}>
         <div class="sticky z-30 py-2 px-4 mb-4">
           <div class="flex items-center justify-center gap-3 flex-wrap">
-            {#each bubbles as bubble}
+            {#each detailBubbles as bubble}
               <div class="relative flex flex-col items-center">
                 <button
                   on:click={() => selectBubble(bubble.id)}

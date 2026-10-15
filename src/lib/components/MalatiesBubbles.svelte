@@ -23,7 +23,7 @@
       id: 1,
       color: "#EA4D50",
       size: "sm",
-      icon: "alert-circle",
+      icon: "rheumatology",
       stat: "33,9%",
       text: "de la població adulta té dolor",
       label: "Població adulta amb dolor",
@@ -32,7 +32,7 @@
       id: 2,
       color: "#F6C3AE",
       size: "lg",
-      icon: "message-circle-warning",
+      icon: "cognition_2",
       stat: "17,5%",
       text: "de la població adulta té ansietat lleu",
       label: "Població adulta amb ansietat lleu",
@@ -41,7 +41,7 @@
       id: 3,
       color: "#F19592",
       size: "sm",
-      icon: "face-expressionless",
+      icon: "cognition_2",
       stat: "15,7%",
       text: "de la població adulta té depressió lleu",
       label: "Població adulta amb depressió lleu",
@@ -69,7 +69,7 @@
       id: 6,
       color: "#FF9671",
       size: "lg",
-      icon: "heart-pulse",
+      icon: "ecg_heart",
       stat: "294,1",
       unit: "persones/100.000",
       text: "Incidència de malaltia isquèmica del cor",
@@ -79,7 +79,7 @@
       id: 7,
       color: "#F19592",
       size: "sm",
-      icon: "brain",
+      icon: "threat_intelligence",
       stat: "226,3",
       unit: "persones/100.000",
       text: "Incidència d'ictus",
@@ -89,7 +89,7 @@
       id: 8,
       color: "#EA4D50",
       size: "lg",
-      icon: "microscope",
+      icon: "coronavirus",
       stat: "0,33",
       unit: "persones/100.000",
       text: "Incidència d'hepatitis C",
@@ -98,6 +98,8 @@
   ];
 
   $: selected = bubbles.find((b) => b.id === selectedId) ?? null;
+  // Només les que tenen detall (descripció i gràfic) surten a la navegació.
+  $: detailBubbles = bubbles.filter((b) => b.description);
   $: currentIframe = selected?.datawrapper ?? null;
 
   // 3 files independents (3+3+2) en lloc de columnes d'una graella: cada
@@ -178,7 +180,7 @@
       <div in:fade={{ duration: 100 }}>
         <div class="sticky z-30 py-2 px-4 mb-4">
           <div class="flex items-center justify-center gap-3 flex-wrap">
-            {#each bubbles as bubble}
+            {#each detailBubbles as bubble}
               <div class="relative flex flex-col items-center">
                 <button
                   on:click={() => selectBubble(bubble.id)}
