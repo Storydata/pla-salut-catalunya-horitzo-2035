@@ -8,8 +8,9 @@
         "label": "Alimentació saludable",
         "intervencions": [
           {
+            "id": "E1-A1-I01",
             "codi": "E1-A1-I01",
-            "nom": "Promoció de la lactància materna amb perspectiva de salut, equitat i sostenibilitat ambiental",
+            "nom": "Lactància materna amb perspectiva de salut, equitat i sostenibilitat ambiental",
             "datawrapper": {
               "src": "https://datawrapper.dwcdn.net/lPHzD/3/",
               "height": 345
@@ -17,6 +18,7 @@
             "fitxa": true
           },
           {
+            "id": "E1-A1-I02",
             "codi": "E1-A1-I02",
             "nom": "Suport a la lactància materna en entorns laborals",
             "datawrapper": {
@@ -26,68 +28,65 @@
             "fitxa": false
           },
           {
+            "id": "E1-A1-I03",
             "codi": "E1-A1-I03",
             "nom": "Certificació d’expertesa en lactància materna",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A1-I04",
             "codi": "E1-A1-I04",
-            "nom": "Extensió del Programa d’Obesitat Infantil de Catalunya (POICAT)",
+            "nom": "Extensió del Programa de prevenció i abordatge de l’obesitat infantil a Catalunya (POICAT)",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A1-I05",
             "codi": "E1-A1-I05",
             "nom": "Menjadors saludables i sostenibles",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A1-I06",
             "codi": "E1-A1-I06",
             "nom": "Cafeteries saludables als centres educatius",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A1-I07",
             "codi": "E1-A1-I07",
             "nom": "Menjadors dels centres educatius de secundària de màxima complexitat",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A1-I08",
             "codi": "E1-A1-I08",
             "nom": "Supermercats saludables i sostenibles",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A1-I10",
             "codi": "E1-A1-I10",
-            "nom": "Etiqueta nutricional",
+            "nom": "Etiqueta digital intel·ligent",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A1-nou-1",
+            "codi": null,
+            "nom": "Canal Aliments",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E1-A1-I11",
             "codi": "E1-A1-I11",
-            "nom": "Adequació de la publicitat alimentària en espais publicitaris municipals",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E1-A1-I12",
-            "nom": "Reforç de l’impost sobre les begudes ensucrades i energètiques PENDENT REVISIÓ ECONOMIA",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E1-A1-I13",
-            "nom": "Fiscalitat sobre els aliments amb alt contingut de sucres, greixos no saludables i sal PENDENT REVISIÓ ECONOMIA",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E1-A1-I134",
-            "nom": "Fiscalitat positiva sobre els aliments saludables PENDENT REVISIÓ ECONOMIA",
+            "nom": "Mesures econòmiques i fiscals per a una alimentació saludable",
             "datawrapper": null,
             "fitxa": false
           }
@@ -98,30 +97,35 @@
         "label": "Vida activa",
         "intervencions": [
           {
+            "id": "E1-A2-I01",
             "codi": "E1-A2-I01",
-            "nom": "Rutes saludables",
+            "nom": "Rutes saludables segures",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A2-I02",
             "codi": "E1-A2-I02",
             "nom": "Vies ciclables segures i interconnectades amb el transport públic",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A2-I03",
             "codi": "E1-A2-I03",
-            "nom": "Activitat física i esportiva per a tothom",
+            "nom": "Activitat física per a tothom",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A2-I04",
             "codi": "E1-A2-I04",
             "nom": "Activitat física i esport extraescolar accessible",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A2-I05",
             "codi": "E1-A2-I05",
             "nom": "Programa de prescripció esportiva",
             "datawrapper": null,
@@ -134,18 +138,21 @@
         "label": "Bon descans",
         "intervencions": [
           {
+            "id": "E1-A3-I01",
             "codi": "E1-A3-I01",
             "nom": "Intervencions grupals per a la millora de la qualitat del son",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A3-I02",
             "codi": "E1-A3-I02",
             "nom": "Eina digital ‘Dorm bé’",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A3-I03",
             "codi": "E1-A3-I03",
             "nom": "Campanya de sensibilització institucional",
             "datawrapper": null,
@@ -158,14 +165,30 @@
         "label": "Tabac zero",
         "intervencions": [
           {
+            "id": "E1-A4-I01",
             "codi": "E1-A4-I01",
             "nom": "Aprovació de la nova Llei del tabac",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A4-nou-1",
+            "codi": null,
+            "nom": "Xarxes territorials de prevenció i control del tabaquisme",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E1-A4-nou-2",
+            "codi": null,
+            "nom": "Prevenció del consum de tabac i altres productes susceptibles d’alliberar nicotina en l’àmbit educatiu",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E1-A4-I02",
             "codi": "E1-A4-I02",
-            "nom": "Cribratge del consum de tabac i intervenció",
+            "nom": "Cribratge i intervencions per a la deshabituació del consum de tabac",
             "datawrapper": null,
             "fitxa": false
           }
@@ -176,18 +199,21 @@
         "label": "Menys alcohol",
         "intervencions": [
           {
+            "id": "E1-A5-I01",
             "codi": "E1-A5-I01",
-            "nom": "Cribratge del consum d’alcohol i intervenció",
+            "nom": "Cribratge del consum d’alcohol i intervenció breu",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A5-I02",
             "codi": "E1-A5-I02",
-            "nom": "Identificació precoç de les addiccions i intervenció",
+            "nom": "Identificació precoç i abordatge de les addiccions",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A5-I03",
             "codi": "E1-A5-I03",
             "nom": "Intervenció preventiva després d'una intoxicació etílica en adolescents i joves",
             "datawrapper": null,
@@ -200,32 +226,44 @@
         "label": "Vida lliure de violències",
         "intervencions": [
           {
+            "id": "E1-A6-I01",
             "codi": "E1-A6-I01",
-            "nom": "Coeducació per a la transformació dels entorns educatius",
+            "nom": "Coeducació adreçada a infants i joves",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A6-I02",
             "codi": "E1-A6-I02",
             "nom": "Detecció i intervenció precoç de situacions de violència masclista",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A6-nou-1",
+            "codi": null,
+            "nom": "Protocol d’atenció en l’àmbit sanitari a homes que exerceixen violències masclistes",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E1-A6-I03",
             "codi": "E1-A6-I03",
             "nom": "Detecció precoç de la violència en la primera infància",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A6-I04",
             "codi": "E1-A6-I04",
             "nom": "Detecció i intervenció precoç de les violències contra la gent gran",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E1-A6-I05",
             "codi": "E1-A6-I05",
-            "nom": "Programa pilot comunitari de prevenció de maltractament en gent gran",
+            "nom": "Programa pilot comunitari de prevenció del maltractament a la gent gran",
             "datawrapper": null,
             "fitxa": false
           }
@@ -242,36 +280,42 @@
         "label": "Territoris i comunitats saludables",
         "intervencions": [
           {
+            "id": "E2-A1-I01",
             "codi": "E2-A1-I01",
             "nom": "Ciutats i viles saludables",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A1-I02",
             "codi": "E2-A1-I02",
             "nom": "Acció comunitària en salut",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A1-I03",
             "codi": "E2-A1-I03",
             "nom": "Arts i salut",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A1-I04",
             "codi": "E2-A1-I04",
             "nom": "Millora urbana, ambiental i social en el marc del Pla de barris i viles",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A1-I05",
             "codi": "E2-A1-I05",
             "nom": "Generació de coneixement i adaptació dels recursos a les necessitats del territori. Centres d'Atenció Primària en zones d'alta vulnerabilitat (Deep End)",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A1-I06",
             "codi": "E2-A1-I06",
             "nom": "Reducció de les desigualtats a les Àrees Integrades de Salut (AIS)",
             "datawrapper": null,
@@ -284,32 +328,37 @@
         "label": "Entorns educatius promotors de salut",
         "intervencions": [
           {
+            "id": "E2-A2-I01",
             "codi": "E2-A2-I01",
             "nom": "Primera infància: detecció precoç i desenvolupament saludable (0-3 anys)",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A2-I02",
             "codi": "E2-A2-I02",
             "nom": "Nascuts per llegir",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A2-I03",
             "codi": "E2-A2-I03",
-            "nom": "Escoles Promotores de Salut",
+            "nom": "Escoles promotores de salut",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A2-I04",
             "codi": "E2-A2-I04",
             "nom": "Competències digitals per a un ús saludable de les pantalles",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A2-I05",
             "codi": "E2-A2-I05",
-            "nom": "Prevenció del fracàs escolar i l’abandonament educatiu prematur",
+            "nom": "Prevenció del fracàs escolar i de l’abandonament educatiu prematur",
             "datawrapper": null,
             "fitxa": false
           }
@@ -320,30 +369,35 @@
         "label": "Entorns laborals saludables",
         "intervencions": [
           {
+            "id": "E2-A3-I01",
             "codi": "E2-A3-I01",
             "nom": "Empreses promotores de salut",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A3-I02",
             "codi": "E2-A3-I02",
             "nom": "Salut mental i treball",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A3-I03",
             "codi": "E2-A3-I03",
-            "nom": "Vigilància dels trastorns musculoesquelètics",
+            "nom": "Detecció i intervenció precoç dels trastorns musculoesquelètics",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A3-I04",
             "codi": "E2-A3-I04",
-            "nom": "Detecció de la sospita i reconeixement de les malalties i notificació integrada dins la història clínica",
+            "nom": "Sospita i reconeixement de les malalties i notificació integrada dins la història clínica",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E2-A3-I05",
             "codi": "E2-A3-I05",
             "nom": "Adaptació a la vida laboral després d'un període llarg d'inactivitat per raons de salut",
             "datawrapper": null,
@@ -362,48 +416,49 @@
         "label": "Protecció del benestar emocional",
         "intervencions": [
           {
+            "id": "E3-A1-I01",
             "codi": "E3-A1-I01",
             "nom": "Criança positiva i suport a les famílies",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A1-I02",
             "codi": "E3-A1-I02",
             "nom": "Programa KiVa contra l’assetjament escolar",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A1-I03",
             "codi": "E3-A1-I03",
             "nom": "Intervenció integral pel benestar emocional a l'entorn educatiu",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A1-I04",
             "codi": "E3-A1-I04",
-            "nom": "Intervencions comunitàries grupals dirigides a persones amb malestar emocional",
+            "nom": "Model català de benestar digital de la infància i l’adolescència",
             "datawrapper": null,
             "fitxa": false
           },
           {
-            "codi": "E3-A1-I05",
-            "nom": "Creació del Model Propi Català de Benestar Digital Infantil i Adolescent",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
+            "id": "E3-A1-I06",
             "codi": "E3-A1-I06",
             "nom": "Certificació de benestar digital en continguts dirigits a menors de 18 anys",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A1-I07",
             "codi": "E3-A1-I07",
             "nom": "Cribratge de l’ús de les TIC i Pla digital familiar a l’edat pediàtrica",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A1-I08",
             "codi": "E3-A1-I08",
             "nom": "Espais comunitaris d’oci no digital",
             "datawrapper": null,
@@ -413,59 +468,75 @@
       },
       {
         "id": "E3-A2",
-        "label": "Resposta adequada a temps i amb la intensitat necessària",
+        "label": "Resposta adequada, a temps i amb la intensitat necessària",
         "intervencions": [
           {
+            "id": "E3-A2-I01",
             "codi": "E3-A2-I01",
             "nom": "Apropar la resposta als problemes de salut mental en infants i adolescents",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A2-I02",
             "codi": "E3-A2-I02",
-            "nom": "Apropar la resposta als problemes de salut mental en adults",
+            "nom": "Apropar la resposta als problemes de salut mental en persones adultes",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A2-I03",
             "codi": "E3-A2-I03",
             "nom": "Eina digital d’autocribratge de salut mental: La Meva Salut Mental",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A2-I04",
             "codi": "E3-A2-I04",
             "nom": "Teràpia digital guiada: ConnectaMent",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A2-I05",
             "codi": "E3-A2-I05",
             "nom": "Detecció i abordatge integral de la salut mental perinatal",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A2-I06",
             "codi": "E3-A2-I06",
             "nom": "Detecció i intervenció precoç de la psicosi",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A2-I07",
             "codi": "E3-A2-I07",
-            "nom": "Abordatge integral als infants i joves amb Trastorns de Neurodesenvolupament i de l’Aprenentatge (TNDiA)",
+            "nom": "Abordatge integral a infants i persones joves amb trastorns del neurodesenvolupament i de l’aprenentatge (TNDiA)",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A2-I08",
             "codi": "E3-A2-I08",
             "nom": "Optimització de l’ús d’antidepressius i ansiolítics, amb èmfasi en els processos de desprescripció",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A2-I09",
             "codi": "E3-A2-I09",
-            "nom": "Adequació de l’ús de neurolèptics en la població infantojuvenil",
+            "nom": "Adequació de l’ús d’antipsicòtics en la població infantojuvenil",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E3-A2-nou-1",
+            "codi": null,
+            "nom": "Integració de l’atenció a la salut mental i les addiccions",
             "datawrapper": null,
             "fitxa": false
           }
@@ -476,36 +547,42 @@
         "label": "Atenció de salut mental comunitària, basada en drets i orientada a la recuperació",
         "intervencions": [
           {
+            "id": "E3-A3-I01",
             "codi": "E3-A3-I01",
-            "nom": "Processos assistencials comunitaris per a l’atenció a persones amb trastorns mentals d’impacte substancial en la funcionalitat o discapacitants.",
+            "nom": "Processos assistencials comunitaris per a l’atenció a persones amb trastorns mentals d’impacte substancial en la funcionalitat o discapacitants",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A3-I02",
             "codi": "E3-A3-I02",
             "nom": "Reconversió de l'hospitalització psiquiàtrica de llarga estada per un model comunitari enfocat a la recuperació i els drets de les persones",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A3-I03",
             "codi": "E3-A3-I03",
             "nom": "Incorporació de persones amb experiència viscuda com a agents de suport entre iguals en el procés terapèutic",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A3-I04",
             "codi": "E3-A3-I04",
             "nom": "Programa de salut mental basat en drets",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A3-I05",
             "codi": "E3-A3-I05",
             "nom": "Revisió de pràctiques i implementació d’alternatives per a la reducció de l'ús de mesures coercitives",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E3-A3-I06",
             "codi": "E3-A3-I06",
             "nom": "Planificació anticipada de crisis i decisions compartides",
             "datawrapper": null,
@@ -524,32 +601,23 @@
         "label": "Promoció de l’envelliment actiu i saludable",
         "intervencions": [
           {
+            "id": "E4-A1-I01",
             "codi": "E4-A1-I01",
             "nom": "Prevenció i abordatge de l’edatisme",
             "datawrapper": null,
             "fitxa": false
           },
           {
-            "codi": "E4-A1-I02",
-            "nom": "Detecció precoç i abordatge dels dèficits auditius i visuals en les persones grans",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E4-A1-I03",
-            "nom": "Promoció de la capacitat cognitiva i de la salut cerebral mitjançant entorns i comunitats actives",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
+            "id": "E4-A1-I04",
             "codi": "E4-A1-I04",
             "nom": "Prevenció i abordatge de la soledat no desitjada",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E4-A1-I05",
             "codi": "E4-A1-I05",
-            "nom": "Entorns comunitaris amigables amb les persones grans",
+            "nom": "Impuls de ciutats i comunitats amigables amb les persones grans",
             "datawrapper": null,
             "fitxa": false
           }
@@ -560,18 +628,28 @@
         "label": "Prevenció de la fragilitat, les caigudes i la discapacitat",
         "intervencions": [
           {
+            "id": "E4-A2-I01",
             "codi": "E4-A2-I01",
             "nom": "Detecció precoç de la fragilitat i intervenció multicomponent per prevenir el deteriorament funcional i la discapacitat en persones grans",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E4-A2-I02",
             "codi": "E4-A2-I02",
             "nom": "Prevenció de caigudes i fractures en persones grans",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E4-A2-nou-1",
+            "codi": null,
+            "nom": "Detecció precoç i abordatge dels dèficits auditius i visuals en les persones grans",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E4-A2-I03",
             "codi": "E4-A2-I03",
             "nom": "Valoració i abordatge precoç de la pèrdua de capacitat cognitiva",
             "datawrapper": null,
@@ -584,26 +662,30 @@
         "label": "Personalització i integració de l’atenció per a les persones amb cronicitat complexa (PCC) i avançada (MACA)",
         "intervencions": [
           {
+            "id": "E4-A3-I01",
             "codi": "E4-A3-I01",
             "nom": "Personalització i integració de l’atenció en població PCC i MACA",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E4-A3-I02",
             "codi": "E4-A3-I02",
             "nom": "Nou model d’atenció farmacèutica en residències",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E4-A3-I03",
             "codi": "E4-A3-I03",
-            "nom": "Presa de decisions compartida i planificació anticipada de decisions",
+            "nom": "Presa de decisions compartides i planificació anticipada de decisions",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E4-A3-I04",
             "codi": "E4-A3-I04",
-            "nom": "Adequació de la prescripció farmacèutica en persones amb fragilitat, PCC o MACA",
+            "nom": "Adequació de la prescripció farmacèutica de persones amb fragilitat complexa i avançada",
             "datawrapper": null,
             "fitxa": false
           }
@@ -617,41 +699,54 @@
     "linies": [
       {
         "id": "E5-A1",
-        "label": "Canvi climàtic, contaminació atmosfèrica i contaminació acústica",
+        "label": "Canvi climàtic, contaminació i soroll",
         "intervencions": [
           {
+            "id": "E5-A1-I01",
             "codi": "E5-A1-I01",
-            "nom": "Implementació de les Zones de Baixes Emissions (ZBE)",
+            "nom": "Implementació de les zones de baixes emissions (ZBE)",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A1-I02",
             "codi": "E5-A1-I02",
             "nom": "Descarbonització i autogeneració d’energia renovable a la xarxa viària de la Generalitat de Catalunya",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A1-I03",
             "codi": "E5-A1-I03",
             "nom": "Millora de la qualitat de l’aire interior dels edificis",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A1-I04",
             "codi": "E5-A1-I04",
             "nom": "Mapes estratègics de soroll, plans de correcció i zones d’especial protecció acústica",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A1-I05",
             "codi": "E5-A1-I05",
             "nom": "Millora de les condicions d’habitabilitat",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A1-I06",
             "codi": "E5-A1-I06",
             "nom": "Augment de la disponibilitat de refugis climàtics i dels seus horaris d’obertura",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E5-A1-nou-1",
+            "codi": null,
+            "nom": "Mitigació de l’impacte de les onades de calor sobre la salut de les persones",
             "datawrapper": null,
             "fitxa": false
           }
@@ -662,36 +757,42 @@
         "label": "Una sola salut i disponibilitat d’espais naturals",
         "intervencions": [
           {
+            "id": "E5-A2-I01",
             "codi": "E5-A2-I01",
             "nom": "Vigilància epidemiològica de les arbovirosis",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A2-I02",
             "codi": "E5-A2-I02",
             "nom": "Pla de preparació davant possibles noves pandèmies",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A2-I03",
             "codi": "E5-A2-I03",
             "nom": "Regulació de l'ús de la roba clínica fora de les àrees assistencials",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A2-I04",
             "codi": "E5-A2-I04",
-            "nom": "Adequació de la indicació i de les durades dels tractaments dels antibiòtics",
+            "nom": "Prevenció i control de les resistències als antibiòtics",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A2-I05",
             "codi": "E5-A2-I05",
             "nom": "Promoció de recursos i actius de natura en zones amb menor disponibilitat i major vulnerabilitat",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A2-I06",
             "codi": "E5-A2-I06",
             "nom": "Impuls de la infraestructura verda i blava en entorns quotidians",
             "datawrapper": null,
@@ -704,44 +805,51 @@
         "label": "Sistema sanitari resilient i sostenible",
         "intervencions": [
           {
+            "id": "E5-A3-I01",
             "codi": "E5-A3-I01",
             "nom": "Reducció de la petjada de carboni dels centres sanitaris",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A3-I02",
             "codi": "E5-A3-I02",
             "nom": "Reducció de les emissions de gasos contaminants associades a la pràctica clínica",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A3-I03",
             "codi": "E5-A3-I03",
             "nom": "Reducció del consum dels productes sanitaris d’un sol ús i millora de la valorització dels residus sanitaris",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A3-I04",
             "codi": "E5-A3-I04",
             "nom": "Disminució de l’impacte de la mobilitat als centres sanitaris",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A3-I05",
             "codi": "E5-A3-I05",
             "nom": "Compra pública verda de medicaments, productes sanitaris i material d’ús sanitari",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A3-I06",
             "codi": "E5-A3-I06",
-            "nom": "Desplegament del Pla General d’Emergències del Departament de Salut",
+            "nom": "Desplegament del Pla general d’emergències del Departament de Salut",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E5-A3-I07",
             "codi": "E5-A3-I07",
-            "nom": "Actualització dels Plans d’Actuació i Contingència interna dels centres sanitaris i les oficines de farmàcia",
+            "nom": "Actualització dels plans d’actuació i contingència interna dels centres sanitaris i les oficines de farmàcia",
             "datawrapper": null,
             "fitxa": false
           }
@@ -755,17 +863,54 @@
     "linies": [
       {
         "id": "E6-A1",
-        "label": "Atenció centrada en la persona",
+        "label": "Les persones, protagonistes de la seva salut",
         "intervencions": [
           {
+            "id": "E6-A1-I01",
             "codi": "E6-A1-I01",
+            "nom": "Capacitació en salut de la ciutadania",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A1-I02",
+            "codi": "E6-A1-I02",
+            "nom": "La Meva Salut com a eina activa de salut per a la ciutadania (Espai Personal de Salut)",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A1-nou-1",
+            "codi": null,
+            "nom": "Prevenció personalitzada",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A1-nou-2",
+            "codi": null,
             "nom": "Presa de decisions compartides entre persones i professionals",
             "datawrapper": null,
             "fitxa": false
           },
           {
-            "codi": "E6-A1-I02",
-            "nom": "Integració de la perspectiva de la persona mitjançant PREM i PROM",
+            "id": "E6-A1-nou-3",
+            "codi": null,
+            "nom": "Impuls i suport de grups d’ajuda mútua",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A1-nou-4",
+            "codi": null,
+            "nom": "Programa Pacient Expert Catalunya i Cuidador Expert Catalunya",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A1-nou-5",
+            "codi": null,
+            "nom": "Participació de pacients i famílies per incorporar la veu i l’experiència de les persones",
             "datawrapper": null,
             "fitxa": false
           }
@@ -773,29 +918,131 @@
       },
       {
         "id": "E6-A2",
-        "label": "Pràctica clínica orientada al valor",
+        "label": "Atenció que aporta valor i millora els resultats en salut",
         "intervencions": [
           {
+            "id": "E6-A2-I01",
             "codi": "E6-A2-I01",
-            "nom": "Reducció de les pràctiques de baix valor",
+            "nom": "Adequació de la pràctica clínica",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E6-A2-I02",
             "codi": "E6-A2-I02",
-            "nom": "Promoció de l’ús racional del medicament",
+            "nom": "Desimplementació d’intervencions sistèmiques de baix valor o sense valor",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E6-A2-I03",
             "codi": "E6-A2-I03",
-            "nom": "Tracte equitatiu i lliure de discriminacions al sistema sanitari",
+            "nom": "Ús adequat i segur dels medicaments",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E6-A2-I04",
             "codi": "E6-A2-I04",
-            "nom": "Reducció de biaixos i inequitats en l'atenció a la salut",
+            "nom": "Mesurar i incorporar els resultats i l’experiència de les persones",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-1",
+            "codi": null,
+            "nom": "Longitudinalitat i professionals de referència",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-2",
+            "codi": null,
+            "nom": "Integrar l’atenció i garantir la continuïtat entre els diferents àmbits assistencials",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-3",
+            "codi": null,
+            "nom": "Desplegar l’atenció integrada en l’àmbit domiciliari i residencial",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-4",
+            "codi": null,
+            "nom": "Orientació al valor en els problemes de salut prioritaris",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-5",
+            "codi": null,
+            "nom": "Vacunació poblacional accessible, proactiva i equitativa",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-6",
+            "codi": null,
+            "nom": "Abordatge del dolor crònic a Catalunya",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-7",
+            "codi": null,
+            "nom": "Diagnòstic ràpid dels càncers més freqüents",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-8",
+            "codi": null,
+            "nom": "Ampliació dels programes de cribratge de càncer de còlon i recte i de mama",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-9",
+            "codi": null,
+            "nom": "Millora de la rehabilitació integral després d’un esdeveniment cardiovascular",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-10",
+            "codi": null,
+            "nom": "Abordatge específic del risc cardiovascular en les dones",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-11",
+            "codi": null,
+            "nom": "Capacitació de la ciutadania en suport vital bàsic i ús dels desfibril·ladors externs automàtics (DEA)",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-12",
+            "codi": null,
+            "nom": "Eliminació del càncer de coll d’úter",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-13",
+            "codi": null,
+            "nom": "Eliminació de les hepatitis víriques en poblacions vulnerables",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A2-nou-14",
+            "codi": null,
+            "nom": "Millora de l’atenció a la salut sexual i reproductiva",
             "datawrapper": null,
             "fitxa": false
           }
@@ -803,95 +1050,40 @@
       },
       {
         "id": "E6-A3",
-        "label": "Innovació, tecnologies i sistemes d’informació",
+        "label": "Equitat en l'atenció i en els resultats",
         "intervencions": [
           {
+            "id": "E6-A3-I01",
             "codi": "E6-A3-I01",
-            "nom": "Millora de l’accessibilitat i la navegabilitat al sistema sanitari",
+            "nom": "Reducció de les desigualtats en salut bucodental",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E6-A3-nou-1",
+            "codi": null,
+            "nom": "Accessibilitat efectiva i atenció proactiva a les persones amb més barreres d’accés",
+            "datawrapper": null,
+            "fitxa": false
+          },
+          {
+            "id": "E6-A3-I02",
             "codi": "E6-A3-I02",
-            "nom": "Reducció de la bretxa digital",
+            "nom": "Atenció equitativa i lliure de discriminacions",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E6-A3-I03",
             "codi": "E6-A3-I03",
-            "nom": "Atenció integrada en persones que requereixen cures domiciliàries continuades",
+            "nom": "Garantir els drets lingüístics i l’ús normal del català en el sistema de salut",
             "datawrapper": null,
             "fitxa": false
           },
           {
+            "id": "E6-A3-I04",
             "codi": "E6-A3-I04",
-            "nom": "Prevenció i Promoció de la Salut Personalitzada",
-            "datawrapper": null,
-            "fitxa": false
-          }
-        ]
-      },
-      {
-        "id": "E6-A4",
-        "label": "Prioritzar les actuacions amb més potencial de millora de salut",
-        "intervencions": [
-          {
-            "codi": "E6-A4-I01",
-            "nom": "Abordatge del dolor crònic a Catalunya",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E6-A4-I02",
-            "nom": "Prescripció de fàrmacs en problemes de salut prioritzats",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E6-A4-I03",
-            "nom": "Atenció integrada a les persones amb demència",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E6-A4-I04",
-            "nom": "Abordatge del risc cardiovascular associat a l’embaràs",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E6-A4-I05",
-            "nom": "Rehabilitació integral després d’un esdeveniment vascular major i en insuficiència cardíaca crònica estable.",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E6-A4-I06",
-            "nom": "Diagnòstic ràpid dels càncers més freqüents.",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E6-A4-I07",
-            "nom": "Estratègia combinada d’eliminació del càncer de coll d’úter.",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E6-A4-I08",
-            "nom": "Ampliació de la població diana del cribratge de càncer de mama",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E6-A4-I09",
-            "nom": "Atenció integrada per a reduir les exacerbacions i hospitalitzacions evitables en persones amb MPOC i asma",
-            "datawrapper": null,
-            "fitxa": false
-          },
-          {
-            "codi": "E6-A4-I10",
-            "nom": "Estratègia integral per a la prevenció, detecció precoç i abordatge de les infeccions de transmissió sexual (ITS)",
+            "nom": "Mesura i reducció de les desigualtats i els biaixos en l’atenció a la salut",
             "datawrapper": null,
             "fitxa": false
           }

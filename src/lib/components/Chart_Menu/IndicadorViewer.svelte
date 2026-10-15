@@ -25,7 +25,6 @@
 
   // --- Objectius de salut -------------------------------------------------
   let selectedObjectiuGrup = null; // Objectiu general (nivell 1 del bloc)
-  let expandedObjectiu = null; // pastilla oberta in situ quan no té dataset
   let confirmedObjectiu = null; // confirmat -> mostra el visor de dades
 
   // --- Indicadors d'entorn ------------------------------------------------
@@ -39,7 +38,6 @@
     selectedIntervencio = null;
     confirmedIntervencio = null;
     selectedObjectiuGrup = null;
-    expandedObjectiu = null;
     confirmedObjectiu = null;
     showEntorn = false;
   }
@@ -86,7 +84,7 @@
 
   function selectIntervencio(intervencio, linia) {
     selectedIntervencio =
-      selectedIntervencio?.codi === intervencio.codi
+      selectedIntervencio?.id === intervencio.id
         ? null
         : { ...intervencio, label: intervencio.nom, parentLabel: linia.label };
   }
@@ -132,21 +130,11 @@
 
   async function selectObjectiuGrup(grupId) {
     selectedObjectiuGrup = $objectiusGrups.find((g) => g.id === grupId);
-    expandedObjectiu = null;
     await realignScroll();
   }
 
   // Una pastilla amb dataset confirma i mostra el visor de dades. Sense
-  // dataset, es desplega in situ ("En procés d'elaboració") sense tancar el
-  // menú -- no és una pantalla nova, per això no hi ha "confirm" ni scroll.
-  function clickObjectiu(objectiu) {
-    if (objectiu.datasetId) {
-      confirmObjectiu(objectiu);
-    } else {
-      expandedObjectiu = expandedObjectiu === objectiu ? null : objectiu;
-    }
-  }
-
+  // dataset no és un botó: només s'indica que és en elaboració.
   async function confirmObjectiu(objectiu) {
     confirmedObjectiu = {
       label: objectiu.label,
@@ -287,28 +275,25 @@
 
                   <div class="flex flex-col gap-1">
                     {#each selectedObjectiuGrup.objectius as objectiu (objectiu.label)}
-                      {@const isExpanded = expandedObjectiu === objectiu}
-                      <div>
+                      {#if objectiu.datasetId}
                         <button
-                          on:click={() => clickObjectiu(objectiu)}
-                          class="w-full rounded-md px-6 py-3 text-left text-sm transition-colors {isExpanded
-                            ? 'bg-[#2E3A59] text-white font-semibold'
-                            : 'bg-[#E8EDF2] text-[#2E3A59] hover:bg-[#D5D8DE]'}"
+                          on:click={() => confirmObjectiu(objectiu)}
+                          class="w-full rounded-md bg-[#E8EDF2] px-6 py-3 text-left text-[15px] font-semibold text-[#2E3A59] transition-colors hover:bg-[#D5D8DE]"
                         >
                           {objectiu.label}
                         </button>
-
-                        {#if isExpanded}
-                          <div
-                            transition:slide={{ duration: 200 }}
-                            class="mt-2 pl-6"
+                      {:else}
+                        <div
+                          class="flex w-full flex-col gap-1 rounded-md bg-[#E8EDF2] px-6 py-3 text-left text-sm text-gray-600 sm:flex-row sm:items-center sm:gap-x-4"
+                        >
+                          <span class="min-w-0 sm:flex-1">{objectiu.label}</span>
+                          <span
+                            class="flex-shrink-0 text-xs uppercase tracking-[0.5px] text-[#828898]"
                           >
-                            <p class="max-w-md text-sm italic text-[#8B898E]">
-                              En procés d'elaboració.
-                            </p>
-                          </div>
-                        {/if}
-                      </div>
+                            En elaboració
+                          </span>
+                        </div>
+                      {/if}
                     {/each}
                   </div>
                 </div>
@@ -382,9 +367,9 @@
                             >
                               Intervencions
                             </p>
-                            {#each linia.intervencions as intervencio (intervencio.codi)}
+                            {#each linia.intervencions as intervencio (intervencio.id)}
                               {@const intervencioOpen =
-                                selectedIntervencio?.codi === intervencio.codi}
+                                selectedIntervencio?.id === intervencio.id}
                               <div>
                                 <button
                                   on:click={() =>

@@ -152,6 +152,18 @@ def read_rows(excel_path, columns, report):
 def build_intervencions(rows, fitxes, report):
     eixos = {}  # EixId -> eix amb les seves línies i intervencions
     seen_codis = {}
+    sense_codi = 0
+    nous_per_linia = {}  # linia_id -> quantes intervencions sense codi
+
+    # Una intervenció sense codi (encara no n'ha rebut cap) pertany a la línia
+    # de les que sí en tenen, dins del mateix eix i amb el mateix nom de línia.
+    linia_ids = {}
+    for r in rows:
+        if r["eix_id"] is None or not r["codi"] or not r["linia"]:
+            continue
+        m = CODI_PATTERN.match(str(r["codi"]).strip())
+        if m:
+            linia_ids.setdefault((r["eix_id"], r["linia"].strip()), f"E{m.group(1)}-A{m.group(2)}")
 
     for r in rows:
         where = f"fila {r['row']}"
@@ -165,32 +177,38 @@ def build_intervencions(rows, fitxes, report):
             continue
 
         codi = str(r["codi"]).strip() if r["codi"] else None
-        if not codi:
-            report.error(f"{where}: sense CODI_PROPI ({r['nom']})")
-            continue
-
-        match = CODI_PATTERN.match(codi)
-        if not match:
-            report.error(f"{where}: el codi '{codi}' no segueix el patró E#-A#-I#")
-            continue
-        if int(match.group(1)) != r["eix_id"]:
-            report.error(f"{where}: el codi {codi} és de l'eix {match.group(1)} però l'EixId és {r['eix_id']}")
-            continue
-        if codi in seen_codis:
-            report.error(f"{where}: el codi {codi} ja s'ha fet servir a la fila {seen_codis[codi]}")
-            continue
-        seen_codis[codi] = r["row"]
+        label = codi or str(r["nom"])[:40]
 
         if not r["linia"] or not r["nom"] or not r["eix"]:
-            report.error(f"{where}: {codi} té l'eix, la línia o el nom buit")
+            report.error(f"{where}: {label} té l'eix, la línia o el nom buit")
             continue
+
+        if codi:
+            match = CODI_PATTERN.match(codi)
+            if not match:
+                report.error(f"{where}: el codi '{codi}' no segueix el patró E#-A#-I#")
+                continue
+            if int(match.group(1)) != r["eix_id"]:
+                report.error(f"{where}: el codi {codi} és de l'eix {match.group(1)} però l'EixId és {r['eix_id']}")
+                continue
+            if codi in seen_codis:
+                report.error(f"{where}: el codi {codi} ja s'ha fet servir a la fila {seen_codis[codi]}")
+                continue
+            seen_codis[codi] = r["row"]
+            linia_id = f"E{match.group(1)}-A{match.group(2)}"
+        else:
+            # Intervenció nova, encara sense codi: es mostra igualment.
+            linia_id = linia_ids.get((r["eix_id"], r["linia"].strip()))
+            if linia_id is None:
+                report.error(f"{where}: '{label}' no té codi i la seva línia no té cap intervenció amb codi")
+                continue
+            sense_codi += 1
 
         eix_name = sentence_case(r["eix"])
         eix = eixos.setdefault(r["eix_id"], {"id": r["eix_id"], "label": eix_name, "linies": {}})
         if eix["label"] != eix_name:
             report.error(f"{where}: l'EixId {r['eix_id']} té dos noms diferents: '{eix['label']}' i '{eix_name}'")
 
-        linia_id = f"E{match.group(1)}-A{match.group(2)}"
         linia = eix["linies"].setdefault(linia_id, {"id": linia_id, "label": r["linia"].strip(), "intervencions": []})
         if linia["label"] != r["linia"].strip():
             report.error(f"{where}: la línia {linia_id} té dos noms diferents: '{linia['label']}' i '{r['linia'].strip()}'")
@@ -199,16 +217,36 @@ def build_intervencions(rows, fitxes, report):
         if r["datawrapper"]:
             datawrapper = parse_datawrapper(r["datawrapper"])
             if datawrapper is None:
-                report.error(f"{where}: no s'ha trobat cap URL a la cel·la de Datawrapper de {codi}")
+                report.error(f"{where}: no s'ha trobat cap URL a la cel·la de Datawrapper de {label}")
             elif not datawrapper["src"].startswith(DATAWRAPPER_HOST):
-                report.warning(f"{where}: la URL de {codi} no és de {DATAWRAPPER_HOST}")
+                report.warning(f"{where}: la URL de {label} no és de {DATAWRAPPER_HOST}")
 
         nom = str(r["nom"]).strip()
         if "PENDENT" in nom.upper():
-            report.warning(f"{where}: {codi} té una nota interna al nom ('{nom[-40:]}')")
+            report.warning(f"{where}: {label} té una nota interna al nom ('{nom[-40:]}')")
+
+        # `id` és el que fa servir la web per distingir intervencions: el codi
+        # quan n'hi ha i, si no, un identificador provisional dins la línia.
+        if codi:
+            interv_id = codi
+        else:
+            nous_per_linia[linia_id] = nous_per_linia.get(linia_id, 0) + 1
+            interv_id = f"{linia_id}-nou-{nous_per_linia[linia_id]}"
 
         linia["intervencions"].append(
-            {"codi": codi, "nom": nom, "datawrapper": datawrapper, "fitxa": f"{codi}.pdf" in fitxes}
+            {
+                "id": interv_id,
+                "codi": codi,
+                "nom": nom,
+                "datawrapper": datawrapper,
+                "fitxa": bool(codi) and f"{codi}.pdf" in fitxes,
+            }
+        )
+
+    if sense_codi:
+        report.warning(
+            f"{sense_codi} intervencions sense CODI_PROPI (pendents de rebre'l): "
+            "es mostren sense fitxa ni gràfic."
         )
 
     # Una línia (nom) no pot tenir dos codis A# ni al revés (dins d'un eix).
@@ -241,7 +279,7 @@ def run_intervencions(args, report):
     rows = read_rows(args.excel, COLUMNS_INTERVENCIONS, report)
     eixos = build_intervencions(rows, fitxes, report)
 
-    codis = {i["codi"] for e in eixos for l in e["linies"] for i in l["intervencions"]}
+    codis = {i["codi"] for e in eixos for l in e["linies"] for i in l["intervencions"] if i["codi"]}
     for pdf in sorted(fitxes):
         if pdf[:-4] not in codis:
             report.warning(f"El PDF '{pdf}' no correspon a cap intervenció (comprova el nom, també majúscules)")
