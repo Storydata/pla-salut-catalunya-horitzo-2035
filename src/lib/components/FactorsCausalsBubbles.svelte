@@ -53,7 +53,7 @@
     },
     {
       id: 3,
-      color: "#5eebef",
+      color: "#e5fbfe",
       textColor: "#262626",
       size: "sm",
       icon: "apple",

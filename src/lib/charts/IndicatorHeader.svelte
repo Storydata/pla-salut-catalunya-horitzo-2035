@@ -31,7 +31,7 @@
       {showTotal}
       {showTotalCategoria}
       infoText={showInfoIcon
-        ? "Els totals es calculen per ponderació en lloc de la mitjana aritmètica"
+        ? "Els resultats estan ponderats seguint la metodologia de l'Enquesta de Salut de Catalunya"
         : ""}
     />
   </div>

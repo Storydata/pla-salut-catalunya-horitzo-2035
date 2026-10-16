@@ -164,7 +164,9 @@
         tooltipData = {
           value: isMissing ? "Sense dades" : fmtValue(value),
           name: name,
-          color: isMissing ? MISSING_COLOR : colorPalette.colors[0],
+          color: isMissing
+            ? MISSING_COLOR
+            : colorPalette.colors[colorPalette.colors.length - 1],
         };
         tooltipVisible = true;
         updateTooltipPosition(event);

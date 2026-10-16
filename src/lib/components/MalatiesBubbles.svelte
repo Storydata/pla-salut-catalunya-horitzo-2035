@@ -30,7 +30,7 @@
       icon: "rheumatology",
       stat: "33,9%",
       text: "de la població adulta té dolor",
-      label: "Població adulta amb dolor",
+      label: "Dolor",
       description:
         "Aquest indicador mesura la proporció de persones adultes que manifesten patir dolor en la seva vida quotidiana, independentment de la causa que l'origina, i reflecteix un aspecte rellevant del benestar i la qualitat de vida de la població.",
       datawrapper: {
@@ -45,7 +45,7 @@
       icon: "cognition_2",
       stat: "17,5%",
       text: "de la població adulta té ansietat lleu",
-      label: "Població adulta amb ansietat lleu",
+      label: "Ansietat lleu",
       description:
         "L'ansietat és un estat de preocupació, nerviosisme o tensió que pot afectar el benestar emocional i el funcionament diari. Aquest indicador mesura la proporció de persones adultes que presenten símptomes lleus d'ansietat, com ara inquietud, preocupació excessiva o dificultat per relaxar-se.",
       datawrapper: {
@@ -60,7 +60,7 @@
       icon: "cognition_2",
       stat: "15,7%",
       text: "de la població adulta té depressió lleu",
-      label: "Població adulta amb depressió lleu",
+      label: "Depressió lleu",
       description:
         "La depressió és un trastorn de l'estat d'ànim que pot provocar tristesa persistent, pèrdua d'interès per les activitats habituals i disminució del benestar emocional. Aquest indicador mesura la proporció de persones adultes que presenten símptomes lleus de depressió, com ara desànim, cansament o dificultats de concentració.",
       datawrapper: {
@@ -75,7 +75,7 @@
       icon: "pulmonology",
       stat: "5,9%",
       text: "de les persones de 40 anys i més tenen malaltia pulmonar obstructiva crònica",
-      label: "Malaltia pulmonar obstructiva crònica (40 anys i més)",
+      label: "Malaltia pulmonar obstructiva crònica",
       description:
         "Aquest indicador mesura la proporció de persones de 40 anys o més que conviuen amb la malaltia pulmonar obstructiva crònica (MPOC), una malaltia que dificulta el pas de l'aire pels pulmons i provoca símptomes com falta d'aire, tos crònica i expectoració.",
       datawrapper: {
@@ -89,13 +89,13 @@
       size: "sm",
       icon: "ITS",
       stat: "396,1",
-      unit: "persones/100.000",
+      unit: "/ 100.000 hab.",
       text: "Incidència d'infeccions de transmissió sexual",
-      label: "Incidència d'infeccions de transmissió sexual",
+      label: "Infeccions de transmissió sexual",
       description:
         "Recull la taxa d'incidència de les principals infeccions de transmissió sexual a tot Catalunya (clamídia, infecció per gonococ, sífilis, limfogranuloma veneri i herpes simple)",
       datawrapper: {
-        src: "https://datawrapper.dwcdn.net/O6qpQ/1/",
+        src: "https://datawrapper.dwcdn.net/McatE/1/",
         height: 400,
       },
     },
@@ -105,13 +105,13 @@
       size: "lg",
       icon: "ecg_heart",
       stat: "294,1",
-      unit: "persones/100.000",
+      unit: "/ 100.000 hab.",
       text: "Incidència de malaltia isquèmica del cor",
-      label: "Incidència de malaltia isquèmica del cor",
+      label: "Malaltia isquèmica del cor",
       description:
-        "L'ictus (o accident cerebrovascular) representa la quarta causa més freqüent de mortalitat evitable a Catalunya en els homes i la cinquena en les dones.",
+        "La malaltia isquèmica del cor (també anomenada cardiopatia isquèmica) és la patologia que causa una obstrucció total o parcial de les artèries coronàries com a conseqüència de l'ateroesclerosi. És la segona causa a Catalunya de mortalitat evitable en els homes, i la quarta en les dones.",
       datawrapper: {
-        src: "https://datawrapper.dwcdn.net/rDGNZ/1/",
+        src: "https://datawrapper.dwcdn.net/O6qpQ/3/",
         height: 400,
       },
     },
@@ -121,11 +121,11 @@
       size: "sm",
       icon: "threat_intelligence",
       stat: "226,3",
-      unit: "persones/100.000",
+      unit: "/ 100.000 hab.",
       text: "Incidència d'ictus",
-      label: "Incidència d'ictus",
+      label: "Ictus",
       description:
-        "La malaltia isquèmica del cor (també anomenada cardiopatia isquèmica) és la patologia que causa una obstrucció total o parcial de les artèries coronàries com a conseqüència de l'ateroesclerosi. És la segona causa a Catalunya de mortalitat evitable en els homes, i la quarta en les dones.",
+        "L'ictus (o accident cerebrovascular) representa la quarta causa més freqüent de mortalitat evitable a Catalunya en els homes i la cinquena en les dones.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/rDGNZ/2/",
         height: 400,
@@ -137,9 +137,9 @@
       size: "lg",
       icon: "coronavirus",
       stat: "0,33",
-      unit: "persones/100.000",
+      unit: "/ 100.000 hab.",
       text: "Incidència d'hepatitis\u00a0C", // espai dur: la C no queda sola
-      label: "Incidència d'hepatitis C",
+      label: "Hepatitis C",
       description:
         "La infecció per virus de l'hepatitis C és la causa d'un gran nombre de casos d'hepatitis aguda, hepatitis crònica, cirrosi, càncer de fetge i trasplantament hepàtic. Això comporta un elevat cost econòmic al sistema de salut, i el patiment i la reducció de l'esperança de vida de les persones afectades.",
       datawrapper: {

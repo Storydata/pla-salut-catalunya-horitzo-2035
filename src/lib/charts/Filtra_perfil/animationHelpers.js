@@ -309,10 +309,10 @@ function drawFrame(figure, from, via, to, progress) {
 
   place(figure.flyer, flyer);
   figure.flyer.style.opacity = gif * group;
-  // While it lands, the GIF is scaled and nudged onto its SVG's footprint.
-  figure.flyerImg.style.transform = `translateX(${figure.fit.shift * landed}px) scale(${
-    1 + (figure.fit.scale - 1) * landed
-  })`;
+  // The GIF always travels scaled and nudged onto its SVG's footprint, so it
+  // matches the still figure at take-off, in flight and on landing (a baby
+  // GIF drawn 20% bigger and 30px off-centre would otherwise jump on arrival).
+  figure.flyerImg.style.transform = `translateX(${figure.fit.shift}px) scale(${figure.fit.scale})`;
 
   lastFrame.set(figure.circle, { slot, flyer, group, still, gif });
 }

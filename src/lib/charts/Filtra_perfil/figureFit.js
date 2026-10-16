@@ -1,8 +1,8 @@
 // A figure's GIF and its still SVG are drawn by hand and don't line up exactly:
-// in some of them (above all the 0-14 group) the SVG is up to ~10% smaller than
+// in some of them (above all the 0-14 group) the SVG is up to ~20% smaller than
 // the GIF and sits to one side of it. Left alone, that shows as a jump when the
-// GIF hands over to the SVG, so the GIF is gently scaled and nudged onto the
-// SVG's footprint while it lands (see animationHelpers.js).
+// GIF hands over to the SVG, so the GIF is scaled and nudged onto the SVG's
+// footprint for its whole trip (see animationHelpers.js).
 //
 // The correction is measured from the real files, so it follows them if they
 // are ever re-exported. It needs ImageDecoder (Chromium, recent Safari) to read
