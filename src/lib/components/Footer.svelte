@@ -64,7 +64,7 @@
 </script>
 
 <footer class="gencat-footer mt-12 w-full md:mt-16">
-  <div class="mx-auto w-full max-w-6xl px-6 py-10 md:py-12">
+  <div class="mx-auto w-full max-w-6xl px-6 pb-10 pt-[25px] md:pb-12 md:pt-[33px]">
     <h2 class="social-heading text-center">
       Segueix-nos a les xarxes socials de gencat
     </h2>
@@ -126,6 +126,18 @@
         {/each}
       </ul>
     </div>
+
+    <p class="credit mt-4 text-center md:text-right">
+      Visualització de dades:
+      <a
+        class="legal-link"
+        href="https://www.storydata.es/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Storydata
+      </a>
+    </p>
   </div>
 </footer>
 
@@ -185,12 +197,21 @@
   }
 
   .legal-link {
-    color: #ffffff;
+    color: var(--link-color, #ffffff);
     font-size: 12px;
-    font-weight: 500;
+    font-weight: var(--link-weight, 500);
     text-decoration: underline;
     text-underline-offset: 4px;
     transition: opacity 0.2s ease;
+  }
+
+  /* Crèdit sota els enllaços legals: mateix estil, en gris i en regular. */
+  .credit {
+    --link-color: #b9b8bb;
+    --link-weight: 400;
+    color: var(--link-color);
+    font-size: 12px;
+    font-weight: var(--link-weight);
   }
 
   .legal-link:hover,

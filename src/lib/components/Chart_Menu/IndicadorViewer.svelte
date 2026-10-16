@@ -361,68 +361,29 @@
                             transition:slide={{ duration: 220 }}
                             class="mt-1 flex flex-col gap-1 pl-6"
                           >
-                            <!-- Nivell 3 (fulla): Intervencions -->
+                            <!-- Nivell 3 (fulla): Intervencions. De moment només es
+                                 mostra la llista, sense accions (fitxa, metes i
+                                 indicadors de seguiment), fins que hi hagi contingut
+                                 consensuat. -->
                             <p
-                              class="mb-3 font-['Inter',sans-serif] text-sm uppercase tracking-wide text-[#8B898E]"
+                              class="mb-1 font-['Inter',sans-serif] text-sm uppercase tracking-wide text-[#8B898E]"
                             >
                               Intervencions
                             </p>
-                            {#each linia.intervencions as intervencio (intervencio.id)}
-                              {@const intervencioOpen =
-                                selectedIntervencio?.id === intervencio.id}
-                              <div>
-                                <button
-                                  on:click={() =>
-                                    selectIntervencio(intervencio, linia)}
-                                  class="w-full rounded-md px-6 py-3 text-left text-sm transition-colors {intervencioOpen
-                                    ? 'bg-[#2E3A59] text-white font-semibold'
-                                    : 'bg-[#E8EDF2]/40 text-[#2E3A59] hover:bg-[#D5D8DE]'}"
+                            <p
+                              class="mb-3 font-['Inter',sans-serif] text-sm tracking-wide text-[#8B898E]"
+                            >
+                              Metes i intervencions de procés. Properament
+                            </p>
+                            <ul class="flex flex-col gap-1">
+                              {#each linia.intervencions as intervencio (intervencio.id)}
+                                <li
+                                  class="rounded-md bg-[#E8EDF2]/40 px-6 py-3 text-left text-sm text-[#2E3A59]"
                                 >
                                   {intervencio.nom}
-                                </button>
-
-                                {#if intervencioOpen}
-                                  <div
-                                    transition:slide={{ duration: 200 }}
-                                    class="mt-2 flex flex-col gap-2 pl-6"
-                                  >
-                                    {#if intervencio.fitxa}
-                                      <a
-                                        href="{base}/fitxes/{intervencio.codi}.pdf"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="w-full max-w-md rounded-md border border-[#D6D8DE] bg-white px-6 py-3 text-left text-sm font-medium text-[#808799] transition-colors hover:border-[#2E3A59] hover:text-[#2E3A59]"
-                                      >
-                                        Veure fitxa
-                                      </a>
-                                    {:else}
-                                      <p
-                                        class="max-w-md text-sm italic text-[#8B898E]"
-                                      >
-                                        La fitxa d'aquesta intervenció encara no
-                                        està disponible.
-                                      </p>
-                                    {/if}
-
-                                    {#if intervencio.datawrapper}
-                                      <button
-                                        on:click={confirmMetesISeguiment}
-                                        class="w-full max-w-md rounded-md border border-[#D6D8DE] bg-white px-6 py-3 text-left text-sm font-medium text-[#808799] transition-colors hover:border-[#2E3A59] hover:text-[#2E3A59]"
-                                      >
-                                        Metes i indicadors de seguiment
-                                      </button>
-                                    {:else}
-                                      <span
-                                        class="w-full max-w-md cursor-not-allowed rounded-md border border-[#D6D8DE] bg-white px-6 py-3 text-left text-sm font-medium text-[#C4C2C6]"
-                                      >
-                                        Metes i indicadors de seguiment ·
-                                        Properament
-                                      </span>
-                                    {/if}
-                                  </div>
-                                {/if}
-                              </div>
-                            {/each}
+                                </li>
+                              {/each}
+                            </ul>
                           </div>
                         {/if}
                       </div>
