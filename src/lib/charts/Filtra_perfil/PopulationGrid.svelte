@@ -132,9 +132,11 @@
   $: separationY =
     LAYOUT_CONSTANTS.SEPARATION_ROWS *
     (config.imageHeight + config.VERTICAL_SPACING);
+  // The excluded block starts below the whole included block, with the gap.
+  $: excludedOffsetY = includedLayout.totalHeight + separationY;
   $: gridHeight =
     renderItems.length > 0
-      ? includedLayout.totalHeight + separationY + excludedLayout.totalHeight
+      ? excludedOffsetY + excludedLayout.totalHeight
       : LAYOUT_CONSTANTS.DEFAULT_GRID_HEIGHT;
 
   // The grid only has real content once renderItems resolves, but the
@@ -159,7 +161,7 @@
       figures,
       includedLayout.positions,
       excludedLayout.positions,
-      separationY,
+      excludedOffsetY,
     );
 
     stopAnimation = animateFigures(

@@ -193,7 +193,7 @@ export function buildTargets(
   figures,
   includedPositions,
   excludedPositions,
-  separationY,
+  excludedOffsetY,
 ) {
   let includedIdx = 0;
   let excludedIdx = 0;
@@ -203,7 +203,7 @@ export function buildTargets(
       return { ...includedPositions[includedIdx++], opacity: 1 };
     }
     const pos = excludedPositions[excludedIdx++];
-    return { x: pos.x, y: pos.y + separationY, opacity: 0.4 };
+    return { x: pos.x, y: pos.y + excludedOffsetY, opacity: 0.4 };
   });
 }
 
