@@ -96,7 +96,12 @@
 >
   <div class="flex flex-col pb-8">
     <SubsectionNav {prev} {next} />
-    <div class="mb-8 px-4 pt-[var(--section-top-gap)] text-center">
+    <!-- En mòbil, el botó de tornar va a l'esquerra del títol, sense empènyer el
+         contingut cap avall; des de lg va a l'esquerra del primer botó. -->
+    <div
+      class="mb-8 flex items-center justify-center gap-3 px-4 pt-[var(--section-top-gap)] text-center"
+    >
+      <BackButton on:click={onClose} class="flex lg:hidden" />
       <p
         class="font-inter text-base font-normal uppercase tracking-[1px] text-[#2E3A59]"
       >
@@ -128,7 +133,7 @@
             >
               <BackButton
                 on:click={onClose}
-                class="w-full md:absolute md:right-full md:top-0 md:mr-8 md:w-auto"
+                class="hidden lg:absolute lg:right-full lg:top-0 lg:mr-8 lg:flex"
               />
               {#each eixos as eix}
                 <button

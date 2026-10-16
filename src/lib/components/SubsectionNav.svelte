@@ -19,7 +19,7 @@
     type="button"
     on:click={prev.onSelect}
     aria-label={`Anar a ${prev.label}`}
-    class="group absolute left-4 top-12 cursor-pointer text-gray-500 transition-colors hover:text-gray-800 focus-visible:text-gray-800 lg:top-0 lg:-translate-y-1/2"
+    class="group absolute left-4 top-12 hidden cursor-pointer md:block text-gray-500 transition-colors hover:text-gray-800 focus-visible:text-gray-800 lg:top-0 lg:-translate-y-1/2"
   >
     <Icon name="chevron-left" size={30} />
     <span
@@ -35,7 +35,7 @@
     type="button"
     on:click={next.onSelect}
     aria-label={`Anar a ${next.label}`}
-    class="group absolute right-4 top-12 cursor-pointer text-gray-500 transition-colors hover:text-gray-800 focus-visible:text-gray-800 lg:top-0 lg:-translate-y-1/2"
+    class="group absolute right-4 top-12 hidden cursor-pointer md:block text-gray-500 transition-colors hover:text-gray-800 focus-visible:text-gray-800 lg:top-0 lg:-translate-y-1/2"
   >
     <Icon name="chevron-right" size={30} />
     <span

@@ -217,6 +217,13 @@
 
   let root;
 
+  // Puja un nivell: del detall a la llista de bombolles i, des de la llista, al
+  // menú de les quatre subseccions.
+  function goBack() {
+    if (selectedId !== null) selectedId = null;
+    else onClose();
+  }
+
   // En obrir el detall d'una bombolla (o canviar de bombolla) es mostra des de
   // l'inici del contingut, no des d'on s'estava fent scroll a la llista.
   $: if (selectedId !== null) showFromTop();
@@ -256,19 +263,26 @@
 >
   <div class="flex flex-col pb-8">
     <SubsectionNav {prev} {next} />
-    <div class="px-4 pt-[var(--section-top-gap)] text-center">
-      <p
-        class="font-inter text-base font-normal uppercase tracking-[1px] text-[#2E3A59]"
-      >
-        La salut de la població | Esperança de vida i mortalitat
-      </p>
-      {#if detailBubbles.length}
+    <!-- En mòbil, el botó de tornar va a l'esquerra del títol, sense empènyer
+         el contingut cap avall; des de lg va a l'esquerra de la primera bombolla. -->
+    <div
+      class="flex items-center justify-center gap-3 px-4 pt-[var(--section-top-gap)] text-center"
+    >
+      <BackButton on:click={goBack} class="flex lg:hidden" />
+      <div>
         <p
-          class="text-xs font-normal uppercase tracking-[0.5px] text-[#828898] mt-1"
+          class="font-inter text-base font-normal uppercase tracking-[1px] text-[#2E3A59]"
         >
-          Clica a les bombolles per aprofundir
+          La salut de la població | Esperança de vida i mortalitat
         </p>
-      {/if}
+        {#if detailBubbles.length}
+          <p
+            class="text-xs font-normal uppercase tracking-[0.5px] text-[#828898] mt-1"
+          >
+            Clica a les bombolles per aprofundir
+          </p>
+        {/if}
+      </div>
     </div>
 
     {#if selectedId === null}
@@ -281,7 +295,7 @@
               {#if i === 0}
                 <BackButton
                   on:click={onClose}
-                  class="w-full md:absolute md:right-full md:top-0 md:mr-8 md:w-auto"
+                  class="hidden lg:absolute lg:right-full lg:top-0 lg:mr-8 lg:flex"
                 />
               {/if}
               {#each row as bubble}
@@ -305,7 +319,7 @@
           >
             <BackButton
               on:click={() => (selectedId = null)}
-              class="w-full md:absolute md:right-full md:mr-8 md:w-auto"
+              class="hidden lg:absolute lg:right-full lg:mr-8 lg:flex"
             />
             {#each detailBubbles as bubble}
               <div class="relative flex flex-col items-center">
