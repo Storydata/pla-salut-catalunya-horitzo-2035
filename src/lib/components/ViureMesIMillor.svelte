@@ -87,11 +87,15 @@
         {#each items as item (item.key)}
           <button
             on:click={() => selectItem(item.key)}
+            aria-pressed={activeKey === item.key}
             class="group flex w-full cursor-pointer flex-col items-center transition-transform hover:scale-105 md:w-[160px]"
           >
             <div class="animate-pulse-slow relative mb-2 md:mb-4">
               <div
-                class="flex h-14 w-14 items-center justify-center rounded-full transition-colors md:h-[clamp(3rem,8vh,6rem)] md:w-[clamp(3rem,8vh,6rem)]"
+                class="flex h-14 w-14 items-center justify-center rounded-full transition-opacity md:h-[clamp(3rem,8vh,6rem)] md:w-[clamp(3rem,8vh,6rem)] {activeKey !==
+                  null && activeKey !== item.key
+                  ? 'opacity-[0.65]'
+                  : ''}"
                 style="background-color: {item.color}"
               >
                 <Icon
@@ -101,8 +105,15 @@
                 />
               </div>
             </div>
+            <!-- Un cop triat un botó, el seu text passa a negreta i els altres al
+                 gris del text d'ajuda: es veu a quin correspon el que surt. -->
             <h3
-              class="text-center font-['Inter',sans-serif] text-[11px] leading-[1.25] text-[#2E3A59] md:text-[clamp(12px,1.6vh,15px)] md:leading-[1.3]"
+              class="text-center font-['Inter',sans-serif] text-[11px] leading-[1.25] md:text-[clamp(12px,1.6vh,15px)] md:leading-[1.3] {activeKey ===
+              null
+                ? 'text-[#2E3A59]'
+                : activeKey === item.key
+                  ? 'font-bold text-[#2E3A59]'
+                  : 'text-[#828898]'}"
             >
               {item.label}
             </h3>
