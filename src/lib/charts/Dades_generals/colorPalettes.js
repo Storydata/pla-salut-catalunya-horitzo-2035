@@ -10,7 +10,7 @@ export const DONES_PALETTE = {
     "rgba(117, 68, 128, 0.8)", // 80%
     "rgba(117, 68, 128, 1)", // 100%
   ],
-  label: "Menys <br> del 15%",
+  label: "Menys <br> del 15\u00a0%",
 };
 
 export const HOMES_PALETTE = {
@@ -22,5 +22,5 @@ export const HOMES_PALETTE = {
     "rgba(38, 170, 170, 0.8)", // 80%
     "rgba(38, 170, 170, 1)", // 100%
   ],
-  label: "Més <br> del 90%",
+  label: "Més <br> del 90\u00a0%",
 };

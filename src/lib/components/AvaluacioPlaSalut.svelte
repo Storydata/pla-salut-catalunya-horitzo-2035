@@ -25,7 +25,7 @@
   const items = [
     {
       key: "estrategia1",
-      label: "Igualtat d'oportunitats en\nsalut al llarg de la vida",
+      label: "Igualtat d’oportunitats en\nsalut al llarg de la vida",
       image: Estrategia1,
       svg: prepare(Pie1, "e1"),
     },
@@ -37,7 +37,7 @@
     },
     {
       key: "estrategia3",
-      label: "Integració de l'atenció\na la salut",
+      label: "Integració de l’atenció\na la salut",
       image: Estrategia3,
       svg: prepare(Pie3, "e3"),
     },
@@ -57,7 +57,7 @@
     </div>
     <div class="container mx-auto px-4">
       <div class="mb-3 text-center md:mb-4">
-        <p class="section-subtitle">Grau d'assoliment</p>
+        <p class="section-subtitle">Grau d’assoliment</p>
       </div>
 
       <div class="relative mb-8 text-center md:mb-12">

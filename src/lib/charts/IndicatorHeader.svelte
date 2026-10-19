@@ -31,7 +31,7 @@
       {showTotal}
       {showTotalCategoria}
       infoText={showInfoIcon
-        ? "Els resultats estan ponderats seguint la metodologia de l'Enquesta de Salut de Catalunya"
+        ? "Els resultats estan ponderats seguint la metodologia de l’Enquesta de Salut de Catalunya"
         : ""}
     />
   </div>

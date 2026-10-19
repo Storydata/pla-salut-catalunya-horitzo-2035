@@ -6,7 +6,7 @@
   // Palette and filters can be overridden by the parent.
   const HOMES_PALETTE = {
     colors: ["#F4F7F7", "#DAE5E6", "#BFD4D5", "#A5C2C5", "#8AB1B4", "#709FA3"],
-    label: "Més <br> del 90%",
+    label: "Més <br> del 90\u00a0%",
   };
   export let colorPalette = HOMES_PALETTE;
   export let filters = {
@@ -44,7 +44,7 @@
   const fmtValue = (value) =>
     value === undefined || value === null || Number.isNaN(+value)
       ? ""
-      : `${d3.format(".1f")(+value).replace(".", ",")}%`;
+      : `${d3.format(".1f")(+value).replace(".", ",")}\u00a0%`;
 
   // Try different property names to find the region name.
   // Beginner note: `getRegionName` is a function; it groups logic you can call later.
@@ -53,7 +53,7 @@
     props.NOMCOMARCA ||
     props.nom ||
     props.name ||
-    "Unknown comarca";
+    "Comarca desconeguda";
 
   // Find the value for a region from the map properties.
   // Beginner note: `getRegionValue` is a function; it groups logic you can call later.

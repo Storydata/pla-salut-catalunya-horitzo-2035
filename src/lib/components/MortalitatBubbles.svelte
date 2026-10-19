@@ -33,7 +33,7 @@
       text: "Esperança de vida en néixer",
       label: "Esperança de vida en néixer",
       description:
-        "Els indicadors de salut de la població catalana se situen entre els valors més alts dels països del nostre entorn. L'esperança de vida n'és un dels principals exemples.",
+        "Els indicadors de salut de la població catalana se situen entre els valors més alts dels països del nostre entorn. L’esperança de vida n’és un dels principals exemples.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/jeuOw/",
         height: 400,
@@ -49,7 +49,7 @@
       text: "Esperança de vida amb bona salut al néixer",
       label: "Esperança de vida amb bona salut al néixer",
       description:
-        "El repte ja no és només viure més anys, sinó viure'ls amb més salut, benestar i autonomia. Aquest indicador incorpora l'esperança de vida i la qualitat de vida per estimar quants anys de bona salut gaudeix la població.",
+        "El repte ja no és només viure més anys, sinó viure’ls amb més salut, benestar i autonomia. Aquest indicador incorpora l’esperança de vida i la qualitat de vida per estimar quants anys de bona salut gaudeix la població.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/Cl9L9/",
         height: 400,
@@ -65,7 +65,7 @@
       text: "Esperança de vida amb bona salut als 65 anys",
       label: "Esperança de vida amb bona salut als 65 anys",
       description:
-        "La vellesa és el període que concentra la major pèrdua de qualitat de vida, lligada entre altres als factors de risc acumulats al llarg de la vida. Aquest indicador mesura els anys viscuts amb bona salut en aquest tram vital clau per l'avaluació de l'estat de salut de la població.",
+        "La vellesa és el període que concentra la major pèrdua de qualitat de vida, lligada entre altres als factors de risc acumulats al llarg de la vida. Aquest indicador mesura els anys viscuts amb bona salut en aquest tram vital clau per l’avaluació de l’estat de salut de la població.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/whJQq/",
         height: 400,
@@ -81,7 +81,7 @@
       text: "Mortalitat general",
       label: "Mortalitat general",
       description:
-        "La taxa de mortalitat per totes les causes recull totes les defuncions, independentment de la causa que les ha provocat, i és el principal indicador del nivell general de mortalitat d'una població.",
+        "La taxa de mortalitat per totes les causes recull totes les defuncions, independentment de la causa que les ha provocat, i és el principal indicador del nivell general de mortalitat d’una població.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/hj5qJ",
         height: 400,
@@ -97,7 +97,7 @@
       text: "Mortalitat per tumors",
       label: "Mortalitat per tumors",
       description:
-        "Els tumors són la primera causa de mort a Catalunya. Inclouen tots els tumors, benignes i malignes, però gairebé totes les morts d'aquest grup es deuen al càncer. Entre ells, destaquen els càncers de pulmó i bronquis, colorectal, de pàncrees, de mama i de pròstata.",
+        "Els tumors són la primera causa de mort a Catalunya. Inclouen tots els tumors, benignes i malignes, però gairebé totes les morts d’aquest grup es deuen al càncer. Entre ells, destaquen els càncers de pulmó i bronquis, colorectal, de pàncrees, de mama i de pròstata.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/FKqyk/",
         height: 400,
@@ -113,7 +113,7 @@
       text: "Mortalitat per malalties cardiovasculars",
       label: "Mortalitat per malalties cardiovasculars",
       description:
-        "Les malalties de l'aparell circulatori són la segona causa de mort a Catalunya. Destaquen la malaltia isquèmica del cor, que inclou l'infart de miocardi, i les malalties cerebrovasculars, com l'ictus. També hi apareixen la insuficiència cardíaca, la malaltia hipertensiva, les arrítmies, les malalties de les vàlvules del cor i l'embòlia pulmonar.",
+        "Les malalties de l’aparell circulatori són la segona causa de mort a Catalunya. Destaquen la malaltia isquèmica del cor, que inclou l’infart de miocardi, i les malalties cerebrovasculars, com l’ictus. També hi apareixen la insuficiència cardíaca, la malaltia hipertensiva, les arrítmies, les malalties de les vàlvules del cor i l’embòlia pulmonar.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/Bc8Bf/",
         height: 400,
@@ -129,7 +129,7 @@
       text: "Mortalitat per malalties respiratòries",
       label: "Mortalitat per malalties respiratòries",
       description:
-        "Les malalties respiratòries són la tercera causa de mort a Catalunya. Inclouen les pneumònies, la grip i altres infeccions respiratòries, la malaltia pulmonar obstructiva crònica (MPOC), l'asma i les malalties intersticials del pulmó.",
+        "Les malalties respiratòries són la tercera causa de mort a Catalunya. Inclouen les pneumònies, la grip i altres infeccions respiratòries, la malaltia pulmonar obstructiva crònica (MPOC), l’asma i les malalties intersticials del pulmó.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/u8DJN/",
         height: 400,
@@ -145,7 +145,7 @@
       text: "Mortalitat per malalties del sistema nerviós",
       label: "Mortalitat per malalties del sistema nerviós",
       description:
-        "Les malalties del sistema nerviós inclouen les malalties neurodegeneratives, com l'Alzheimer, el Parkinson i l'esclerosi lateral amiotròfica (ELA), a més de l'esclerosi múltiple, l'epilèpsia i les meningitis.",
+        "Les malalties del sistema nerviós inclouen les malalties neurodegeneratives, com l’Alzheimer, el Parkinson i l’esclerosi lateral amiotròfica (ELA), a més de l’esclerosi múltiple, l’epilèpsia i les meningitis.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/f6aTL/",
         height: 400,
@@ -161,7 +161,7 @@
       text: "Mortalitat per trastorns mentals",
       label: "Mortalitat per trastorns mentals",
       description:
-        "Les malalties mentals inclouen trastorns relacionats amb el consum d'alcohol i altres drogues, ansietat, depressió, esquizofrènia i altres trastorns psicòtics, trastorns del comportament i el desenvolupament, i alguns tipus específics de demències.",
+        "Les malalties mentals inclouen trastorns relacionats amb el consum d’alcohol i altres drogues, ansietat, depressió, esquizofrènia i altres trastorns psicòtics, trastorns del comportament i el desenvolupament, i alguns tipus específics de demències.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/rJ6j0/2/",
         height: 400,
@@ -174,10 +174,10 @@
       icon: "gastroenterology",
       stat: "36,6",
       unit: "persones/100.000",
-      text: "Mortalitat per malalties de l'aparell digestiu",
-      label: "Mortalitat per malalties de l'aparell digestiu",
+      text: "Mortalitat per malalties de l’aparell digestiu",
+      label: "Mortalitat per malalties de l’aparell digestiu",
       description:
-        "Les malalties de l'aparell digestiu inclouen les malalties del fetge, com la cirrosi, les del pàncrees i la vesícula biliar, les d'esòfag i estómac, i les intestinals, entre altres.",
+        "Les malalties de l’aparell digestiu inclouen les malalties del fetge, com la cirrosi, les del pàncrees i la vesícula biliar, les d’esòfag i estómac, i les intestinals, entre altres.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/F8G5q/1/",
         height: 400,

@@ -35,7 +35,7 @@
         <h2
           class="min-w-0 text-lg font-bold leading-tight text-[#2E3A59] md:text-2xl"
         >
-          Indicadors d'entorn
+          Indicadors d’entorn
         </h2>
       </div>
     </div>
@@ -45,12 +45,12 @@
     <p
       class="font-inter text-[14px] leading-[1.75] text-[#2e3a59] md:text-base md:leading-[1.9]"
     >
-      L'OMS defineix els determinants socials de la salut com les
+      L’OMS defineix els determinants socials de la salut com les
       circumstàncies en què les persones neixen, creixen, treballen, viuen i
       envelleixen. La nostra salut està determinada en gran mesura per aquestes
       causes fonamentals alienes a la medicina, que inclouen, entre altres, una
-      educació de qualitat, l'accés a aliments nutritius i unes condicions
-      d'habitatge i de treball dignes.
+      educació de qualitat, l’accés a aliments nutritius i unes condicions
+      d’habitatge i de treball dignes.
     </p>
   </div>
 

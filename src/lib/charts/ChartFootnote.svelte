@@ -11,7 +11,7 @@
   // 0 means missing here just as it does for Indicador, so the line hides.
   export let marge = null;
   export let margeMax = null;
-  export let font = "Generalitat de Catalunya, Departament de Salut.";
+  export let font = "Generalitat de Catalunya, Departament de Salut";
 
   const hasValue = (v) => v !== null && v !== undefined && v !== "" && +v > 0;
 
@@ -22,9 +22,9 @@
 <div class="font-inter text-left text-[11px] font-normal leading-snug text-[#828898]">
   {#if showMarge}
     <p>
-      Marge d&rsquo;error: {fmtPct(marge)}{#if showRange} - {fmtPct(
+      Marge d’error: {fmtPct(marge)}{#if showRange} - {fmtPct(
           margeMax,
-        )}{/if}.
+        )}{/if}
     </p>
   {/if}
   <p>Font: {font}</p>

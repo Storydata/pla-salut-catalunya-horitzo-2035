@@ -29,11 +29,11 @@
       textColor: "#262626",
       size: "sm",
       icon: "directions_bike",
-      stat: "33,4%",
-      text: "de la població infantil té un estil d'oci actiu",
-      label: "Estil d'oci actiu en la població infantil",
+      stat: "33,4\u00a0%",
+      text: "de la població infantil té un estil d’oci actiu",
+      label: "Estil d’oci actiu en la població infantil",
       description:
-        "L'activitat física durant el temps lliure contribueix al desenvolupament i la salut dels infants. Aquest indicador mesura la proporció d'infants que realitzen activitats d'oci actives de manera habitual.",
+        "L’activitat física durant el temps lliure contribueix al desenvolupament i la salut dels infants. Aquest indicador mesura la proporció d’infants que realitzen activitats d’oci actives de manera habitual.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/AnNT5/1/",
         height: 400,
@@ -45,11 +45,11 @@
       textColor: "#262626",
       size: "lg",
       icon: "breastfeeding",
-      stat: "54,3%",
+      stat: "54,3\u00a0%",
       text: "de nadons amb lactància materna exclusiva als 6 mesos",
       label: "Lactància materna exclusiva als 6 mesos",
       description:
-        "La lactància materna és una de les intervencions més efectives per promoure la salut infantil i materna. Aquest indicador mesura la proporció de nadons que s'alimenten només amb llet materna durant els primers 6 mesos de vida.",
+        "La lactància materna és una de les intervencions més efectives per promoure la salut infantil i materna. Aquest indicador mesura la proporció de nadons que s’alimenten només amb llet materna durant els primers 6 mesos de vida.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/ed1aD/1/",
         height: 400,
@@ -61,11 +61,11 @@
       textColor: "#262626",
       size: "sm",
       icon: "apple",
-      stat: "8,4%",
+      stat: "8,4\u00a0%",
       text: "de la població infantil consumeix cinc racions de fruita i/o verdura",
       label: "Consum diari de cinc racions de fruita i/o verdura en la població infantil",
       description:
-        "El consum recomanat de fruites i verdures és un dels principals indicadors d'una alimentació saludable. Aquest indicador mesura la proporció d'infants que consumeixen almenys cinc racions de fruita i/o verdura al dia.",
+        "El consum recomanat de fruites i verdures és un dels principals indicadors d’una alimentació saludable. Aquest indicador mesura la proporció d’infants que consumeixen almenys cinc racions de fruita i/o verdura al dia.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/DgJ7h/3/",
         height: 400,
@@ -77,11 +77,11 @@
       textColor: "#262626",
       size: "lg",
       icon: "gauge",
-      stat: "34%",
+      stat: "34\u00a0%",
       text: "de la població infantil té excés de pes",
       label: "Excés de pes en la població infantil",
       description:
-        "L'excés de pes inclou el sobrepès i l'obesitat, mesurats per l'índex de massa corporal (IMC) superior a 25. Aquest indicador mesura la proporció d'infants amb un pes superior al considerat saludable per a la seva edat i sexe.",
+        "L’excés de pes inclou el sobrepès i l’obesitat, mesurats per l’índex de massa corporal (IMC) superior a 25. Aquest indicador mesura la proporció d’infants amb un pes superior al considerat saludable per a la seva edat i sexe.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/25lGT/2/",
         height: 400,
@@ -93,11 +93,11 @@
       textColor: "#262626",
       size: "sm",
       icon: "lunch_dining",
-      stat: "35,4%",
+      stat: "35,4\u00a0%",
       text: "de la població infantil consumeix aliments alts en sucres, greixos no saludables i sal",
-      label: "Consum d'aliments alts en sucres, greixos no saludables i sal en la població infantil",
+      label: "Consum d’aliments alts en sucres, greixos no saludables i sal en la població infantil",
       description:
-        "Aquest indicador mesura la proporció d'infants que consumeixen habitualment productes amb un alt contingut de sucres, greixos no saludables o sal. El consum freqüent d'aquests aliments s'associa a un major risc de problemes de salut que poden persistir en l'edat adulta.",
+        "Aquest indicador mesura la proporció d’infants que consumeixen habitualment productes amb un alt contingut de sucres, greixos no saludables o sal. El consum freqüent d’aquests aliments s’associa a un major risc de problemes de salut que poden persistir en l’edat adulta.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/CfFJM/2/",
         height: 400,
@@ -109,11 +109,11 @@
       textColor: "#262626",
       size: "lg",
       icon: "vaping_rooms",
-      stat: "12,9% i 14,8%",
-      text: "dels nois i noies de 4t d'ESO fumen cigarretes electròniques",
-      label: "Cigarretes electròniques en l'alumnat de 2n i 4t d'ESO",
+      stat: "12,9\u00a0% i 14,8\u00a0%",
+      text: "dels nois i noies de 4t d’ESO fumen cigarretes electròniques",
+      label: "Cigarretes electròniques en l’alumnat de 2n i 4t d’ESO",
       description:
-        "El tabac i l'alcohol continuen sent dos dels principals factors de risc evitables per a la salut a Catalunya, i les cigarretes electròniques són una de les formes més freqüents de consum de nicotina entre adolescents. Aquest indicador mesura la proporció d'alumnes de 4t d'ESO que en consumeixen.",
+        "El tabac i l’alcohol continuen sent dos dels principals factors de risc evitables per a la salut a Catalunya, i les cigarretes electròniques són una de les formes més freqüents de consum de nicotina entre adolescents. Aquest indicador mesura la proporció d’alumnes de 4t d’ESO que en consumeixen.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/G346a/2/",
         height: 400,
@@ -125,11 +125,11 @@
       textColor: "#262626",
       size: "sm",
       icon: "sports_bar",
-      stat: "14,8% i 17,0%",
-      text: "dels nois i noies de 4t d'ESO amb consum de risc d'alcohol",
-      label: "Consum de risc d'alcohol en l'alumnat de 2n i 4t d'ESO",
+      stat: "14,8\u00a0% i 17,0\u00a0%",
+      text: "dels nois i noies de 4t d’ESO amb consum de risc d’alcohol",
+      label: "Consum de risc d’alcohol en l’alumnat de 2n i 4t d’ESO",
       description:
-        "El tabac i l'alcohol continuen sent dos dels principals factors de risc evitables per a la salut a Catalunya, i el consum d'alcohol durant l'adolescència pot tenir greus efectes negatius sobre la salut i el desenvolupament. Aquest indicador mesura la proporció d'alumnes de 4t d'ESO amb un patró de consum considerat de risc.",
+        "El tabac i l’alcohol continuen sent dos dels principals factors de risc evitables per a la salut a Catalunya, i el consum d’alcohol durant l’adolescència pot tenir greus efectes negatius sobre la salut i el desenvolupament. Aquest indicador mesura la proporció d’alumnes de 4t d’ESO amb un patró de consum considerat de risc.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/EJJAu/4/",
         height: 400,
@@ -141,11 +141,11 @@
       textColor: "#262626",
       size: "lg",
       icon: "hiking",
-      stat: "38,7%",
+      stat: "38,7\u00a0%",
       text: "de la població adulta realitza activitat física (OMS)",
-      label: "Activitat física recomanada per l'OMS en la població adulta",
+      label: "Activitat física recomanada per l’OMS en la població adulta",
       description:
-        "L'activitat física regular contribueix a prevenir nombrosos problemes de salut. Aquest indicador mesura la proporció de persones adultes que compleixen les recomanacions d'activitat física de l'Organització Mundial de la Salut.",
+        "L’activitat física regular contribueix a prevenir nombrosos problemes de salut. Aquest indicador mesura la proporció de persones adultes que compleixen les recomanacions d’activitat física de l’Organització Mundial de la Salut.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/yHP2I/2/",
         height: 400,
@@ -157,11 +157,11 @@
       textColor: "#262626",
       size: "sm",
       icon: "cognition_2",
-      stat: "11,8%",
+      stat: "11,8\u00a0%",
       text: "de la població adulta presenta baix benestar emocional",
       label: "Baix benestar emocional en la població adulta",
       description:
-        "El benestar emocional és una dimensió fonamental de la salut mental, i un dels principals reptes de salut pública a Catalunya. Aquest indicador mesura la proporció de persones adultes que presenten un baix nivell de benestar emocional, que pot conduir a trastorns d'ansietat i depressió.",
+        "El benestar emocional és una dimensió fonamental de la salut mental, i un dels principals reptes de salut pública a Catalunya. Aquest indicador mesura la proporció de persones adultes que presenten un baix nivell de benestar emocional, que pot conduir a trastorns d’ansietat i depressió.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/9BnKn/2/",
         height: 400,
@@ -173,7 +173,7 @@
       textColor: "#262626",
       size: "lg",
       icon: "smoking_rooms",
-      stat: "20,6%",
+      stat: "20,6\u00a0%",
       text: "de la població adulta fuma tabac",
       label: "Consum tabac (15 anys i més)",
       description:
@@ -189,11 +189,11 @@
       textColor: "#262626",
       size: "sm",
       icon: "gauge",
-      stat: "54,3%",
+      stat: "54,3\u00a0%",
       text: "de la població adulta té excés de pes",
       label: "Excés de pes en la població adulta",
       description:
-        "L'excés de pes inclou el sobrepès i l'obesitat, mesurats per l'índex de massa corporal (IMC) superior a 25. Aquest indicador mesura la proporció de persones adultes amb un pes superior al considerat saludable, un factor associat a diverses malalties cròniques",
+        "L’excés de pes inclou el sobrepès i l’obesitat, mesurats per l’índex de massa corporal (IMC) superior a 25. Aquest indicador mesura la proporció de persones adultes amb un pes superior al considerat saludable, un factor associat a diverses malalties cròniques.",
       datawrapper: {
         src: "https://datawrapper.dwcdn.net/kHr47/4/",
         height: 400,

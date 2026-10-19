@@ -22,14 +22,14 @@
     },
     {
       icon: OrientacioAvads,
-      label: "Pioners en l'anàlisi de la càrrega de malaltia a Catalunya",
+      label: "Pioners en l’anàlisi de la càrrega de malaltia a Catalunya",
       href: "#pioners-analisi-carrega-malaltia",
     },
   ];
 
   // Els salts de línia (\n) es respecten amb `whitespace-pre-line`.
   const principis = [
-    { icon: "settings_accessibility", text: "Centralitat de la persona\ni respecte a l'autonomia" },
+    { icon: "settings_accessibility", text: "Centralitat de la persona\ni respecte a l’autonomia" },
     { icon: "vertical_distribute", text: "Justícia i equitat" },
     { icon: "volunteer_activism", text: "Solidaritat i cohesió social" },
     { icon: "nest_eco_leaf", text: "Sostenibilitat i responsabilitat\nenvers les generacions futures" },
@@ -79,8 +79,8 @@
           i eficients en generar un major impacte en la salut i el benestar de
           la ciutadania. El Pla promou un enfocament ecosistèmic que integra
           actuacions a nivell individual, comunitari, per transformar els
-          entorns, territoris i condicions de vida per fer de l'opció saludable
-          l'opció més fàcil, equitativa i accessible. Orienta el sistema de
+          entorns, territoris i condicions de vida per fer de l’opció saludable
+          l’opció més fàcil, equitativa i accessible. Orienta el sistema de
           salut cap a resultats i pràctiques de valor.
         </p>
       </div>
@@ -180,7 +180,7 @@
 >
   <div class="container mx-auto px-4">
     <p class="section-subtitle">
-      Pioners en l'anàlisi de la càrrega de malaltia a Catalunya
+      Pioners en l’anàlisi de la càrrega de malaltia a Catalunya
     </p>
 
     <p
@@ -194,7 +194,7 @@
       <iframe
         bind:this={avadFrame}
         title="Salut barres horitzontals"
-        aria-label="Table"
+        aria-label="Taula"
         id="datawrapper-chart-4wgfp"
         src="https://datawrapper.dwcdn.net/4wgfp/2/"
         scrolling="no"

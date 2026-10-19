@@ -8,7 +8,7 @@
   <div class="hero w-full">
     <img
       src={bgImage}
-      alt="Hero background"
+      alt="Il·lustració d’inici"
       class="w-full h-auto block max-h-[85vh]"
     />
   </div>
@@ -29,12 +29,12 @@
       <p
         class="font-['Inter',sans-serif] text-[15px] leading-[1.65] md:text-lg md:leading-8 font-normal text-center text-[#2E3A59] px-0 py-[25px] sm:px-[35px]"
       >
-        El Pla de salut de Catalunya és l'instrument i marc de referència per a
-        totes les actuacions públiques en matèria de salut dins l'àmbit de la
+        El Pla de salut de Catalunya és l’instrument i marc de referència per a
+        totes les actuacions públiques en matèria de salut dins l’àmbit de la
         Generalitat. El seu objectiu és millorar la salut i la qualitat de vida
         de la població i actuar com a brúixola del sistema de salut. El Pla de
         salut de Catalunya. Horitzó 2035 analitza els principals reptes i
-        oportunitats de la societat actual per tal d'incidir-hi amb aquest mateix objectiu:
+        oportunitats de la societat actual per tal d’incidir-hi amb aquest mateix objectiu:
         millorar la qualitat de vida i la salut de la població de Catalunya.
       </p>
     </div>

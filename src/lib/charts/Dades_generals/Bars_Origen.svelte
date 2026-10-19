@@ -13,7 +13,7 @@
   const bandPadding = 0.2;
 
   const origenLabels = {
-    Si: "Nivell d'ingressos alt",
+    Si: "Nivell d’ingressos alt",
     No: "Resta de països",
   };
 
@@ -100,7 +100,7 @@
     <p class="text-xs text-[#3F3F46] leading-relaxed max-w-sm">
       Classificació del Banc Mundial. Ingrés Nacional Brut (INB) del país de
       naixement. <strong>Dades 2025</strong>
-      <InfoPopover text="Segons el nivell d'ingressos del país d'origen" />
+      <InfoPopover text="Segons el nivell d’ingressos del país d’origen" />
     </p>
   </div>
 
@@ -130,7 +130,7 @@
               font-size="8"
               fill="#8B898E"
             >
-              {tick}%
+              {tick}&nbsp;%
             </text>
           </g>
         {/each}
@@ -170,7 +170,7 @@
               font-weight="400"
               fill="#4C4F51"
             >
-              {fmtPct(row.value)}%
+              {fmtPct(row.value)}&nbsp;%
             </text>
           </g>
         {/each}

@@ -28,7 +28,7 @@
   <p
     class="px-5 pb-3 text-center font-['Inter',sans-serif] text-lg font-bold leading-[1.4] text-[#2E3A59] lg:pt-[var(--section-top-gap)]"
   >
-    Índex socioeconòmic i nivell d'estudis
+    Índex socioeconòmic i nivell d’estudis
   </p>
   <div
     class="flex w-full max-w-[1200px] flex-col items-center gap-10 px-5 md:flex-row md:items-start md:justify-center md:gap-8 lg:max-w-none lg:gap-[6%] lg:px-0"
@@ -41,7 +41,7 @@
           startValue={0}
           endValue={36.5}
           decimals={1}
-          suffix="%"
+          suffix="&nbsp;%"
           color="#2E3A59"
           label="dels catalans tenen formació superior"
         />
@@ -50,7 +50,7 @@
       <div class="w-full">
         <iframe
           title="Nivell de formació de la població"
-          aria-label="Line chart"
+          aria-label="Gràfic de línies"
           id="datawrapper-chart-uN1CF"
           src="https://datawrapper.dwcdn.net/uN1CF/1/"
           scrolling="no"
@@ -72,15 +72,15 @@
           endValue={83.7}
           decimals={1}
           color="#2E3A59"
-          label="Alt Empordà té l'Índex més baix"
-          suffix="%"
+          label="Alt Empordà té l’Índex més baix"
+          suffix="&nbsp;%"
         />
       </div>
 
       <div class="w-full">
         <iframe
           title="Formació superior per comarques"
-          aria-label="Map"
+          aria-label="Mapa"
           id="datawrapper-chart-FSoVB"
           src="https://datawrapper.dwcdn.net/FSoVB/1/"
           scrolling="no"

@@ -12,7 +12,7 @@
     title: "Orientació del Pla de salut",
     href: `${base}/orientacio/`,
     image: illustrationOrientacio,
-    alt: "Il·lustració sobre l'orientació del Pla de salut",
+    alt: "Il·lustració sobre l’orientació del Pla de salut",
     desktopClass: "relative flex w-[25vw] flex-col justify-between",
   };
   const pla = {
@@ -24,7 +24,7 @@
     featured: true,
   };
   const poblacio = {
-    title: "La població de Catalunya\ni la seva salut.",
+    title: "La població de Catalunya\ni la seva salut",
     href: `${base}/estructura-poblacio/`,
     image: illustration02,
     alt: "Il·lustració sobre la població de Catalunya i la seva salut",
@@ -39,10 +39,10 @@
       "absolute block left-1/2 bottom-1/2 w-72 -translate-x-1/2 translate-y-[min(20vw,300px)]",
   };
   const avaluacio = {
-    title: "Avaluació del Pla de salut 2021-2025.",
+    title: "Avaluació del Pla de salut 2021-2025",
     href: `${base}/avaluacio-pla-salut/`,
     image: illustration03,
-    alt: "Il·lustració sobre l'avaluació del Pla de salut 2021-2025",
+    alt: "Il·lustració sobre l’avaluació del Pla de salut 2021-2025",
     desktopClass: "absolute block right-0 bottom-1/2 w-72 translate-y-[min(20vw,300px)]",
   };
 

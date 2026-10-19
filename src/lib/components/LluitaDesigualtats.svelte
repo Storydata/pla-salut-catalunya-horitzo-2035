@@ -35,12 +35,12 @@
     },
     {
       key: "estudis",
-      label: "Per nivell d'estudis",
+      label: "Per nivell d’estudis",
       svg: prepare(SvgEstudis, "estudis"),
     },
     {
       key: "origen",
-      label: "Per país d'origen",
+      label: "Per país d’origen",
       svg: prepare(SvgOrigen, "origen"),
     },
   ];
@@ -120,10 +120,10 @@
         <p
           class="mx-auto mb-6 max-w-[820px] text-center font-inter text-[15px] leading-relaxed text-[#2e3a59]"
         >
-          Les desigualtats més marcades s'observen segons el nivell educatiu i
-          la classe social, fet que reforça l'evidència que la salut està
+          Les desigualtats més marcades s’observen segons el nivell educatiu i
+          la classe social, fet que reforça l’evidència que la salut està
           fortament condicionada pels determinants socials i que reduir aquestes
-          diferències requereix actuar molt més enllà del sistema sanitari
+          diferències requereix actuar molt més enllà del sistema sanitari.
         </p>
 
         <div class="mb-6 flex flex-col items-center">
@@ -161,7 +161,7 @@
                   class="font-inter text-[11px] uppercase leading-[1.6] tracking-[0.5px] text-[#828898]"
                 >
                   Indica la diferència de prevalença entre 2 grups extrems. Les
-                  diferències es mostren a partir de +5 punts.
+                  diferències es mostren a partir de +5 punts
                 </p>
               </div>
               <div>

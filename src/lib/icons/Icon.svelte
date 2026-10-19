@@ -49,7 +49,7 @@
   // mal escrit, majúscules, o l'arxiu a la carpeta equivocada).
   $: if (name && !markup && import.meta.env.DEV) {
     console.warn(
-      `[Icon] No s'ha trobat la icona "${name}" a src/lib/icons/Lucide/ ni a src/lib/icons/material/`,
+      `[Icon] No s’ha trobat la icona "${name}" a src/lib/icons/Lucide/ ni a src/lib/icons/material/`,
     );
   }
 </script>

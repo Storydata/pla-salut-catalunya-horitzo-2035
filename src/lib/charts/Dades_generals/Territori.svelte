@@ -13,12 +13,12 @@
   >
     <h3 class="text-[#1B4853] text-sm font-bold">Per sexe i territori</h3>
     <div class="flex flex-row items-center">
-      <span class="text-[#3F3F46] text-[10px] mr-1.5">Menys del 15%</span>
+      <span class="text-[#3F3F46] text-[10px] mr-1.5">Menys del 15&nbsp;%</span>
       <div class="flex flex-col gap-[0.12em]">
         <Legend colors={DONES_PALETTE.colors} />
         <Legend colors={HOMES_PALETTE.colors} />
       </div>
-      <span class="text-[#3F3F46] text-[10px] ml-1.5">Més del 90%</span>
+      <span class="text-[#3F3F46] text-[10px] ml-1.5">Més del 90&nbsp;%</span>
     </div>
     <div class="flex flex-row items-center">
       <div

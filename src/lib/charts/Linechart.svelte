@@ -1,6 +1,7 @@
 <script>
   import * as d3 from "d3";
   import {
+    displayLabel,
     filterSelectClasses,
     fmtPct,
     getLineColor,
@@ -20,7 +21,7 @@
   const height = 350;
 
   const filterOptions = [
-    { key: "Tots", label: "Tots" },
+    { key: "Tots", label: displayLabel("Tots") },
     { key: "Edat", label: "Edat" },
     { key: "ClasseSocial", label: "Classe social" },
     { key: "Estudis", label: "Nivell estudis" },
@@ -301,7 +302,7 @@
     >
       {#each ["Dona", "Home", "Tots"] as option}
         <option value={option}>
-          {option === "Tots" ? "Sexe: Tots" : option}
+          {option === "Tots" ? `Sexe: ${displayLabel(option)}` : option}
         </option>
       {/each}
     </select>
@@ -335,7 +336,7 @@
       class="block w-full h-auto"
       viewBox={`0 0 ${width} ${height}`}
       preserveAspectRatio="xMidYMid meet"
-      aria-label="Gràfic de línies de l'indicador per any"
+      aria-label="Gràfic de línies de l’indicador per any"
     >
       {#if yearData.length > 0}
         {#each yearData as d}
@@ -377,7 +378,7 @@
             font-size={isSmall ? 9 : 12}
             fill={lineChartSvgColors.textFill}
           >
-            {tick}%
+            {tick}&nbsp;%
           </text>
         {/each}
 
@@ -452,7 +453,7 @@
             font-weight="600"
             fill={label.color}
           >
-            {label.name}
+            {displayLabel(label.name)}
           </text>
         {/each}
 

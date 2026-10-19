@@ -76,7 +76,7 @@
       <p
         class="px-5 pb-3 text-center font-['Inter',sans-serif] text-lg font-bold leading-[1.4] text-[#2E3A59] lg:pt-[var(--section-top-gap)]"
       >
-        On es concentra l'envelliment
+        On es concentra l’envelliment
       </p>
       <div
         class="flex w-full max-w-[1200px] flex-col items-center gap-10 px-5 md:flex-row md:items-start md:justify-center md:gap-8 lg:max-w-none lg:gap-[6%] lg:px-0"
@@ -96,8 +96,8 @@
 
           <div data-chart-box class="w-full overflow-hidden">
             <iframe
-              title="Evolució de l'índex d'envelliment a Catalunya"
-              aria-label="Line chart"
+              title="Evolució de l’índex d’envelliment a Catalunya"
+              aria-label="Gràfic de línies"
               id="datawrapper-chart-Rli1a"
               src="https://datawrapper.dwcdn.net/Rli1a/6/"
               scrolling="no"
@@ -125,8 +125,8 @@
 
           <div data-chart-box class="w-full overflow-hidden">
             <iframe
-              title="Índex d'envelliment per comarques"
-              aria-label="Map"
+              title="Índex d’envelliment per comarques"
+              aria-label="Mapa"
               id="datawrapper-chart-Ze6Gj"
               src="https://datawrapper.dwcdn.net/Ze6Gj/1/"
               scrolling="no"
@@ -153,11 +153,11 @@
         <h2 class="text-[#2E3A59] pt-2 font-bold mb-3">Context</h2>
         <p class="text-[#2E3A59] leading-relaxed">
           Catalunya té una estructura de població per edats força envellida, que
-          s'explica, entre d'altres, per una esperança de vida cada cop més
+          s’explica, entre d’altres, per una esperança de vida cada cop més
           llarga i una fecunditat més baixa. Aquesta tendència ha anat en
           augment en els darrers anys i avui dia en més de la mitjana de
           comarques del territori català hi ha una proporció més elevada de
-          majors de 65 anys vivint-hi respecte als altres grups d'edat.
+          majors de 65 anys vivint-hi respecte als altres grups d’edat.
         </p>
       </div>
     </div>

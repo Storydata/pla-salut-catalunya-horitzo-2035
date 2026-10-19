@@ -4,19 +4,19 @@
     "label": "Esperança de vida",
     "objectius": [
       {
-        "label": "Incrementar l'esperança de vida en néixer",
+        "label": "Incrementar l’esperança de vida en néixer",
         "indicador": "Esperança de vida en néixer",
         "font": "Registre de mortalitat de Catalunya",
         "datasetId": null
       },
       {
-        "label": "Incrementar l'esperança de vida amb bona salut en néixer",
+        "label": "Incrementar l’esperança de vida amb bona salut en néixer",
         "indicador": "Esperança de vida amb bona salut en néixer",
         "font": "Registre de mortalitat de Catalunya",
         "datasetId": null
       },
       {
-        "label": "Incrementar l'esperança de vida amb bona salut en dones als 65 anys",
+        "label": "Incrementar l’esperança de vida amb bona salut en dones als 65 anys",
         "indicador": "Esperança de vida amb bona salut als 65 anys",
         "font": "Registre de mortalitat de Catalunya",
         "datasetId": null
@@ -64,8 +64,8 @@
         "datasetId": null
       },
       {
-        "label": "Mantenir la taxa de mortalitat evitable per malalties de l'aparell respiratori",
-        "indicador": "Taxa de mortalitat evitable per malalties de l'aparell respiratori",
+        "label": "Mantenir la taxa de mortalitat evitable per malalties de l’aparell respiratori",
+        "indicador": "Taxa de mortalitat evitable per malalties de l’aparell respiratori",
         "font": "Registre de mortalitat de Catalunya",
         "datasetId": null
       },
@@ -77,7 +77,7 @@
       },
       {
         "label": "Reduir un 10 % la taxa de mortalitat evitable per càncer d’estómac",
-        "indicador": "Taxa de mortalitat evitable per càncer d'estómac",
+        "indicador": "Taxa de mortalitat evitable per càncer d’estómac",
         "font": "Registre de mortalitat de Catalunya",
         "datasetId": null
       },
@@ -88,7 +88,7 @@
         "datasetId": null
       },
       {
-        "label": "No incrementar la mortalitat atribuïble a l'excés de temperatures",
+        "label": "No incrementar la mortalitat atribuïble a l’excés de temperatures",
         "indicador": "Taxa de mortalitat per temperatures extremes",
         "font": "Sistema de monitoratge de la mortalitat diària",
         "datasetId": null
@@ -124,7 +124,7 @@
         "datasetId": "FRUITAVERDURA_R_adults"
       },
       {
-        "label": "Reduir per sota del 25 % el consum d'aliments alts en sucres, greixos no saludables i sal en la població infantil, i reduir-ne les desigualtats",
+        "label": "Reduir per sota del 25 % el consum d’aliments alts en sucres, greixos no saludables i sal en la població infantil, i reduir-ne les desigualtats",
         "indicador": "% de persones de 3-14 anys que consumeixen aliments alts en sucres, greixos no saludables i sal",
         "font": "Enquesta de salut de Catalunya",
         "datasetId": null
@@ -148,45 +148,45 @@
         "datasetId": "IMC_CAT_OMS_0_19_Sobrepes_infants"
       },
       {
-        "label": "Reduir per sota del 50 % l'excés de pes en la població adulta, i reduir-ne les desigualtats",
+        "label": "Reduir per sota del 50 % l’excés de pes en la població adulta, i reduir-ne les desigualtats",
         "indicador": "% de persones de 18-74 anys amb excés de pes (excés de pes)",
         "font": "Enquesta de salut de Catalunya",
         "datasetId": "IMC_CAT_15imes_R_adults"
       },
       {
-        "label": "Superar el 40 % d'oci actiu en la població infantil, i reduir-ne les desigualtats",
+        "label": "Superar el 40 % d’oci actiu en la població infantil, i reduir-ne les desigualtats",
         "indicador": "% de persones de 3-14 anys que realitzen oci actiu (4)",
         "font": "Enquesta de salut de Catalunya",
         "datasetId": "Oci_actiu_infants"
       },
       {
-        "label": "Superar el 50 % d'activitat física recomanada per l’OMS, i reduir-ne les desigualtats",
+        "label": "Superar el 50 % d’activitat física recomanada per l’OMS, i reduir-ne les desigualtats",
         "indicador": "% de persones de 15 anys i més que fan ≥ 150 minuts setmanals d’activitat física moderada o ≥ 75 minuts setmanals de vigorosa",
         "font": "Enquesta de salut de Catalunya",
         "datasetId": "ACT_INT_MOD_adults"
       },
       {
-        "label": "Superar el 80 % d'hores de son recomanades en la població infantil i adulta",
+        "label": "Superar el 80 % d’hores de son recomanades en la població infantil i adulta",
         "indicador": "% de persones de 3-14 anys que dormen les hores recomanades",
         "font": "Enquesta de salut de Catalunya",
         "datasetId": null
       },
       {
-        "label": "Reduir per sota del 3 % l'exposició al fum ambiental en la població infantil",
+        "label": "Reduir per sota del 3 % l’exposició al fum ambiental en la població infantil",
         "indicador": "% de persones de 0 a 14 anys no fumadores exposades al fum ambiental de tabac a casa",
         "font": "Enquesta de salut de Catalunya",
         "datasetId": null
       },
       {
-        "label": "Reduir per sota de l'1 % el consum de tabac en l'alumnat de 2n d'ESO i per sota del 3 % en el de 4t d'ESO",
-        "indicador": "% de persones de 2n i 4t d'ESO que fumen de tant en tant o diàriament",
-        "font": "Enquesta d'Educació, Salut i Social de la població adolescent de Catalunya",
+        "label": "Reduir per sota de l’1 % el consum de tabac en l’alumnat de 2n d’ESO i per sota del 3 % en el de 4t d’ESO",
+        "indicador": "% de persones de 2n i 4t d’ESO que fumen de tant en tant o diàriament",
+        "font": "Enquesta d’Educació, Salut i Social de la població adolescent de Catalunya",
         "datasetId": null
       },
       {
-        "label": "Reduir per sota de l'1 % el consum de cigarretes electròniques en l'alumnat de 2n d'ESO i per sota del 5 % en el de 4t d'ESO",
-        "indicador": "% de persones de 2n i 4t d'ESO que fumen cigarretes electròniques de tant en tant o diàriament",
-        "font": "Enquesta d'Educació, Salut i Social de la població adolescent de Catalunya",
+        "label": "Reduir per sota de l’1 % el consum de cigarretes electròniques en l’alumnat de 2n d’ESO i per sota del 5 % en el de 4t d’ESO",
+        "indicador": "% de persones de 2n i 4t d’ESO que fumen cigarretes electròniques de tant en tant o diàriament",
+        "font": "Enquesta d’Educació, Salut i Social de la població adolescent de Catalunya",
         "datasetId": null
       },
       {
@@ -196,9 +196,9 @@
         "datasetId": "CONS_TABAC_adults"
       },
       {
-        "label": "Reduir per sota de l'1,5 % el consum de risc d'alcohol en l'alumnat de 2n d'ESO i per sota del 12 % en el de 4t d'ESO",
-        "indicador": "% de persones de 2n i 4t d'ESO que fan consum de risc d'alcohol (puntuació de 3 o més en test AUDIT-C)",
-        "font": "Enquesta d'Educació, Salut i Social de la població adolescent de Catalunya",
+        "label": "Reduir per sota de l’1,5 % el consum de risc d’alcohol en l’alumnat de 2n d’ESO i per sota del 12 % en el de 4t d’ESO",
+        "indicador": "% de persones de 2n i 4t d’ESO que fan consum de risc d’alcohol (puntuació de 3 o més en test AUDIT-C)",
+        "font": "Enquesta d’Educació, Salut i Social de la població adolescent de Catalunya",
         "datasetId": null
       },
       {
@@ -232,14 +232,14 @@
         "datasetId": "SWEMWBS_index_adults"
       },
       {
-        "label": "Reduir l'edat mitjana a la maternitat",
+        "label": "Reduir l’edat mitjana a la maternitat",
         "indicador": "Edat mitjana a la maternitat (dones)",
         "font": "Idescat",
         "datasetId": null
       },
       {
         "label": "Mantenir el 97 % la vacunació infantil de DTPa",
-        "indicador": "% de persones de 7 anys amb pauta completa de difèria i tètanus (DT)",
+        "indicador": "% de persones de 7 anys amb pauta completa de diftèria i tètanus (DT)",
         "font": "Sistema d’informació sanitària de l’atenció primària",
         "datasetId": null
       },
@@ -287,7 +287,7 @@
       },
       {
         "label": "Reduir per sota del nivell actual les infeccions de transmissió sexual",
-        "indicador": "Taxa d’incidència d'infeccions de transmissió sexual\n(per 100.000 habitants)",
+        "indicador": "Taxa d’incidència d’infeccions de transmissió sexual\n(per 100.000 habitants)",
         "font": "Centre d’Estudis Epidemiològics de Catalunya",
         "datasetId": null
       },
@@ -311,7 +311,7 @@
       },
       {
         "label": "Tendir a l’eliminació de la infecció pel virus de l’hepatitis C",
-        "indicador": "Taxa d'incidència d'hepatitis C (per 100.000 habitants)",
+        "indicador": "Taxa d’incidència d’hepatitis C (per 100.000 habitants)",
         "font": "Malalties de Declaració Obligatòria",
         "datasetId": null
       }

@@ -96,7 +96,7 @@
           <div data-chart-box class="w-full overflow-hidden">
             <iframe
               title="Evolució de la població a Catalunya"
-              aria-label="Line chart"
+              aria-label="Gràfic de línies"
               id="datawrapper-chart-q1OOm"
               src="https://datawrapper.dwcdn.net/q1OOm/26/"
               scrolling="no"
@@ -118,7 +118,7 @@
               endValue={20}
               color=" #2E3A59"
               label="de població major de 65 anys"
-              suffix="%"
+              suffix="&nbsp;%"
             />
           </div>
 
@@ -153,9 +153,9 @@
         <p class="text-[#2E3A59] leading-relaxed">
           La població de Catalunya ha crescut en els darrers quatre anys a un
           ritme elevat i supera ja els vuit milions de persones. Les dades
-          mostren que globalment hi ha més dones que homes i que el grup d'edat
+          mostren que globalment hi ha més dones que homes i que el grup d’edat
           de 65 anys ha estat creixent de forma continuada, en consonància amb
-          l'augment de l'esperança de vida.
+          l’augment de l’esperança de vida.
         </p>
       </div>
     </div>

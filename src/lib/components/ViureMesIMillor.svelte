@@ -24,7 +24,7 @@
     },
     {
       key: "alcohol",
-      label: "... deixes el consum d'alcohol",
+      label: "... deixes el consum d’alcohol",
       icon: "beer-off",
       gifs: { dona: "dona-C.gif", home: "home-C.gif" },
       years: { dona: "+2", home: "+3" },

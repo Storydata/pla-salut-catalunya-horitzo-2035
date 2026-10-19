@@ -36,7 +36,7 @@
     <p
       class="text-center font-['Inter',sans-serif] text-[15px] font-normal leading-[1.65] text-[#2E3A59] md:text-[18px] md:leading-[1.8]"
     >
-      Aquest Pla proposa 15 objectius de salut, 25 de reducció de risc i  10 de morbiditat, agrupats en 6 eixos estratègics que donen lloc a 150 intervencions.
+      Aquest Pla proposa 15 objectius de salut, 25 de reducció de risc i 10 de morbiditat, agrupats en 6 eixos estratègics que donen lloc a 150 intervencions.
     </p>
   </div>
 

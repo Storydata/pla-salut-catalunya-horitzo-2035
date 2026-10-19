@@ -199,7 +199,7 @@
     </div>
   {:else if populationData.length === 0}
     <div class="w-full py-12 px-4 bg-white text-center text-gray-500">
-      No data to display
+      No hi ha dades per mostrar
     </div>
   {/if}
 </div>

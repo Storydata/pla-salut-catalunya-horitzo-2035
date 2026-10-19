@@ -215,7 +215,7 @@
           {
             "id": "E1-A5-I03",
             "codi": "E1-A5-I03",
-            "nom": "Intervenció preventiva després d'una intoxicació etílica en adolescents i joves",
+            "nom": "Intervenció preventiva després d’una intoxicació etílica en adolescents i joves",
             "datawrapper": null,
             "fitxa": false
           }
@@ -310,7 +310,7 @@
           {
             "id": "E2-A1-I05",
             "codi": "E2-A1-I05",
-            "nom": "Generació de coneixement i adaptació dels recursos a les necessitats del territori. Centres d'Atenció Primària en zones d'alta vulnerabilitat (Deep End)",
+            "nom": "Generació de coneixement i adaptació dels recursos a les necessitats del territori. Centres d’Atenció Primària en zones d’alta vulnerabilitat (Deep End)",
             "datawrapper": null,
             "fitxa": false
           },
@@ -399,7 +399,7 @@
           {
             "id": "E2-A3-I05",
             "codi": "E2-A3-I05",
-            "nom": "Adaptació a la vida laboral després d'un període llarg d'inactivitat per raons de salut",
+            "nom": "Adaptació a la vida laboral després d’un període llarg d’inactivitat per raons de salut",
             "datawrapper": null,
             "fitxa": false
           }
@@ -432,7 +432,7 @@
           {
             "id": "E3-A1-I03",
             "codi": "E3-A1-I03",
-            "nom": "Intervenció integral pel benestar emocional a l'entorn educatiu",
+            "nom": "Intervenció integral pel benestar emocional a l’entorn educatiu",
             "datawrapper": null,
             "fitxa": false
           },
@@ -556,7 +556,7 @@
           {
             "id": "E3-A3-I02",
             "codi": "E3-A3-I02",
-            "nom": "Reconversió de l'hospitalització psiquiàtrica de llarga estada per un model comunitari enfocat a la recuperació i els drets de les persones",
+            "nom": "Reconversió de l’hospitalització psiquiàtrica de llarga estada per un model comunitari enfocat a la recuperació i els drets de les persones",
             "datawrapper": null,
             "fitxa": false
           },
@@ -577,7 +577,7 @@
           {
             "id": "E3-A3-I05",
             "codi": "E3-A3-I05",
-            "nom": "Revisió de pràctiques i implementació d’alternatives per a la reducció de l'ús de mesures coercitives",
+            "nom": "Revisió de pràctiques i implementació d’alternatives per a la reducció de l’ús de mesures coercitives",
             "datawrapper": null,
             "fitxa": false
           },
@@ -773,7 +773,7 @@
           {
             "id": "E5-A2-I03",
             "codi": "E5-A2-I03",
-            "nom": "Regulació de l'ús de la roba clínica fora de les àrees assistencials",
+            "nom": "Regulació de l’ús de la roba clínica fora de les àrees assistencials",
             "datawrapper": null,
             "fitxa": false
           },
@@ -1050,7 +1050,7 @@
       },
       {
         "id": "E6-A3",
-        "label": "Equitat en l'atenció i en els resultats",
+        "label": "Equitat en l’atenció i en els resultats",
         "intervencions": [
           {
             "id": "E6-A3-I01",

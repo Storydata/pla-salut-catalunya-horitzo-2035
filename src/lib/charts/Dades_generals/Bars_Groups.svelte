@@ -33,7 +33,7 @@
     },
     {
       key: "estudis",
-      title: "Per nivell d'estudis",
+      title: "Per nivell d’estudis",
       groupField: "Estudis",
       filter: (d) =>
         d.Edat === "Tots" &&

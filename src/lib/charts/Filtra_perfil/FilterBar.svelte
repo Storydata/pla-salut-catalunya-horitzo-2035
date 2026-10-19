@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import { filterSelectClasses } from "../chartHelpers";
+  import { displayLabel, filterSelectClasses } from "../chartHelpers";
 
   export let filters = {
     regio: "Tots",
@@ -46,7 +46,7 @@
     >
       {#each dim.options as option}
         <option value={option}>
-          {option === "Tots" ? `${dim.label}: Tots` : option}
+          {option === "Tots" ? `${dim.label}: ${displayLabel(option)}` : option}
         </option>
       {/each}
     </select>

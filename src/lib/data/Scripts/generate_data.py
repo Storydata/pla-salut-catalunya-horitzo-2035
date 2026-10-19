@@ -57,6 +57,9 @@ COLUMNS_OBJECTIUS = {
 
 # E<eix>-A<línia>-I<intervenció>, p. ex. E1-A1-I01 (el número final pot tenir
 # més de 2 xifres, com E1-A1-I134).
+# Apòstrof entre lletres (l'esperança) -> corbat.
+APOSTROPHE = re.compile(r"(?<=\w)['\u2019](?=\w)")
+
 CODI_PATTERN = re.compile(r"^E(\d+)-A(\d+)-I(\d+)$")
 
 DATAWRAPPER_HOST = "https://datawrapper.dwcdn.net/"
@@ -138,9 +141,14 @@ def read_rows(excel_path, columns, report):
     for number, values in enumerate(sheet.iter_rows(min_row=2, values_only=True), start=2):
         if not any(values):
             continue
-        rows.append(
-            {"row": number, **{key: values[index[name]] for key, name in columns.items()}}
-        )
+        # Apòstrof corbat a tot el text (l'Excel barreja ’ i ').
+        cells = {
+            key: APOSTROPHE.sub("\u2019", values[index[name]])
+            if isinstance(values[index[name]], str)
+            else values[index[name]]
+            for key, name in columns.items()
+        }
+        rows.append({"row": number, **cells})
     return rows
 
 

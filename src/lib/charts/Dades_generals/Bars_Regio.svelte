@@ -184,7 +184,7 @@
       {width}
       {height}
       preserveAspectRatio="xMidYMid meet"
-      aria-label="Horizontal bar chart by region"
+      aria-label="Gràfic de barres horitzontals per regió"
     >
       {#if chartRows.length > 0}
         {#each axisTicks as tick}
@@ -196,7 +196,7 @@
               font-size={width < 300 ? 8 : 9}
               fill="#8B898E"
             >
-              {tick}%
+              {tick}&nbsp;%
             </text>
           </g>
         {/each}

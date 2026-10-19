@@ -104,7 +104,7 @@
         <div data-chart-box class="w-full overflow-hidden">
           <iframe
             title="Creixement natural i migratori de la població a Catalunya"
-            aria-label="Line chart"
+            aria-label="Gràfic de línies"
             id="datawrapper-chart-O1GNI"
             src="https://datawrapper.dwcdn.net/O1GNI/3/"
             scrolling="no"
@@ -129,10 +129,10 @@
         <h2 class="text-[#2E3A59] pt-2 font-bold mb-3">Context</h2>
         <p class="text-[#2E3A59] leading-relaxed">
           La població de Catalunya ha crescut considerablement els darrers 4
-          anys. Les projeccions poblacionals de l'Idescat ja mostraven aquesta
+          anys. Les projeccions poblacionals de l’Idescat ja mostraven aquesta
           tendència creixent i aquest augment es confirma ara amb les dades
-          actuals. El creixement de la població de Catalunya ha estat d’un 1,3% interanual. Aquest increment s'explica, entre
-          d'altres, pel flux migratori donat que el creixement natural és
+          actuals. El creixement de la població de Catalunya ha estat d’un 1,3&nbsp;% interanual. Aquest increment s’explica, entre
+          d’altres, pel flux migratori donat que el creixement natural és
           negatiu.
         </p>
       </div>

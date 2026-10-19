@@ -244,7 +244,10 @@ const transformData = (data, edatTots) =>
       Tasa: aq.escape((d) => +d.Tasa),
     })
     .derive({
-      Regio: aq.escape((d) => normalizeCode(d.Regio, { All: "Catalunya" })),
+      Regio: aq.escape((d) =>
+        // Apòstrof corbat als noms de regió (com al GeoJSON del mapa).
+        normalizeCode(d.Regio, { All: "Catalunya" })?.replace("\u0027", "\u2019"),
+      ),
       // Display label keeps the real age range even when Edat is
       // normalized to "Tots" for single-age-group files below
       Edat_label: aq.escape((d) =>
@@ -275,8 +278,8 @@ const transformData = (data, edatTots) =>
       Estudis: aq.escape((d) =>
         normalizeCode(d.Estudis, {
           All: "Tots",
-          P: "Primaria",
-          S: "Secundaria",
+          P: "Primària",
+          S: "Secundària",
           U: "Universitat",
         }),
       ),

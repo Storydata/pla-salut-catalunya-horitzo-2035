@@ -333,7 +333,7 @@
                   <p
                     class="mb-3 font-['Inter',sans-serif] text-sm uppercase tracking-wide text-[#8B898E]"
                   >
-                    Línies d'actuació
+                    Línies d’actuació
                   </p>
 
                   <div class="flex flex-col gap-1">

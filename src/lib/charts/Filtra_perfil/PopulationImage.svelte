@@ -59,7 +59,7 @@
       style="position: relative; opacity: 1;"
     />
   {:else}
-    <div class="w-6 h-6 rounded-full bg-gray-300" title="Not included" />
+    <div class="w-6 h-6 rounded-full bg-gray-300" title="No inclosa" />
   {/if}
 </div>
 

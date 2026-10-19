@@ -11,6 +11,10 @@ const colorMap = {
 export const getColor = (sex) => colorMap[sex];
 export const getColorLabel = getColor;
 
+// El valor intern "Tots" (a les dades i als filtres) es mostra com a "Total".
+export const displayLabel = (value) =>
+  typeof value === "string" ? value.replace(/^Tots\b/, "Total") : value;
+
 export const lineChartButtonClasses = {
   active:
     "!bg-[#2E3A59] !text-white !border-transparent hover:!bg-[#2E3A59] hover:!text-white focus:!text-white focus-visible:!text-white active:!text-white",
@@ -48,7 +52,7 @@ const lineChartSexeColors = {
 const lineChartCategoryOrderings = {
   Edat: ["15-44", "45-64", "65 i més"],
   ClasseSocial: ["Alta", "Mitjana", "Baixa"],
-  Estudis: ["Universitat", "Secundaria", "Primaria"],
+  Estudis: ["Universitat", "Secundària", "Primària"],
 };
 
 const lineChartSubtotalColor = "#FF9671";

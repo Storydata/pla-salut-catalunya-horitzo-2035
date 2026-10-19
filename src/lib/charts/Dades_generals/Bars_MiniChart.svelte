@@ -3,6 +3,7 @@
   import {
     BAR_GROUP_PADDING,
     barGroupsExtent,
+    displayLabel,
     fmtPct,
     getColor,
     getColorLabel,
@@ -70,7 +71,7 @@
 
     return {
       group,
-      label: (labelField && groupRows[0]?.[labelField]) || group,
+      label: displayLabel((labelField && groupRows[0]?.[labelField]) || group),
       y: facetScale(group) ?? margin.top,
       labelY: facetScale.bandwidth() / 2,
       bars: groupRows
@@ -181,7 +182,7 @@
                 font-size={width < 300 ? 8 : 9}
                 fill="#8B898E"
               >
-                {tick}%
+                {tick}&nbsp;%
               </text>
             </g>
           {/each}
