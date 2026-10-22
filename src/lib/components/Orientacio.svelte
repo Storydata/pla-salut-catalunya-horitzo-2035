@@ -77,9 +77,9 @@
           Aposta per actuar sobre les causes, els factors i els determinants de
           la salut i prioritza les intervencions que han demostrat ser efectives
           i eficients en generar un major impacte en la salut i el benestar de
-          la ciutadania. El Pla promou un enfocament ecosistèmic que integra 
+          la ciutadania.<br> El Pla promou un enfocament ecosistèmic que integra 
           actuacions a nivell individual i comunitari, entorns, regulació, polítiques 
-          comercials, tecnologia i dades, i organització i gestió del sistema de salut. 
+          comercials, tecnologia i dades, i organització i gestió del sistema de salut. <br> 
           L’objectiu és transformar els entorns, territoris i condicions de vida per 
           fer que l’opció saludable sigui la més fàcil, equitativa i accessible per a 
           tothom; i orientar el sistema de salut cap a la generació de valor, mitjançant 
