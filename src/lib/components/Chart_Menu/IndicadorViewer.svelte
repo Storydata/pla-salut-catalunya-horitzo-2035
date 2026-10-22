@@ -373,7 +373,7 @@
                             <p
                               class="mb-3 font-['Inter',sans-serif] text-sm tracking-wide text-[#8B898E]"
                             >
-                              Metes i intervencions de procés. Properament
+                              Metes i indicadors de procés. Properament
                             </p>
                             <ul class="flex flex-col gap-1">
                               {#each linia.intervencions as intervencio (intervencio.id)}
