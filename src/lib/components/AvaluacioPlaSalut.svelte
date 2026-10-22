@@ -53,7 +53,7 @@
 <div class="relative w-full lg:min-h-[120vh]">
   <div class="lg:sticky lg:top-[var(--site-header-h)] lg:z-10">
     <div class="pb-4 pt-[var(--section-top-gap)] text-center">
-      <p class="section-title">Avaluació del pla de salut 2021-2025</p>
+      <p class="section-title">Avaluació del Pla de salut 2021-2025</p>
     </div>
     <div class="container mx-auto px-4">
       <div class="mb-3 text-center md:mb-4">
@@ -64,7 +64,7 @@
         <p
           class="mx-auto max-w-[560px] text-center text-[14px] leading-[1.6] text-[#2E3A59] md:text-base"
         >
-          El Pla de Salut 2021-2025 ha finalitzat, presentem els resultats
+          El Pla de salut 2021-2025 ha finalitzat, presentem els resultats
           assolits i el grau de compliment dels objectius establerts.
         </p>
       </div>
